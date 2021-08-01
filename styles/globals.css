@@ -2,15 +2,29 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: Arial, sans-serif;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+:root {
+  --title-color: rgb(50, 50, 50);
+  --footer-color: rgb(88, 88, 88);
+  --main-color: #785de8;
+  --button-degree-background: -webkit-linear-gradient(330deg, #5263f1, #2ae7d8);
 }
 
-* {
-  box-sizing: border-box;
+.btn {
+  border-radius: 20px;
+  box-shadow: 0px 10px 30px 0px rgb(0 0 0 / 10%);
+  transition: opacity 0.2s ease, box-shadow 0.2s ease;
+  width: auto;
+  padding: 16px 20px;
+  background: var(--button-degree-background);
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+
+.btn:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 10%);
 }

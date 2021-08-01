@@ -1,0 +1,66 @@
+.container {
+  display: flex;
+  justify-content: center;
+  margin-top: 70px;
+}
+
+.sliderText {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 36px;
+  color: white;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.plus {
+  float: left;
+  margin-top: 4px;
+}
+
+.textBox {
+  background-color: rgba(255, 255, 255, 0.8);
+  height: 42px;
+  width: fit-content;
+  padding: 4px;
+  margin-left: 24px;
+  padding: 4px 8px;
+}
+
+.loopTextItem {
+  width: fit-content;
+  background-color: white;
+  background-image: -webkit-linear-gradient(
+    330deg,
+    rgb(0, 228, 216),
+    rgb(132, 3, 255)
+  );
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+
+.show {
+  opacity: 1;
+  white-space: nowrap;
+  transition: 0.75s ease-out;
+}
+
+.hide {
+  opacity: 0;
+  white-space: nowrap;
+  display: table-column;
+  transition: 0.75s ease-out;
+}

@@ -1,0 +1,30 @@
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.menu {
+  margin-top: 24px;
+  padding: 1px 20px;
+  border-radius: 20px;
+  background-color: white;
+  position: absolute;
+  height: 50px;
+}
+
+.menuButton {
+  font-size: 16px;
+  display: inline-block;
+  color: grey !important;
+  text-decoration: none;
+  margin: 10px 10px 0px;
+}
+
+.menuButton:hover {
+  color: black !important;
+  margin-top: 2px;
+}
+
+.active {
+  font-weight: bold;
+}
