@@ -4,20 +4,21 @@
   margin-top: 40px;
   filter: drop-shadow(2px 2px 8px white);
   opacity: 0.9;
+  overflow: hidden;
 }
 
 .brand {
-  width: 320px;
-  margin-left: 4px;
-  margin-right: 4px;
+  width: 300px;
+  margin-left: 10px;
+  margin-right: 10px;
   border-bottom: none;
-  height: 118px;
+  height: 100px;
   background-color: white;
-  padding: 20px;
+  padding: 16px;
 }
 
 .brandLogo {
-  margin: -20px;
+  margin: -30px;
 }
 
 .brandName1 {
@@ -34,7 +35,7 @@
   float: right;
   width: 180px;
   text-align: right;
-  margin-top: -50px;
+  margin-top: -36px;
   line-height: 20px;
   font-size: 14px;
 }
