@@ -1,4 +1,5 @@
 import styles from "../../styles/Header.module.css";
+import Brands from "../brands";
 import LanguageChanger from "../languageChanger";
 import Menu from "../menu";
 import Slider from "../slider";
@@ -25,6 +26,7 @@ const Header = () => {
         </div>
       </div>
       <Slider />
+      <Brands />
     </div>
   );
 };

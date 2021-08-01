@@ -20,6 +20,8 @@ export default {
     plus2: "artificial intelligence",
     plus3: "big data",
     plus4: "vertical solutions",
+    brand1Text: "Enterprise Mobility Management as a Service",
+    brand2Text: "Full Stack IoT Platform with Edge Computing",
   },
   page: {
     _404: {

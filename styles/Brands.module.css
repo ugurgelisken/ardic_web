@@ -1,0 +1,40 @@
+.container {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+  filter: drop-shadow(2px 2px 8px white);
+  opacity: 0.9;
+}
+
+.brand {
+  width: 320px;
+  margin-left: 4px;
+  margin-right: 4px;
+  border-bottom: none;
+  height: 118px;
+  background-color: white;
+  padding: 20px;
+}
+
+.brandLogo {
+  margin: -20px;
+}
+
+.brandName1 {
+  float: right;
+  height: 22px;
+}
+
+.brandName2 {
+  float: right;
+  height: 29px;
+}
+
+.brandText {
+  float: right;
+  width: 180px;
+  text-align: right;
+  margin-top: -50px;
+  line-height: 20px;
+  font-size: 14px;
+}

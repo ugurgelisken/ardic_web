@@ -20,6 +20,8 @@ export default {
     plus2: "yapay zeka",
     plus3: "büyük veri",
     plus4: "dikey çözümler",
+    brand1Text: "Hizmet Olarak Kurumsal Mobilite Yönetimi",
+    brand2Text: "Edge Computing ile Tam Yığın IoT Platformu",
   },
   page: {
     _404: {
