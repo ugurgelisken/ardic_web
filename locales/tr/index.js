@@ -22,6 +22,7 @@ export default {
     plus4: "dikey çözümler",
     brand1Text: "Hizmet Olarak Kurumsal Mobilite Yönetimi",
     brand2Text: "Edge Computing ile Tam Yığın IoT Platformu",
+    copyright: "© 2021 ARDIC Inc.",
   },
   page: {
     _404: {

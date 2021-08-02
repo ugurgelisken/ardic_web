@@ -6,6 +6,7 @@ import styles from "../../styles/About.module.css";
 
 import tr from "../../locales/tr";
 import en from "../../locales/en";
+import Footer from "../../components/footer";
 
 const About = () => {
   const router = useRouter();
@@ -19,6 +20,7 @@ const About = () => {
       </Head>
       <Header />
       <div>{t.page.about.title}</div>
+      <Footer />
     </div>
   );
 };

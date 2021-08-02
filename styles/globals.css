@@ -36,3 +36,25 @@ a:active {
   color: inherit;
   text-decoration: none;
 }
+
+.page-box {
+  background-color: whitesmoke;
+  padding: 20px;
+}
+
+.icons {
+  float: left;
+  margin-right: 6px;
+}
+
+.mw-50px {
+  max-width: 50px;
+}
+
+.page-sub-title {
+  background-color: #54a7e4;
+  padding: 6px 10px;
+  font-size: 18px;
+  color: white;
+  margin-bottom: 20px;
+}

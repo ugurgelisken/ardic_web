@@ -6,6 +6,7 @@ import tr from "../locales/tr";
 import en from "../locales/en";
 
 import Header from "../components/header";
+import Footer from "../components/footer";
 
 const Home = () => {
   const router = useRouter();
@@ -92,6 +93,7 @@ const Home = () => {
         <meta name="theme-color" content="#ffffff"></meta>
       </Head>
       <Header />
+      <Footer />
     </div>
   );
 };

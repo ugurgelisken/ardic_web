@@ -5,4 +5,9 @@ module.exports = {
     defaultLocale: "en",
     localeDetection: false,
   },
+  env: {
+    HOST: process.env.HOST,
+    HOSTNAME: process.env.HOSTNAME,
+    PORT: process.env.PORT,
+  },
 };

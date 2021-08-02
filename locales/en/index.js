@@ -22,6 +22,7 @@ export default {
     plus4: "vertical solutions",
     brand1Text: "Enterprise Mobility Management as a Service",
     brand2Text: "Full Stack IoT Platform with Edge Computing",
+    copyright: "© 2021 ARDIC Inc.",
   },
   page: {
     _404: {
