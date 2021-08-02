@@ -7,6 +7,12 @@
   background-size: cover;
 }
 
+@media screen and (max-width: 1024px) {
+  .container {
+    background-image: url("/assets/header-background-mobile.jpg");
+  }
+}
+
 .header {
   position: fixed;
   z-index: 10;
