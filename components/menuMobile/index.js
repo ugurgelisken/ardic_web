@@ -1,5 +1,5 @@
 import { useRouter } from "next/router";
-import React, { useEffect, useState } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 import styles from "../../styles/MenuMobile.module.css";
 
 import MenuButtonMobile from "../menuButtonMobile";
@@ -13,6 +13,9 @@ const Menu = ({ menuItems }) => {
   const { locale } = router;
   useEffect(() => {
     setSelectedLanguage(locale);
+    window.onresize = () => {
+      setMenuState(false);
+    };
   }, []);
 
   const setLanguage = (l) => {
