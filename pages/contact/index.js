@@ -1,12 +1,10 @@
 import Head from "next/head";
 import { useRouter } from "next/router";
-import Header from "../../components/header";
 
 import styles from "../../styles/About.module.css";
 
 import tr from "../../locales/tr";
 import en from "../../locales/en";
-import Footer from "../../components/footer";
 
 const Contact = ({ data }) => {
   const router = useRouter();
@@ -18,7 +16,6 @@ const Contact = ({ data }) => {
         <title>{t.title.about}</title>
         <meta name="description" content={t.meta.about} />
       </Head>
-      <Header />
       <div className="container">
         <div className="row">
           <div className="col page-box">
@@ -71,7 +68,6 @@ const Contact = ({ data }) => {
           </div>
         </div>
       </div>
-      <Footer />
     </div>
   );
 };
@@ -87,12 +83,3 @@ export const getStaticProps = async (router) => {
 };
 
 export default Contact;
-
-/*  name: "Istanbul Office",
-      organization:
-        "ARDIC ArGe Bilgi ve Teknoloji Çözümleri, Yazılım, Bilgisayar San. ve Tic. A.Ş.",
-      address:
-        "Atatürk Mah. Gülibrişim Cd. No:23 Evinpark Residence A1 Blok Daire:2 34758 Ataşehir/İstanbul - Turkey",
-      phone: "+90 530 098 5889",
-      email: "info@ardictech.com",
-      map: "https*/

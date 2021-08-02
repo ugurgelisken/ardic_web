@@ -39,3 +39,33 @@
   line-height: 20px;
   font-size: 14px;
 }
+
+@media screen and (max-width: 768px) {
+  .brand {
+    width: 44%;
+    text-align: center;
+    padding: 4px;
+  }
+
+  .brandLogo {
+    height: 80px;
+    margin: -10px;
+  }
+
+  .brandName1 {
+    display: none;
+  }
+
+  .brandName2 {
+    display: none;
+  }
+
+  .brandText {
+    float: none;
+    width: auto;
+    text-align: center;
+    margin-top: 0px;
+    font-size: 12px;
+    line-height: 14px;
+  }
+}

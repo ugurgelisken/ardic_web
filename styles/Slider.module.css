@@ -1,7 +1,7 @@
 .container {
   display: flex;
   justify-content: center;
-  margin-top: 50px;
+  padding-top: 110px;
 }
 
 .sliderText {
@@ -9,6 +9,17 @@
   font-size: 28px;
   line-height: 36px;
   color: white;
+  height: 110px;
+}
+
+@media screen and (max-width: 768px) {
+  .sliderText {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+    color: white;
+    padding-left: 20px;
+  }
 }
 
 @keyframes fade {

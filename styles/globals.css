@@ -40,6 +40,7 @@ a:active {
 .page-box {
   background-color: whitesmoke;
   padding: 20px;
+  border-top: 6px solid #aa03ff;
 }
 
 .icons {
@@ -49,6 +50,10 @@ a:active {
 
 .mw-50px {
   max-width: 50px;
+}
+
+.mw-75 {
+  min-width: 75%;
 }
 
 .page-sub-title {

@@ -1,12 +1,9 @@
 import Head from "next/head";
 import { useRouter } from "next/router";
-import Header from "../../components/header";
-
 import styles from "../../styles/About.module.css";
 
 import tr from "../../locales/tr";
 import en from "../../locales/en";
-import Footer from "../../components/footer";
 
 const About = () => {
   const router = useRouter();
@@ -18,9 +15,7 @@ const About = () => {
         <title>{t.title.about}</title>
         <meta name="description" content={t.meta.about} />
       </Head>
-      <Header />
       <div>{t.page.about.title}</div>
-      <Footer />
     </div>
   );
 };

@@ -13,18 +13,25 @@ const Brands = () => {
   return (
     <div className={styles.container}>
       <div className={styles.brand}>
-        <a href="/modiverse">
-          <img className={styles.brandLogo} src="assets/logo-modiverse.jpg" />
-          <img className={styles.brandName1} src="assets/modiverse.png" />
-          <p className={styles.brandText}>{t.commons.brand2Text}</p>
-        </a>
+        <Link href="/modiverse">
+          <a>
+            <img className={styles.brandLogo} src="assets/logo-modiverse.jpg" />
+            <img className={styles.brandName1} src="assets/modiverse.png" />
+            <p className={styles.brandText}>{t.commons.brand2Text}</p>
+          </a>
+        </Link>
       </div>
       <div className={styles.brand}>
-        <a href="/iot-ignite">
-          <img className={styles.brandLogo} src="assets/logo-iot-ignite.jpg" />
-          <img className={styles.brandName2} src="assets/iot-ignite.png" />
-          <p className={styles.brandText}>{t.commons.brand2Text}</p>
-        </a>
+        <Link href="/iot-ignite">
+          <a>
+            <img
+              className={styles.brandLogo}
+              src="assets/logo-iot-ignite.jpg"
+            />
+            <img className={styles.brandName2} src="assets/iot-ignite.png" />
+            <p className={styles.brandText}>{t.commons.brand2Text}</p>
+          </a>
+        </Link>
       </div>
     </div>
   );
