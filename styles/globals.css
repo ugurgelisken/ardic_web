@@ -3,6 +3,7 @@ body {
   padding: 0;
   margin: 0;
   font-family: Arial, sans-serif;
+  background-color: whitesmoke;
 }
 
 :root {
@@ -38,9 +39,10 @@ a:active {
 }
 
 .page-box {
-  background-color: whitesmoke;
+  background-color: white;
   padding: 20px;
   border-top: 6px solid #aa03ff;
+  filter: drop-shadow(0px 0px 10px silver);
 }
 
 .icons {
@@ -62,4 +64,17 @@ a:active {
   font-size: 18px;
   color: white;
   margin-bottom: 20px;
+}
+
+h4 {
+  font-weight: bolder;
+  font-size: 19px;
+}
+
+.card-text {
+  margin-bottom: 0px !important;
+}
+
+.shadow {
+  filter: drop-shadow(0px 0px 6px rgba(0, 0, 0, 0.5));
 }

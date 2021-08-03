@@ -23,6 +23,9 @@ export default {
     brand1Text: "Enterprise Mobility Management as a Service",
     brand2Text: "Full Stack IoT Platform with Edge Computing",
     copyright: "© 2021 ARDIC Inc.",
+    references: "References",
+    successStories: "Success Stories",
+    solutions: "Solutions",
   },
   page: {
     _404: {

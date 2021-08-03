@@ -7,7 +7,6 @@ import tr from "../locales/tr";
 import en from "../locales/en";
 
 const Layout = ({ children }) => {
-  console.log(children.type.name);
   const router = useRouter();
   const { locale } = router;
   const t = locale === "en" ? en : tr;

@@ -3,7 +3,6 @@ import styles from "../../styles/Menu.module.css";
 import MenuButton from "../menuButton";
 
 const Menu = ({ menuItems, router }) => {
-  console.log(menuItems);
   return (
     <div className={styles.container}>
       <nav className={styles.menu}>

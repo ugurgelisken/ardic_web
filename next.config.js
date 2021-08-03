@@ -1,5 +1,6 @@
 module.exports = {
   reactStrictMode: true,
+  generateEtags: false,
   i18n: {
     locales: ["en", "tr"],
     defaultLocale: "en",

@@ -36,7 +36,9 @@ const Header = () => {
   return (
     <div className={styles.container}>
       {/* LG, XL Screen */}
-      <div className={`container-fluid d-none d-lg-block ${styles.header}`}>
+      <div
+        className={`container-fluid shadow d-none d-lg-block ${styles.header}`}
+      >
         <div className="row">
           <div className="col">
             <div className={styles.brand}>
@@ -55,7 +57,7 @@ const Header = () => {
         </div>
       </div>
       {/* SM, MD Screen */}
-      <div className={`container-fluid  d-lg-none d-xl-none ${styles.header}`}>
+      <div className={`container-fluid d-lg-none d-xl-none ${styles.header}`}>
         <div className="row">
           <div className={"col mw-75 " + styles.brand}>
             <a href="/">

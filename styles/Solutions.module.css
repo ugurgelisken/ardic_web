@@ -1,0 +1,32 @@
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.sectionTitle {
+  font-size: 16px;
+  border-bottom: 1px solid silver;
+  margin-bottom: 10px;
+  text-align: center;
+  margin: auto auto;
+  padding: 6px;
+}
+
+.iconsContainer {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.icons {
+  width: 48px;
+  border-radius: 24px;
+  margin-left: 12px;
+  filter: drop-shadow(2px 2px 4px silver);
+}
+
+.iconsLink:hover {
+  cursor: pointer;
+  border: 1px solid whitesmoke;
+}
