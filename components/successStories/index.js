@@ -11,7 +11,7 @@ const SuccessStories = ({ data }) => {
   const t = locale === "en" ? en : tr;
   return (
     <div className="container-fluid">
-      <div className={styles.sectionTitle}>{t.commons.successStories}</div>
+      <div className="section-title">{t.commons.successStories}</div>
       <div className="row">
         <div className={"col " + styles.container}>
           {data.map((item, index) => {

@@ -1,0 +1,79 @@
+.charValue1 {
+  font-size: 40px;
+  line-height: 1em;
+  font-weight: 700;
+  background: -webkit-linear-gradient(338deg, #67a0fd, #9a6bfb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.charValue2 {
+  font-size: 40px;
+  line-height: 1em;
+  font-weight: 700;
+  background: -webkit-linear-gradient(338deg, #a25dff, #df68ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  width: fit-content;
+}
+
+@media screen and (max-width: 768px) {
+  .charValue1,
+  .charValue2 {
+    font-size: 32px;
+  }
+}
+
+.chartImage {
+  width: 100%;
+}
+.chartValueName {
+  font-size: 20px;
+  font-weight: bolder;
+  color: silver;
+  margin-bottom: 0px;
+}
+
+.chartBoxValues {
+  position: relative;
+  left: 10px;
+  top: 10px;
+  height: 0px;
+  background-color: white;
+  width: fit-content;
+}
+.box {
+  border-radius: 10px;
+  padding: 10px;
+  filter: drop-shadow(0px 0px 6px silver);
+  background-color: white;
+  min-height: 110px;
+  margin-right: 10px;
+  margin-bottom: 30px;
+}
+
+.boxText {
+  width: fit-content;
+  background-color: white;
+  background-image: -webkit-linear-gradient(
+    330deg,
+    rgb(0, 228, 216),
+    rgb(132, 3, 255)
+  );
+  font-size: 4rem;
+  font-weight: bolder;
+  margin: auto auto;
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.boxIcon {
+  height: 30px;
+  opacity: 0.4;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}

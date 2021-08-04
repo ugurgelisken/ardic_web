@@ -78,3 +78,40 @@ h4 {
 .shadow {
   filter: drop-shadow(0px 0px 6px rgba(0, 0, 0, 0.5));
 }
+
+.section-title {
+  margin-left: -40px;
+  padding-left: 10px;
+  background-color: white;
+  font-weight: bolder;
+  border-bottom: 1px solid #e4e4e4;
+  padding: 10px;
+  text-align: left !important;
+  text-align: center;
+  color: #444444;
+}
+
+.m-40 {
+  margin: 40px !important;
+}
+
+@media screen and (max-width: 768px) {
+  .section-title {
+    font-weight: bolder;
+    padding: 10px;
+    text-align: center !important;
+    background-color: whitesmoke;
+    color: #444444;
+    border-radius: 12px;
+    font-size: 19px;
+    font-weight: 100;
+    margin: -20px;
+    margin-bottom: 3px;
+  }
+
+  .m-40 {
+    margin: 20px !important;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+  }
+}

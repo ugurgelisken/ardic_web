@@ -12,7 +12,7 @@ const Solutions = ({ data }) => {
   const t = locale === "en" ? en : tr;
   return (
     <div className="container">
-      <div className={styles.sectionTitle}>{t.commons.solutions}</div>
+      <div className="section-title">{t.commons.solutions}</div>
       <br />
       <div className="row">
         {data.map((item, index) => {

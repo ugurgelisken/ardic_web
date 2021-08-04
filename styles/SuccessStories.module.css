@@ -3,12 +3,3 @@
   justify-content: center;
   flex-wrap: wrap;
 }
-
-.sectionTitle {
-  font-size: 16px;
-  border-bottom: 1px solid silver;
-  margin-bottom: 10px;
-  text-align: center;
-  margin: auto auto;
-  padding: 6px;
-}

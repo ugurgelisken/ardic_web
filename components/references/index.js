@@ -22,7 +22,7 @@ const References = () => {
 
   return (
     <div className="container-fluid">
-      <div className={styles.sectionTitle}>{t.commons.references}</div>
+      <div className="section-title">{t.commons.references}</div>
       <div className="row">
         <div className={"col " + styles.container}>
           {referencesData.map((item, index) => {
