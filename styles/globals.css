@@ -91,10 +91,6 @@ h4 {
   color: #444444;
 }
 
-.m-40 {
-  margin: 40px !important;
-}
-
 @media screen and (max-width: 768px) {
   .section-title {
     font-weight: bolder;
@@ -107,11 +103,5 @@ h4 {
     font-weight: 100;
     margin: -20px;
     margin-bottom: 3px;
-  }
-
-  .m-40 {
-    margin: 20px !important;
-    margin-left: 0px !important;
-    margin-right: 0px !important;
   }
 }

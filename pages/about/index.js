@@ -18,9 +18,8 @@ const About = ({ data }) => {
       </Head>
       <div className="container page-box">
         <div className="section-title">{t.title.about}</div>
-
-        <h5 className="m-40 text-center">{data.text}</h5>
-
+        <br />
+        <h5 className="mb-4 text-center">{data.text}</h5>
         <div className="row mt-4">
           <div className="col-sm-12 col-md-6 col-lg-3 col-xl-3">
             <div className={styles.box}>

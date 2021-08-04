@@ -17,6 +17,8 @@ const Contact = ({ data }) => {
         <meta name="description" content={t.meta.about} />
       </Head>
       <div className="container page-box">
+        <div className="section-title">{t.title.about}</div>
+        <br />
         <div className="row">
           <div className="col">
             {data.map((item, index) => {
