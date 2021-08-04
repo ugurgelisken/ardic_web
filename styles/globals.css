@@ -98,10 +98,24 @@ h4 {
     text-align: center !important;
     background-color: whitesmoke;
     color: #444444;
-    border-radius: 12px;
     font-size: 19px;
     font-weight: 100;
     margin: -20px;
     margin-bottom: 3px;
   }
+}
+
+.link {
+  background-color: #e8e8e8;
+  border: none;
+  border-radius: 4px;
+  padding: 4px 10px;
+  font-size: 14px;
+  color: black;
+}
+
+.link:hover {
+  transition: 0.2s;
+  background-color: #848484;
+  color: white;
 }

@@ -49,7 +49,7 @@ const Header = () => {
             </div>
           </div>
           <div className="col">
-            <Menu menuItems={menuItems} />
+            <Menu menuItems={menuItems} router={router} />
           </div>
           <div className="col">
             <LanguageChanger />

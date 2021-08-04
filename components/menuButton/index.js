@@ -1,13 +1,15 @@
+import { useRouter } from "next/router";
 import Link from "next/link";
 
 import styles from "../../styles/Menu.module.css";
 
-const MenuButton = ({ title, slug, locale, route }) => {
+const MenuButton = ({ title, slug, locale }) => {
+  const router = useRouter();
   return (
     <Link href={slug} hrefLang={locale}>
       <a
         className={`${styles.menuButton} ${
-          slug === route ? styles.active : ""
+          slug === router.route ? styles.active : ""
         }`}
       >
         {title}

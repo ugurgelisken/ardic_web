@@ -6,11 +6,13 @@ export default {
     _404: "404",
     index: "Ardıc",
     about: "About",
+    technologies: "Technologies",
   },
   meta: {
     _404: "404",
     index: "Ardıc",
     about: "About",
+    technologies: "Technologies",
   },
   commons: {
     sliderText:
@@ -26,6 +28,7 @@ export default {
     references: "References",
     successStories: "Success Stories",
     solutions: "Solutions",
+    readMore: "read more",
   },
   page: {
     _404: {
