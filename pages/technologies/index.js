@@ -15,7 +15,9 @@ const Technologies = ({ data }) => {
   return (
     <div className={styles.container}>
       <Head>
-        <title>{t.title.technologies}</title>
+        <title>
+          {process.env.APP_NAME} | {t.title.technologies}
+        </title>
         <meta name="description" content={t.meta.technologies} />
       </Head>
       <div className="container page-box">

@@ -13,7 +13,9 @@ const About = ({ data }) => {
   return (
     <div className={styles.container}>
       <Head>
-        <title>{t.title.about}</title>
+        <title>
+          {process.env.APP_NAME} | {t.title.about}
+        </title>
         <meta name="description" content={t.meta.about} />
       </Head>
       <div className="container page-box">

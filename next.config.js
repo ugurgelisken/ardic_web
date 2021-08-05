@@ -7,6 +7,7 @@ module.exports = {
     localeDetection: false,
   },
   env: {
+    APP_NAME: process.env.APP_NAME,
     HOST: process.env.HOST,
     HOSTNAME: process.env.HOSTNAME,
     PORT: process.env.PORT,

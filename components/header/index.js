@@ -1,4 +1,7 @@
 import { useRouter } from "next/router";
+
+import { useEffect, useState } from "react";
+
 import styles from "../../styles/Header.module.css";
 import Brands from "../brands";
 import LanguageChanger from "../languageChanger";
@@ -6,32 +9,18 @@ import Menu from "../menu";
 import MenuMobile from "../menuMobile";
 import Slider from "../slider";
 
-import tr from "../../locales/tr";
-import en from "../../locales/en";
-
 const Header = () => {
   const router = useRouter();
-  const { locale } = router;
-  const t = locale === "en" ? en : tr;
 
-  const menuItems = [
-    {
-      title: t.page.about.title,
-      slug: t.page.about.slug,
-    },
-    {
-      title: t.page.solutions.title,
-      slug: t.page.solutions.slug,
-    },
-    {
-      title: t.page.technologies.title,
-      slug: t.page.technologies.slug,
-    },
-    {
-      title: t.page.contact.title,
-      slug: t.page.contact.slug,
-    },
-  ];
+  const [menuItems, setMenuItems] = useState([]);
+
+  useEffect(() => {
+    fetch(`${process.env.HOST}/api/${router.locale}/menu`)
+      .then((response) => response.json())
+      .then((data) => {
+        setMenuItems(data);
+      });
+  }, []);
 
   return (
     <div className={styles.container}>

@@ -6,7 +6,7 @@ import tr from "../../locales/tr";
 import en from "../../locales/en";
 
 const Solutions = ({ data }) => {
-  console.log(data);
+  console.log(data.solutions);
   const router = useRouter();
   const { locale } = router;
   const t = locale === "en" ? en : tr;
@@ -15,7 +15,7 @@ const Solutions = ({ data }) => {
       <div className="section-title">{t.commons.solutions}</div>
       <br />
       <div className="row">
-        {data.map((item, index) => {
+        {data.solutions.map((item, index) => {
           return (
             <div
               key={index}
@@ -62,6 +62,15 @@ const Solutions = ({ data }) => {
             </div>
           );
         })}
+      </div>
+      <div className={"row " + styles.moreBox}>
+        <Link href="/contact">
+          <a className={styles.plusIcon}>+</a>
+        </Link>
+        <div className={styles.plusContent}>
+          <h4>{data.more.title}</h4>
+          <p className={styles.plusText}>{data.more.text}</p>
+        </div>
       </div>
     </div>
   );

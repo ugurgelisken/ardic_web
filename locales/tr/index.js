@@ -7,12 +7,14 @@ export default {
     index: "Ardıc",
     about: "Hakkında",
     technologies: "Teknolojiler",
+    contact: "İletişim",
   },
   meta: {
     _404: "404",
     index: "Ardıc",
     about: "Hakkında",
     technologies: "Teknolojiler",
+    contact: "İletişim",
   },
   commons: {
     sliderText:

@@ -13,7 +13,7 @@ const Brands = () => {
   return (
     <div className={styles.container}>
       <div className={styles.brand}>
-        <Link href="/modiverse">
+        <Link href="/technologies/modiverse">
           <a>
             <img className={styles.brandLogo} src="assets/logo-modiverse.jpg" />
             <img className={styles.brandName1} src="assets/modiverse.png" />
@@ -22,7 +22,7 @@ const Brands = () => {
         </Link>
       </div>
       <div className={styles.brand}>
-        <Link href="/iot-ignite">
+        <Link href="/technologies/iot-ignite">
           <a>
             <img
               className={styles.brandLogo}

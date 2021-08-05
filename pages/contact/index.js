@@ -13,11 +13,13 @@ const Contact = ({ data }) => {
   return (
     <div className={styles.container}>
       <Head>
-        <title>{t.title.about}</title>
-        <meta name="description" content={t.meta.about} />
+        <title>
+          {process.env.APP_NAME} | {t.title.contact}
+        </title>
+        <meta name="description" content={t.meta.contact} />
       </Head>
       <div className="container page-box">
-        <div className="section-title">{t.title.about}</div>
+        <div className="section-title">{t.title.contact}</div>
         <br />
         <div className="row">
           <div className="col">

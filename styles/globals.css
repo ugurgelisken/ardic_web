@@ -119,3 +119,14 @@ h4 {
   background-color: #848484;
   color: white;
 }
+
+.card img:nth-child(1):hover {
+  transition: 0.2s;
+
+  filter: saturate(0.5);
+}
+
+.card {
+  transition: 0.2s;
+  overflow: hidden !important;
+}

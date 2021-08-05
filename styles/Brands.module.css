@@ -9,12 +9,17 @@
 
 .brand {
   width: 300px;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
   border-bottom: none;
   height: 100px;
   background-color: white;
   padding: 16px;
+  overflow: hidden;
+}
+.brand:hover {
+  margin-top: 4px;
+  transition: 0.1s;
 }
 
 .brandLogo {

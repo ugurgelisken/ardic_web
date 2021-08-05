@@ -13,7 +13,7 @@ const Layout = ({ children }) => {
   return (
     <div className="content">
       <Head>
-        <title>{t.page.home.title}</title>
+        <title>{process.env.APP_NAME}</title>
         <meta name="description" content="ARDIC" />
         <link
           rel="apple-touch-icon"
