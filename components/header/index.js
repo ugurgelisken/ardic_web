@@ -1,6 +1,7 @@
 import { useRouter } from "next/router";
 
 import { useEffect, useState } from "react";
+import Link from "next/link";
 
 import styles from "../../styles/Header.module.css";
 import Brands from "../brands";
@@ -31,10 +32,12 @@ const Header = () => {
         <div className="row">
           <div className="col">
             <div className={styles.brand}>
-              <a href="/">
-                <img className={styles.logo} src="/assets/ardic_180.png" />
-                <img src="/assets/ardic-tech.png" />
-              </a>
+              <Link href="/">
+                <a>
+                  <img className={styles.logo} src="/assets/ardic_180.png" />
+                  <img src="/assets/ardic-tech.png" />
+                </a>
+              </Link>
             </div>
           </div>
           <div className="col">
@@ -49,10 +52,12 @@ const Header = () => {
       <div className={`container-fluid d-lg-none d-xl-none ${styles.header}`}>
         <div className="row">
           <div className={"col mw-75 " + styles.brand}>
-            <a href="/">
-              <img className={styles.logo} src="/assets/ardic_180.png" />
-              <img src="/assets/ardic-tech.png" />
-            </a>
+            <Link href="/">
+              <a>
+                <img className={styles.logo} src="/assets/ardic_180.png" />
+                <img src="/assets/ardic-tech.png" />
+              </a>
+            </Link>
           </div>
           <div className="col">
             <MenuMobile menuItems={menuItems} />
