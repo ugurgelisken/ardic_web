@@ -1,6 +1,8 @@
 export default {
   button: {
-    go_to_main_page: "Ana sayfaya git",
+    goToMainPage: "Ana sayfaya git",
+    readMore: "devamını oku →",
+    visitWebSite: "Web sayfasını ziyaret et",
   },
   title: {
     _404: "404",
@@ -30,7 +32,6 @@ export default {
     references: "Referanslar",
     successStories: "Başarı Hikayeleri",
     solutions: "Çözümler",
-    readMore: "devamını oku",
   },
   page: {
     _404: {

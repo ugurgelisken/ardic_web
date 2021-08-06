@@ -25,7 +25,7 @@ const _404 = (data) => {
         className={styles["small-button"]}
         onClick={() => redirectIndexPage()}
       >
-        {t.button.go_to_main_page}
+        {t.button.goToMainPage}
       </small>
     </div>
   );

@@ -9,7 +9,6 @@ const About = ({ data }) => {
   const router = useRouter();
   const { locale } = router;
   const t = locale === "en" ? en : tr;
-  console.log(data);
   return (
     <div className={styles.container}>
       <Head>

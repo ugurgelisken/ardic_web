@@ -2,7 +2,7 @@ import { useRouter } from "next/router";
 import Head from "next/head";
 import Header from "../components/header";
 import Footer from "../components/footer";
-
+import Brands from "../components/brands";
 import tr from "../locales/tr";
 import en from "../locales/en";
 
@@ -90,6 +90,7 @@ const Layout = ({ children }) => {
         <meta name="theme-color" content="#ffffff"></meta>
       </Head>
       {children.type.name !== "_404" ? <Header {...router} t={t} /> : null}
+      {children.type.name !== "_404" ? <Brands {...router} t={t} /> : null}
       {children}
       {children.type.name !== "_404" ? <Footer {...router} t={t} /> : null}
     </div>

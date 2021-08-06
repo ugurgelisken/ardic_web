@@ -1,6 +1,8 @@
 export default {
   button: {
-    go_to_main_page: "Go to main page",
+    goToMainPage: "Go to main page",
+    readMore: "read more →",
+    visitWebSite: "Visit web site",
   },
   title: {
     _404: "404",
@@ -30,7 +32,6 @@ export default {
     references: "References",
     successStories: "Success Stories",
     solutions: "Solutions",
-    readMore: "read more",
   },
   page: {
     _404: {

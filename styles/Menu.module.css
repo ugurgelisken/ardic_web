@@ -13,7 +13,7 @@
 }
 
 .menuButton {
-  font-size: 16px;
+  font-size: 18px;
   display: inline-block;
   color: grey !important;
   text-decoration: none;
@@ -22,9 +22,9 @@
 
 .menuButton:hover {
   color: black !important;
-  margin-top: 2px;
 }
 
 .active {
   font-weight: bold;
+  font-size: 19px;
 }

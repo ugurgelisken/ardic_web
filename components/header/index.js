@@ -4,7 +4,6 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 
 import styles from "../../styles/Header.module.css";
-import Brands from "../brands";
 import LanguageChanger from "../languageChanger";
 import Menu from "../menu";
 import MenuMobile from "../menuMobile";
@@ -65,7 +64,6 @@ const Header = () => {
         </div>
       </div>
       <Slider />
-      <Brands />
     </div>
   );
 };

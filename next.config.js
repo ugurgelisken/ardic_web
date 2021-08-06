@@ -13,4 +13,11 @@ module.exports = {
     PORT: process.env.PORT,
     PUBLIC_GOOGLE_ANALYTICS: process.env.PUBLIC_GOOGLE_ANALYTICS,
   },
+  distDir: "build",
+  generateBuildId: async () => {
+    return new Date().toDateString();
+  },
+  eslint: {
+    ignoreDuringBuilds: false,
+  },
 };

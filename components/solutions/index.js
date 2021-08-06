@@ -6,7 +6,6 @@ import tr from "../../locales/tr";
 import en from "../../locales/en";
 
 const Solutions = ({ data }) => {
-  console.log(data.solutions);
   const router = useRouter();
   const { locale } = router;
   const t = locale === "en" ? en : tr;

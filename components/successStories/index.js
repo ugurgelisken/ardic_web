@@ -5,7 +5,6 @@ import tr from "../../locales/tr";
 import en from "../../locales/en";
 
 const SuccessStories = ({ data }) => {
-  console.log(data);
   const router = useRouter();
   const { locale } = router;
   const t = locale === "en" ? en : tr;

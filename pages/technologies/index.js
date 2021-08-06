@@ -43,7 +43,7 @@ const Technologies = ({ data }) => {
                     <p className={styles.summary}>{item.summary}</p>
                     {item.link && (
                       <Link href={item.link} hrefLang={locale}>
-                        <a className="link">{t.commons.readMore}</a>
+                        <a className="link">{t.button.readMore}</a>
                       </Link>
                     )}
                   </div>
