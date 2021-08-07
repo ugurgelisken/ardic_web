@@ -26,5 +26,5 @@
 
 .active {
   font-weight: bold;
-  font-size: 19px;
+  color: #3a3a3a !important;
 }
