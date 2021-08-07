@@ -30,7 +30,10 @@ const Brands = () => {
                 className={styles.brandLogo}
                 src={`/assets/${left.icon}.jpg`}
               />
-              <img className={styles.brandName1} src="assets/modiverse.png" />
+              <img
+                className={styles.brandName1}
+                src={`assets/${left.logo}.png`}
+              />
               <p className={styles.brandText}>{left.summary}</p>
             </a>
           </Link>
@@ -42,7 +45,10 @@ const Brands = () => {
                 className={styles.brandLogo}
                 src={`/assets/${right.icon}.jpg`}
               />
-              <img className={styles.brandName2} src="assets/modiverse.png" />
+              <img
+                className={styles.brandName2}
+                src={`assets/${right.logo}.png`}
+              />
               <p className={styles.brandText}>{right.summary}</p>
             </a>
           </Link>
