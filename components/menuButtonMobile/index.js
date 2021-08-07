@@ -3,7 +3,7 @@ import Link from "next/link";
 
 import styles from "../../styles/MenuMobile.module.css";
 
-const MenuButton = ({ title, slug, locale, route, onClick }) => {
+const MenuButton = ({ title, slug, locale, onClick }) => {
   const router = useRouter();
   return (
     <Link href={slug} hrefLang={locale}>

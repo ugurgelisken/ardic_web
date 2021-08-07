@@ -1,14 +1,11 @@
-import { useRouter } from "next/router";
-import React, { useCallback, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import styles from "../../styles/MenuMobile.module.css";
 
 import MenuButtonMobile from "../menuButtonMobile";
 
-const Menu = ({ menuItems }) => {
+const Menu = ({ menuItems, router }) => {
   const [selectedLanguage, setSelectedLanguage] = useState("");
   const [menuState, setMenuState] = useState(false);
-
-  const router = useRouter();
 
   const { locale } = router;
   useEffect(() => {

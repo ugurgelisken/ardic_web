@@ -1,10 +1,8 @@
-import { useRouter } from "next/router";
 import Link from "next/link";
 
 import styles from "../../styles/Menu.module.css";
 
-const MenuButton = ({ title, slug, locale }) => {
-  const router = useRouter();
+const MenuButton = ({ title, slug, locale, router }) => {
   return (
     <Link href={slug} hrefLang={locale}>
       <a

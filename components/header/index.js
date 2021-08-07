@@ -20,7 +20,7 @@ const Header = () => {
       .then((data) => {
         setMenuItems(data);
       });
-  }, []);
+  }, [router]);
 
   return (
     <div className={styles.container}>
@@ -40,7 +40,7 @@ const Header = () => {
             </div>
           </div>
           <div className="col">
-            <Menu menuItems={menuItems} />
+            <Menu menuItems={menuItems} router={router} />
           </div>
           <div className="col">
             <LanguageChanger />
@@ -59,7 +59,7 @@ const Header = () => {
             </Link>
           </div>
           <div className="col">
-            <MenuMobile menuItems={menuItems} />
+            <MenuMobile menuItems={menuItems} router={router} />
           </div>
         </div>
       </div>
