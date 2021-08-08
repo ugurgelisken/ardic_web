@@ -5,6 +5,7 @@ import Footer from "../components/footer";
 import Brands from "../components/brands";
 import tr from "../locales/tr";
 import en from "../locales/en";
+import Upward from "../components/upward";
 
 const Layout = ({ children }) => {
   const router = useRouter();
@@ -88,11 +89,16 @@ const Layout = ({ children }) => {
         <meta name="msapplication-TileColor" content="#ffffff" />
         <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
         <meta name="theme-color" content="#ffffff"></meta>
+        <meta
+          name="viewport"
+          content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no, user-scalable=no, viewport-fit=cover"
+        />
       </Head>
       {children.type.name !== "_404" ? <Header {...router} t={t} /> : null}
       {children.type.name !== "_404" ? <Brands {...router} t={t} /> : null}
       {children}
       {children.type.name !== "_404" ? <Footer {...router} t={t} /> : null}
+      {children.type.name !== "_404" ? <Upward {...router} t={t} /> : null}
     </div>
   );
 };

@@ -1,4 +1,12 @@
-module.exports = {
+const withPWA = require("next-pwa");
+
+module.exports = withPWA({
+  pwa: {
+    dest: "public",
+    register: true,
+    skipWaiting: true,
+    disable: process.env.MODE === "development",
+  },
   reactStrictMode: true,
   generateEtags: false,
   i18n: {
@@ -7,6 +15,7 @@ module.exports = {
     localeDetection: false,
   },
   env: {
+    MODE: process.env.MODE,
     APP_NAME: process.env.APP_NAME,
     HOST: process.env.HOST,
     HOSTNAME: process.env.HOSTNAME,
@@ -20,4 +29,4 @@ module.exports = {
   eslint: {
     ignoreDuringBuilds: false,
   },
-};
+});

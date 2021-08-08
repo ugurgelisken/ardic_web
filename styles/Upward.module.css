@@ -1,0 +1,24 @@
+.container {
+  position: fixed;
+  z-index: 99;
+  bottom: 80px;
+  right: 40px;
+  width: 64px;
+  height: 64px;
+  padding: 10px;
+  opacity: 0.5;
+  background-color: black;
+}
+
+.container:hover {
+  cursor: pointer;
+  opacity: 0.7;
+  bottom: 84px;
+  transition: 0.2s;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    display: none;
+  }
+}
