@@ -89,6 +89,7 @@ h4 {
   text-align: left !important;
   text-align: center;
   color: #444444;
+  font-size: 18px;
 }
 
 @media screen and (max-width: 768px) {
@@ -98,7 +99,7 @@ h4 {
     text-align: center !important;
     background-color: whitesmoke;
     color: #444444;
-    font-size: 19px;
+    font-size: 18px;
     font-weight: 100;
     margin: -20px;
     margin-bottom: 3px;

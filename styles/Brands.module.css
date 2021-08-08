@@ -48,9 +48,21 @@
 
 @media screen and (max-width: 768px) {
   .brand {
-    width: 44%;
+    width: 50%;
+    height: 110px;
     text-align: center;
     padding: 4px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .brand:nth-child(1) {
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+    border-left: 2px solid rgba(0, 0, 0, 0.2);
+  }
+  .brand:nth-child(2) {
+    border-left: 1px solid rgba(0, 0, 0, 0.2);
+    border-right: 2px solid rgba(0, 0, 0, 0.2);
   }
 
   .brandLogo {
@@ -71,7 +83,12 @@
     width: auto;
     text-align: center;
     margin-top: 0px;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 14px;
+  }
+
+  .container {
+    height: 110px;
+    opacity: 1;
   }
 }
