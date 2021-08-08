@@ -47,8 +47,8 @@
 }
 
 .mobileLanguageChanger {
-  margin-top: 26px;
-  float: right;
+  position: absolute;
+  bottom: 20px;
 }
 
 .mobileLanguageChangerButton {
