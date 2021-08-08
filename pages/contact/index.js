@@ -1,6 +1,8 @@
 import Head from "next/head";
 import { useRouter } from "next/router";
 
+import MailForm from "../../components/mailForm/";
+
 import styles from "../../styles/About.module.css";
 
 import tr from "../../locales/tr";
@@ -21,6 +23,8 @@ const Contact = ({ data }) => {
       <div className="container page-box">
         <div className="section-title">{t.title.contact}</div>
         <br />
+        <MailForm />
+        <hr />
         <div className="row">
           <div className="col">
             {data.map((item, index) => {

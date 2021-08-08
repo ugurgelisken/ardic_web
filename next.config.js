@@ -15,6 +15,7 @@ module.exports = withPWA({
     localeDetection: false,
   },
   env: {
+    VERSION: process.env.VERSION,
     MODE: process.env.MODE,
     APP_NAME: process.env.APP_NAME,
     HOST: process.env.HOST,
