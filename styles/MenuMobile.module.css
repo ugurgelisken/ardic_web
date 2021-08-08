@@ -35,8 +35,8 @@
 .menuButtonMobile {
   display: block;
   border-bottom: 1px solid silver;
-  font-size: 16px;
-  padding: 6px;
+  font-size: 18px;
+  padding: 16px;
 }
 
 .menuButtonMobile:hover {
@@ -47,7 +47,7 @@
 }
 
 .mobileLanguageChanger {
-  margin-top: 20px;
+  margin-top: 26px;
   float: right;
 }
 
@@ -56,5 +56,6 @@
   border-radius: 10px;
   border: 1px solid silver;
   margin-left: 8px;
-  font-size: 14px;
+  font-size: 19px;
+  padding: 6px 10px;
 }
