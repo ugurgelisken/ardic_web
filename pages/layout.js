@@ -11,7 +11,6 @@ const Layout = ({ children }) => {
   const router = useRouter();
   const { locale } = router;
   const t = locale === "en" ? en : tr;
-
   return (
     <div className="content">
       <Head>

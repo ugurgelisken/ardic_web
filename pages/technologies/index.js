@@ -13,7 +13,7 @@ const Technologies = ({ data, meta }) => {
   const t = locale === "en" ? en : tr;
 
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
         <title>
           {process.env.APP_NAME} | {meta.title}
