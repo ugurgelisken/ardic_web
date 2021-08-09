@@ -5,11 +5,31 @@ import "../styles/globals.css";
 import { useEffect } from "react";
 import { useRouter } from "next/router";
 import { motion } from "framer-motion";
+import NProgress from "nprogress";
+import "nprogress/nprogress.css";
+
+NProgress.configure({
+  showSpinner: false,
+});
 
 function App({ Component, pageProps }) {
   const router = useRouter();
 
   useEffect(() => {
+    router.events.on("routeChangeStart", () => {
+      console.log("YÜKLENiYORRR");
+      NProgress.start();
+    });
+
+    router.events.on("routeChangeComplete", () => {
+      console.log("YÜKLENDİ");
+      NProgress.done();
+    });
+
+    router.events.on("routeChangeError", () => {
+      console.log("YÜKLENEMEDİ");
+    });
+
     const handleRouteChange = (url) => {
       if (typeof window !== "undefined") {
         window.gtag("config", process.env.GA_TRACKING_ID, {
@@ -32,12 +52,9 @@ function App({ Component, pageProps }) {
         variants={{
           initial: {
             opacity: 0.5,
-            y: 20,
           },
           animate: {
             opacity: 1,
-            y: 0,
-            scale: 1,
           },
         }}
       >
