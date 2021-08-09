@@ -4,6 +4,7 @@ import "../styles/globals.css";
 
 import { useEffect } from "react";
 import { useRouter } from "next/router";
+import { motion } from "framer-motion";
 
 function App({ Component, pageProps }) {
   const router = useRouter();
@@ -24,7 +25,24 @@ function App({ Component, pageProps }) {
 
   return (
     <Layout>
-      <Component {...pageProps} />
+      <motion.div
+        key={router.route}
+        initial="initial"
+        animate="animate"
+        variants={{
+          initial: {
+            opacity: 0.5,
+            y: 20,
+          },
+          animate: {
+            opacity: 1,
+            y: 0,
+            scale: 1,
+          },
+        }}
+      >
+        <Component {...pageProps} />
+      </motion.div>
     </Layout>
   );
 }
