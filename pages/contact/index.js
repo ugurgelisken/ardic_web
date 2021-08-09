@@ -3,7 +3,7 @@ import { useRouter } from "next/router";
 
 import MailForm from "../../components/mailForm/";
 
-import styles from "../../styles/About.module.css";
+import styles from "../../styles/Contact.module.css";
 
 import tr from "../../locales/tr";
 import en from "../../locales/en";
@@ -22,9 +22,20 @@ const Contact = ({ data }) => {
       </Head>
       <div className="container page-box">
         <div className="section-title">{t.title.contact}</div>
-        <br />
+        <div className={styles.sectionHeader}>
+          <div className={styles.sectionHeaderIcon}>
+            <img src="/assets/icons/contact-forms.png" />
+          </div>
+          <div className={styles.sectionHeaderBar}></div>
+        </div>
         <MailForm />
-        <hr />
+        <div className={styles.sectionHeader}>
+          <div className={styles.sectionHeaderIcon}>
+            <img src="/assets/icons/maps_placeholder.png" />
+          </div>
+          <div className={styles.sectionHeaderBar}></div>
+        </div>
+        <br />
         <div className="row">
           <div className="col">
             {data.map((item, index) => {

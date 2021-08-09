@@ -58,4 +58,14 @@ export default {
       slug: "/contact",
     },
   },
+  forms: {
+    mail: {
+      name: "Name Surname",
+      email: "Email",
+      message: "Message",
+      sending: "Sending...",
+      sent: "Your message has been sent.",
+      error: "An error occurred, please try again to send.",
+    },
+  },
 };

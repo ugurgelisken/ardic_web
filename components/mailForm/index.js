@@ -1,7 +1,15 @@
+import { useRouter } from "next/router";
 import { useState } from "react";
 import styles from "../../styles/MailForm.module.css";
 
+import tr from "../../locales/tr";
+import en from "../../locales/en";
+
 const Footer = () => {
+  const router = useRouter();
+  const { locale } = router;
+  const t = locale === "en" ? en : tr;
+
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
@@ -15,7 +23,7 @@ const Footer = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (validateEmail(email) && name && message) {
+    if (validateEmail(email) && name && message && submitted === "") {
       setSubmitted("sending");
 
       fetch("api/send-mail", {
@@ -34,14 +42,23 @@ const Footer = () => {
             setName("");
             setEmail("");
             setMessage("");
+            setTimeout(() => {
+              setSubmitted("");
+            }, 3000);
           }
           if (res.status === 500) {
             setSubmitted("error");
             console.log(res);
+            setTimeout(() => {
+              setSubmitted("");
+            }, 3000);
           }
         })
         .catch((e) => {
           console.log(e);
+          setTimeout(() => {
+            setSubmitted("");
+          }, 3000);
         });
     }
   };
@@ -59,8 +76,7 @@ const Footer = () => {
                 }}
               >
                 <div className={styles.inputGroup}>
-                  <label for="name">Name</label>
-
+                  <label for="name">{t.forms.mail.name}</label>
                   <input
                     type="text"
                     name="name"
@@ -74,7 +90,7 @@ const Footer = () => {
                   />
                 </div>
                 <div className={styles.inputGroup}>
-                  <label for="email">Email</label>
+                  <label for="email">{t.forms.mail.email}</label>
                   <input
                     type="email"
                     name="email"
@@ -89,7 +105,7 @@ const Footer = () => {
                   />
                 </div>
                 <div className={styles.inputGroup}>
-                  <label for="message">Message</label>
+                  <label for="message">{t.forms.mail.message}</label>
                   <textarea
                     rows="4"
                     type="text"
@@ -103,13 +119,15 @@ const Footer = () => {
                     }}
                   />
                 </div>
-                <input type="submit" className="submit" />
-                <div className="float-left pt-1">
-                  {submitted === "sending" && <b>Gönderiliyor...</b>}
-                  {submitted === "sent" && <b>Mesajınız gönderildi</b>}
-                  {submitted === "error" && (
-                    <b>Hata oluştu, tekrar göndermeyi deneyin</b>
-                  )}
+                <input
+                  type="submit"
+                  className={styles.submit}
+                  disabled={submitted !== ""}
+                />
+                <div className={styles.errorMessage}>
+                  {submitted === "sending" && <p>{t.forms.mail.sending}</p>}
+                  {submitted === "sent" && <p>{t.forms.mail.sent}</p>}
+                  {submitted === "error" && <p>{t.forms.mail.error}</p>}
                 </div>
               </form>
             </div>

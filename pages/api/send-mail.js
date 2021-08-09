@@ -6,11 +6,11 @@ export default function (req, res) {
   dotenv.config();
 
   const mailData = {
-    from: req.body.email,
+    from: `${req.body.name} <${req.body.email}>`,
     to: process.env.MAIL_TO,
     subject: `${process.env.APP_NAME} | Contact Form`,
-    text: `${req.body.name}; ${req.body.message}`,
-    html: `<b>${req.body.name}</b><br /><p>${req.body.message}</p>`,
+    text: `${req.body.message}`,
+    html: `<p>${req.body.message}</p>`,
   };
 
   const transporter = nodemailer.createTransport({
@@ -34,7 +34,6 @@ export default function (req, res) {
       return res.status(500).json({ status: 500, ...error });
     }
     console.log("[ ✓ ] Mail sent sucessfully. Info: ", info);
-
     return res.status(200).json({ status: 200, ...info });
   });
 }

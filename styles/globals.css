@@ -132,28 +132,15 @@ h4 {
   overflow: hidden !important;
 }
 
-.submit {
-  float: right;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 4px;
-  color: white !important;
-  background-image: -webkit-linear-gradient(
-    330deg,
-    rgb(0, 228, 216),
-    rgb(132, 3, 255)
-  );
-}
-
-.submit:hover {
-  cursor: pointer;
-  background-image: -webkit-linear-gradient(
-    360deg,
-    rgb(0, 228, 216),
-    rgb(132, 3, 255)
-  );
-}
-
 .p0 {
   padding: 0px !important;
+}
+
+.pt-10 {
+  padding-top: 10px;
+}
+
+label {
+  margin-top: 10px;
+  margin-bottom: 4px;
 }

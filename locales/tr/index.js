@@ -58,4 +58,14 @@ export default {
       slug: "/contact",
     },
   },
+  forms: {
+    mail: {
+      name: "İsim Soyisim",
+      email: "E-posta",
+      message: "Mesaj",
+      sending: "Gönderiliyor...",
+      sent: "Mesajınız gönderildi.",
+      error: "Bir hata oluştu, göndermeyi tekrar deneyiniz.",
+    },
+  },
 };
