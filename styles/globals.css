@@ -144,3 +144,9 @@ label {
   margin-top: 10px;
   margin-bottom: 4px;
 }
+
+.pointer-fit:hover {
+  cursor: pointer !important;
+  width: fit-content;
+  opacity: 0.7;
+}

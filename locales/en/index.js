@@ -7,16 +7,10 @@ export default {
   title: {
     _404: "404",
     index: "Ardıc",
-    about: "About",
-    technologies: "Technologies",
-    contact: "Contact",
   },
   meta: {
     _404: "404",
     index: "Ardıc",
-    about: "About",
-    technologies: "Technologies",
-    contact: "Contact",
   },
   commons: {
     sliderText:

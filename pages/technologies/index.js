@@ -7,7 +7,7 @@ import styles from "../../styles/Technologies.module.css";
 import tr from "../../locales/tr";
 import en from "../../locales/en";
 
-const Technologies = ({ data }) => {
+const Technologies = ({ data, meta }) => {
   const router = useRouter();
   const { locale } = router;
   const t = locale === "en" ? en : tr;
@@ -16,12 +16,12 @@ const Technologies = ({ data }) => {
     <div className={styles.container}>
       <Head>
         <title>
-          {process.env.APP_NAME} | {t.title.technologies}
+          {process.env.APP_NAME} | {meta.title}
         </title>
-        <meta name="description" content={t.meta.technologies} />
+        <meta name="description" content={meta.desc} />
       </Head>
       <div className="container page-box">
-        <div className="section-title">{t.title.technologies}</div>
+        <div className="section-title">{meta.title}</div>
         <br />
         <div className="row">
           {data.map((item, index) => {
@@ -57,14 +57,15 @@ const Technologies = ({ data }) => {
   );
 };
 
-export const getStaticProps = async (router) => {
+export const getServerSideProps = async (router) => {
   const res = await fetch(
     `${process.env.HOST}/api/${router.locale}/technologies`
   );
   const data = await res.json();
   return {
     props: {
-      data,
+      data: data.data,
+      meta: data.meta,
     },
   };
 };

@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from "next/link";
 import { useRouter } from "next/router";
 
 import MailForm from "../../components/mailForm/";
@@ -8,7 +9,7 @@ import styles from "../../styles/Contact.module.css";
 import tr from "../../locales/tr";
 import en from "../../locales/en";
 
-const Contact = ({ data }) => {
+const Contact = ({ data, meta }) => {
   const router = useRouter();
   const { locale } = router;
   const t = locale === "en" ? en : tr;
@@ -16,12 +17,12 @@ const Contact = ({ data }) => {
     <div className={styles.container}>
       <Head>
         <title>
-          {process.env.APP_NAME} | {t.title.contact}
+          {process.env.APP_NAME} | {meta.title}
         </title>
-        <meta name="description" content={t.meta.contact} />
+        <meta name="description" content={meta.desc} />
       </Head>
       <div className="container page-box">
-        <div className="section-title">{t.title.contact}</div>
+        <div className="section-title">{meta.title}</div>
         <div className={styles.sectionHeader}>
           <div className={styles.sectionHeaderIcon}>
             <img src="/assets/icons/contact-forms.png" />
@@ -57,7 +58,9 @@ const Contact = ({ data }) => {
                       <img src="assets/icons/phone.png" alt="address" />
                     </div>
                     <div className="col">
-                      <p>{item.phone}</p>
+                      <Link href={`tel:${item.phone}`}>
+                        <p className="pointer-fit">{item.phone}</p>
+                      </Link>
                     </div>
                   </div>
                   <div className="row">
@@ -65,7 +68,9 @@ const Contact = ({ data }) => {
                       <img src="assets/icons/mail.png" alt="address" />
                     </div>
                     <div className="col">
-                      <p>{item.email}</p>
+                      <Link href={`mailto:${item.email}`}>
+                        <p className="pointer-fit">{item.email}</p>
+                      </Link>
                     </div>
                   </div>
                   <div className="row">
@@ -91,12 +96,13 @@ const Contact = ({ data }) => {
   );
 };
 
-export const getStaticProps = async (router) => {
+export const getServerSideProps = async (router) => {
   const res = await fetch(`${process.env.HOST}/api/${router.locale}/contact`);
   const data = await res.json();
   return {
     props: {
-      data,
+      data: data.data,
+      meta: data.meta,
     },
   };
 };

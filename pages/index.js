@@ -1,6 +1,5 @@
+import Head from "next/head";
 import { useRouter } from "next/router";
-import styles from "../styles/Home.module.css";
-
 import tr from "../locales/tr";
 import en from "../locales/en";
 
@@ -8,13 +7,17 @@ import References from "../components/references";
 import SuccessStories from "../components/successStories";
 import Solutions from "../components/solutions";
 
-const Index = ({ successStoriesData, solutionsData }) => {
+const Index = ({ successStoriesData, solutionsMeta, solutionsData }) => {
   const router = useRouter();
   const { locale } = router;
   const t = locale === "en" ? en : tr;
 
   return (
     <div className="container">
+      <Head>
+        <title>{process.env.APP_NAME}</title>
+        <meta name="description" content={solutionsMeta.desc} />
+      </Head>
       <div className="page-box">
         {/*<SuccessStories data={successStoriesData} />*/}
         <Solutions data={solutionsData} />
@@ -24,7 +27,7 @@ const Index = ({ successStoriesData, solutionsData }) => {
   );
 };
 
-export const getStaticProps = async (router) => {
+export const getServerSideProps = async (router) => {
   // Success Stories Section
   const res_successStories = await fetch(
     `${process.env.HOST}/api/${router.locale}/success-stories`
@@ -40,7 +43,8 @@ export const getStaticProps = async (router) => {
   return {
     props: {
       successStoriesData,
-      solutionsData,
+      solutionsMeta: solutionsData.meta,
+      solutionsData: solutionsData.data,
     },
   };
 };

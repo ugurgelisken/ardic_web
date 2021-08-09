@@ -11,11 +11,16 @@ const Layout = ({ children }) => {
   const router = useRouter();
   const { locale } = router;
   const t = locale === "en" ? en : tr;
+
   return (
     <div className="content">
       <Head>
         <title>{process.env.APP_NAME}</title>
         <meta name="description" content="ARDIC" />
+        <meta name="robots" content="index, follow" />
+        <meta name="distribution" content="global" />
+        <meta name="author" content={process.env.APP_NAME} />
+        <meta name="robots" content="noindex,nofollow" />
         <link
           rel="apple-touch-icon"
           sizes="57x57"

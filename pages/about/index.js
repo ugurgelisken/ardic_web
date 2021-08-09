@@ -5,7 +5,7 @@ import styles from "../../styles/About.module.css";
 import tr from "../../locales/tr";
 import en from "../../locales/en";
 
-const About = ({ data }) => {
+const About = ({ data, meta }) => {
   const router = useRouter();
   const { locale } = router;
   const t = locale === "en" ? en : tr;
@@ -13,12 +13,12 @@ const About = ({ data }) => {
     <div>
       <Head>
         <title>
-          {process.env.APP_NAME} | {t.title.about}
+          {process.env.APP_NAME} | {meta.title}
         </title>
-        <meta name="description" content={t.meta.about} />
+        <meta name="description" content={meta.desc} />
       </Head>
       <div className="container page-box">
-        <div className="section-title">{t.title.about}</div>
+        <div className="section-title">{meta.title}</div>
         <br />
         <h5 className="mb-4 text-center">{data.text}</h5>
         <div className="row mt-4">
@@ -98,12 +98,13 @@ const About = ({ data }) => {
 
 export default About;
 
-export const getStaticProps = async (router) => {
+export const getServerSideProps = async (router) => {
   const res = await fetch(`${process.env.HOST}/api/${router.locale}/about`);
   const data = await res.json();
   return {
     props: {
-      data,
+      data: data.data,
+      meta: data.meta,
     },
   };
 };
