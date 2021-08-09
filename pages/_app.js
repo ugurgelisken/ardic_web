@@ -17,17 +17,11 @@ function App({ Component, pageProps }) {
 
   useEffect(() => {
     router.events.on("routeChangeStart", () => {
-      console.log("YÜKLENiYORRR");
       NProgress.start();
     });
 
     router.events.on("routeChangeComplete", () => {
-      console.log("YÜKLENDİ");
       NProgress.done();
-    });
-
-    router.events.on("routeChangeError", () => {
-      console.log("YÜKLENEMEDİ");
     });
 
     const handleRouteChange = (url) => {

@@ -10,7 +10,7 @@ const About = ({ data }) => {
   const { locale } = router;
   const t = locale === "en" ? en : tr;
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
         <title>
           {process.env.APP_NAME} | {t.title.about}
