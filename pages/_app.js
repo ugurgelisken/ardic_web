@@ -1,6 +1,5 @@
 import Layout from "./layout";
 import "bootstrap/dist/css/bootstrap.css";
-import "../styles/globals.css";
 
 import { useEffect } from "react";
 import { useRouter } from "next/router";

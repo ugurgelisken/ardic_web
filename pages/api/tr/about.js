@@ -12,7 +12,7 @@ export default function handler(req, res) {
         icon: "start",
       },
       section_2: {
-        title: "VC-funded tarafıdan",
+        title: "VC-funded tarafından",
         value: "2016",
         icon: "star",
       },

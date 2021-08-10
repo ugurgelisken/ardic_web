@@ -69,10 +69,10 @@ Easy to Use',
       contents: [
         {
           title: "Requirements",
-          text: `Under the approval of Ministry of Education (MoE), Kocaeli Municipality have been carried out a grant programme of 27.109 education tablets. Casper won the tender and provided the tablets devices with ARDIC Modiverse solution bundle to Kocaeli Municipality. Main requirements can be summerized as providing secured and flexible education tablet solution set to schools and to be able to control remotely devices if necessary via mobile services platform.
+          text: `<h1>Under the approval of Ministry of Education (MoE), Kocaeli Municipality have been carried out a grant programme of 27.109 education tablets. Casper won the tender and provided the tablets devices with ARDIC Modiverse solution bundle to Kocaeli Municipality. Main requirements can be summerized as providing secured and flexible education tablet solution set to schools and to be able to control remotely devices if necessary via mobile services platform.
 
 Solution Components:
-
+<u/><li>
 Casper VIA T41 Android Tablets with Intel Baytrail processor (27.109 tablets)
 ARDIC ArCloud IoT Platform
 ARDIC Modiverse Mobile Services Package Solution

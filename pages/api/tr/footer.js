@@ -1,6 +1,7 @@
 export default function handler(req, res) {
   res.status(200).json({
-    copyright: "©2021 ARDIC Inc. | Powered by ARDIC Technology ",
+    copyright: "©2021 ARDIC Inc.",
+    powered: " | ARDIC Teknoloji Tarafından Geliştirilmiştir",
     socialMedias: [
       {
         name: "Facebook",

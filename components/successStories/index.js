@@ -1,5 +1,4 @@
 import { useRouter } from "next/router";
-import styles from "../../styles/SuccessStories.module.css";
 
 import tr from "../../locales/tr";
 import en from "../../locales/en";
@@ -28,10 +27,9 @@ const SuccessStories = ({ data }) => {
           })}
         </div>
       </div>
+      <style jsx>{``}</style>
     </div>
   );
 };
 
 export default SuccessStories;
-
-/**/

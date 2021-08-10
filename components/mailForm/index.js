@@ -1,6 +1,5 @@
 import { useRouter } from "next/router";
 import { useState } from "react";
-import styles from "../../styles/MailForm.module.css";
 
 import tr from "../../locales/tr";
 import en from "../../locales/en";
@@ -64,76 +63,111 @@ const Footer = () => {
   };
 
   return (
-    <div className={styles.container}>
+    <div className="container-mail-form">
       <div className="container-fluid">
         <div className="row">
           <div className="col p0">
-            <div className={styles.container}>
-              <form
-                className={styles.main}
-                onSubmit={(e) => {
-                  handleSubmit(e);
-                }}
-              >
-                <div className={styles.inputGroup}>
-                  <label for="name">{t.forms.mail.name}</label>
-                  <input
-                    type="text"
-                    name="name"
-                    id="name"
-                    className="form-control"
-                    required={true}
-                    value={name}
-                    onChange={(e) => {
-                      setName(e.target.value);
-                    }}
-                  />
-                </div>
-                <div className={styles.inputGroup}>
-                  <label for="email">{t.forms.mail.email}</label>
-                  <input
-                    type="email"
-                    name="email"
-                    id="email"
-                    className="form-control"
-                    value={email}
-                    pattern="^[^ ]+@[^ ]+\.[a-z]{2,6}$"
-                    required={true}
-                    onChange={(e) => {
-                      setEmail(e.target.value);
-                    }}
-                  />
-                </div>
-                <div className={styles.inputGroup}>
-                  <label for="message">{t.forms.mail.message}</label>
-                  <textarea
-                    rows="4"
-                    type="text"
-                    name="message"
-                    id="message"
-                    className="form-control"
-                    value={message}
-                    required={true}
-                    onChange={(e) => {
-                      setMessage(e.target.value);
-                    }}
-                  />
-                </div>
+            <form
+              className="main"
+              onSubmit={(e) => {
+                handleSubmit(e);
+              }}
+            >
+              <div className="inputGroup">
+                <label htmlFor="name">{t.forms.mail.name}</label>
                 <input
-                  type="submit"
-                  className={styles.submit}
-                  disabled={submitted !== ""}
+                  type="text"
+                  name="name"
+                  id="name"
+                  className="form-control"
+                  required={true}
+                  value={name}
+                  onChange={(e) => {
+                    setName(e.target.value);
+                  }}
                 />
-                <div className={styles.errorMessage}>
-                  {submitted === "sending" && <p>{t.forms.mail.sending}</p>}
-                  {submitted === "sent" && <p>{t.forms.mail.sent}</p>}
-                  {submitted === "error" && <p>{t.forms.mail.error}</p>}
-                </div>
-              </form>
-            </div>
+              </div>
+              <div className="inputGroup">
+                <label htmlFor="email">{t.forms.mail.email}</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  className="form-control"
+                  value={email}
+                  pattern="^[^ ]+@[^ ]+\.[a-z]{2,6}$"
+                  required={true}
+                  onChange={(e) => {
+                    setEmail(e.target.value);
+                  }}
+                />
+              </div>
+              <div className="inputGroup">
+                <label htmlFor="message">{t.forms.mail.message}</label>
+                <textarea
+                  rows="4"
+                  type="text"
+                  name="message"
+                  id="message"
+                  className="form-control"
+                  value={message}
+                  required={true}
+                  onChange={(e) => {
+                    setMessage(e.target.value);
+                  }}
+                />
+              </div>
+              <input
+                type="submit"
+                className="submit"
+                disabled={submitted !== ""}
+              />
+              <div className="errorMessage">
+                {submitted === "sending" && <p>{t.forms.mail.sending}</p>}
+                {submitted === "sent" && <p>{t.forms.mail.sent}</p>}
+                {submitted === "error" && <p>{t.forms.mail.error}</p>}
+              </div>
+            </form>
           </div>
         </div>
       </div>
+      <style jsx>{`
+        .container-mail-form {
+          margin-bottom: 10px;
+        }
+        .submit {
+          float: right;
+          border: none;
+          padding: 10px 20px;
+          margin-top: 10px;
+          border-radius: 4px;
+          color: white !important;
+          background-color: #54a7e4;
+          );
+        }
+        .submit:hover {
+          cursor: pointer;
+        }
+        .errorMessage {
+          margin-top: 10px;
+          margin-bottom: 20px;
+        }
+        .submit:disabled,
+        .submit[disabled] {
+          color: silver;
+          opacity: 0.9;
+          cursor: not-allowed;
+        }
+        @media screen and (max-width: 768px) {
+          .submit {
+            width: 100%;
+          }
+          .errorMessage {
+            padding-top: 60px;
+            text-align: center;
+          }
+        }
+      `}</style>
     </div>
   );
 };

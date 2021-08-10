@@ -54,7 +54,7 @@ export default {
   },
   forms: {
     mail: {
-      name: "İsim Soyisim",
+      name: "Ad Soyad",
       email: "E-posta",
       message: "Mesaj",
       sending: "Gönderiliyor...",

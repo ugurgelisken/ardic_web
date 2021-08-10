@@ -1,10 +1,9 @@
-import styles from "../../styles/Menu.module.css";
 import MenuButton from "../menuButton";
 
 const Menu = ({ menuItems, router }) => {
   return (
-    <div className={styles.container}>
-      <nav className={styles.menu}>
+    <div className="container-menu">
+      <nav className="menu">
         {menuItems.map((item, index) => (
           <MenuButton
             key={index}
@@ -14,6 +13,21 @@ const Menu = ({ menuItems, router }) => {
           />
         ))}
       </nav>
+      <style jsx>{`
+        .container-menu {
+          display: flex;
+          justify-content: center;
+        }
+        .menu {
+          display: flex;
+          margin-top: 24px;
+          padding: 1px 20px;
+          border-radius: 20px;
+          background-color: white;
+          position: absolute;
+          height: 50px;
+        }
+      `}</style>
     </div>
   );
 };

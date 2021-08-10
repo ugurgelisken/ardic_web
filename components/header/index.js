@@ -1,9 +1,7 @@
 import { useRouter } from "next/router";
-
 import { useEffect, useState } from "react";
 import Link from "next/link";
 
-import styles from "../../styles/Header.module.css";
 import LanguageChanger from "../languageChanger";
 import Menu from "../menu";
 import MenuMobile from "../menuMobile";
@@ -23,17 +21,15 @@ const Header = () => {
   }, [router]);
 
   return (
-    <div className={styles.container}>
+    <div className="container-header">
       {/* LG, XL Screen */}
-      <div
-        className={`container-fluid shadow d-none d-lg-block ${styles.header}`}
-      >
+      <div className="container-fluid shadow d-none d-lg-block header">
         <div className="row">
           <div className="col">
-            <div className={styles.brand}>
+            <div className="brand">
               <Link href="/">
                 <a>
-                  <img className={styles.logo} src="/assets/ardic_180.png" />
+                  <img className="logo" src="/assets/ardic_180.png" />
                   <img src="/assets/ardic-tech.png" />
                 </a>
               </Link>
@@ -48,12 +44,12 @@ const Header = () => {
         </div>
       </div>
       {/* SM, MD Screen */}
-      <div className={`container-fluid d-lg-none d-xl-none ${styles.header}`}>
+      <div className="container-fluid d-lg-none d-xl-none header">
         <div className="row">
-          <div className={"col mw-75 " + styles.brand}>
+          <div className="col mw-75 brand">
             <Link href="/">
               <a>
-                <img className={styles.logo} src="/assets/ardic_180.png" />
+                <img className="logo" src="/assets/ardic_180.png" />
                 <img src="/assets/ardic-tech.png" />
               </a>
             </Link>
@@ -64,6 +60,36 @@ const Header = () => {
         </div>
       </div>
       <Slider />
+      <style jsx>{`
+        .container-header {
+          width: 100%;
+          height: 360px;
+          background-image: url("/assets/header-background.jpg");
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+        .header {
+          position: fixed;
+          z-index: 10;
+          top: 0px;
+          left: 0px;
+          right: 0px;
+          background-color: white;
+        }
+        .brand {
+          padding: 14px;
+        }
+        .logo {
+          height: 32px;
+          margin-right: 10px;
+        }
+        @media screen and (max-width: 1024px) {
+          .container {
+            background-image: url("/assets/header-background-mobile.jpg");
+          }
+        }
+      `}</style>
     </div>
   );
 };

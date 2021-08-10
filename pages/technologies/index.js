@@ -2,8 +2,6 @@ import Head from "next/head";
 import Link from "next/link";
 import { useRouter } from "next/router";
 
-import styles from "../../styles/Technologies.module.css";
-
 import tr from "../../locales/tr";
 import en from "../../locales/en";
 
@@ -30,17 +28,17 @@ const Technologies = ({ data, meta }) => {
                 key={index}
                 className="col-sm-12 col-md-12 col-lg-6 col-xl-4"
               >
-                <div className={styles.box}>
+                <div className="box">
                   <div>
                     <img
                       src={`assets/icons-128/icon-${item.icon}.jpg`}
-                      className={styles.icon}
+                      className="icon"
                       alt={item.name}
                     />
                   </div>
                   <div>
                     <h4>{item.name}</h4>
-                    <p className={styles.summary}>{item.summary}</p>
+                    <p className="summary">{item.summary}</p>
                     {item.slug && (
                       <Link href={item.slug} hrefLang={locale}>
                         <a className="link">{t.button.readMore}</a>
@@ -53,6 +51,25 @@ const Technologies = ({ data, meta }) => {
           })}
         </div>
       </div>
+      <style jsx>{`
+        .box {
+          display: flex;
+          margin-bottom: 30px;
+        }
+        .icon {
+          width: 36px;
+          -webkit-filter: drop-shadow(0px 0px 6px silver);
+          filter: drop-shadow(0px 0px 6px silver);
+          border-radius: 36px;
+          margin-right: 10px;
+          margin-top: 30px;
+        }
+        .summary {
+          text-align: left;
+          margin-right: 10px;
+          margin-bottom: 4px;
+        }
+      `}</style>
     </div>
   );
 };

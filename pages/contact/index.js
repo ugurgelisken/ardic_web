@@ -4,8 +4,6 @@ import { useRouter } from "next/router";
 
 import MailForm from "../../components/mailForm/";
 
-import styles from "../../styles/Contact.module.css";
-
 import tr from "../../locales/tr";
 import en from "../../locales/en";
 
@@ -14,7 +12,7 @@ const Contact = ({ data, meta }) => {
   const { locale } = router;
   const t = locale === "en" ? en : tr;
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
         <title>
           {process.env.APP_NAME} | {meta.title}
@@ -23,18 +21,18 @@ const Contact = ({ data, meta }) => {
       </Head>
       <div className="container page-box">
         <div className="section-title">{meta.title}</div>
-        <div className={styles.sectionHeader}>
-          <div className={styles.sectionHeaderIcon}>
+        <div className="sectionHeader">
+          <div className="sectionHeaderIcon">
             <img src="/assets/icons/contact-forms.png" />
           </div>
-          <div className={styles.sectionHeaderBar}></div>
+          <div className="sectionHeaderBar"></div>
         </div>
         <MailForm />
-        <div className={styles.sectionHeader}>
-          <div className={styles.sectionHeaderIcon}>
+        <div className="sectionHeader">
+          <div className="sectionHeaderIcon">
             <img src="/assets/icons/maps_placeholder.png" />
           </div>
-          <div className={styles.sectionHeaderBar}></div>
+          <div className="sectionHeaderBar"></div>
         </div>
         <br />
         <div className="row">
@@ -92,6 +90,35 @@ const Contact = ({ data, meta }) => {
           </div>
         </div>
       </div>
+      <style jsx>{`
+        .sectionHeader {
+          width: 100%;
+          height: 64px;
+        }
+        .sectionHeaderIcon {
+          width: 64px;
+          height: 64px;
+          border-radius: 32px;
+          background-color: #eaeaea;
+          margin: auto auto;
+          padding: 16px;
+          margin-top: 10px;
+          margin-bottom: 10px;
+        }
+        .sectionHeaderIcon img {
+          height: 32px;
+          width: 32px;
+          filter: brightness(0.7);
+        }
+        .sectionHeaderBar {
+          width: 100%;
+          height: 6px;
+          background-color: #eaeaea;
+          margin-top: -42px;
+          position: relative;
+          z-index: -1;
+        }
+      `}</style>
     </div>
   );
 };
