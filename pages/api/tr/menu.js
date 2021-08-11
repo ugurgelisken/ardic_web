@@ -9,6 +9,14 @@ export default function handler(req, res) {
       slug: "/technologies",
     },
     {
+      title: "Takım",
+      slug: "/teams",
+    },
+    {
+      title: "Kariyer",
+      slug: "/career",
+    },
+    {
       title: "İletişim",
       slug: "/contact",
     },

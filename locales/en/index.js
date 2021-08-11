@@ -53,6 +53,14 @@ export default {
       title: "Contact",
       slug: "/contact",
     },
+    carreer: {
+      title: "Carreer",
+      slug: "/carreer",
+    },
+    teams: {
+      title: "Teams",
+      slug: "/teams",
+    },
   },
   forms: {
     mail: {

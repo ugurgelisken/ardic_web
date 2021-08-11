@@ -150,6 +150,9 @@ const Layout = ({ children }) => {
           border-top: 6px solid #aa03ff;
           filter: drop-shadow(0px 0px 10px silver);
         }
+        .overflow-hidden {
+          overflow: hidden;
+        }
         .icons {
           float: left;
           margin-right: 6px;
@@ -170,6 +173,9 @@ const Layout = ({ children }) => {
           margin-left: -20px;
           border-top-right-radius: 6px;
           border-bottom-right-radius: 6px;
+        }
+        h1 {
+          font-weight: 800;
         }
         h4 {
           font-weight: bolder;
@@ -229,9 +235,15 @@ const Layout = ({ children }) => {
         .mt-10 {
           margin-top: 10px;
         }
+        .max-width-100per {
+          max-width: 100%;
+        }
         label {
           margin-top: 10px;
           margin-bottom: 4px;
+        }
+        .pointer {
+          cursor: pointer;
         }
         .pointer-fit:hover {
           cursor: pointer !important;
@@ -260,7 +272,6 @@ const Layout = ({ children }) => {
             filter: blur(10px);
             pointer-events: none;
             position: fixed;
-            overflow: hidden;
           }
         }
         @media screen and (max-width: 768px) {

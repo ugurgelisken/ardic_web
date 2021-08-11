@@ -38,7 +38,7 @@ const Upward = () => {
         .container-upward {
           position: fixed;
           z-index: 99;
-          bottom: 30px;
+          bottom: 50px;
           right: 30px;
           width: 52px;
           height: 52px;
@@ -56,7 +56,7 @@ const Upward = () => {
 
         @media screen and (max-width: 1024px) {
           .container-upward {
-            bottom: 30px;
+            bottom: 50px;
             right: 30px;
             width: 44px;
             height: 44px;

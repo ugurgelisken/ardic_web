@@ -53,6 +53,14 @@ export default {
       title: "İletişim",
       slug: "/contact",
     },
+    carreer: {
+      title: "Kariyer",
+      slug: "/carreer",
+    },
+    teams: {
+      title: "Takım",
+      slug: "/teams",
+    },
   },
   forms: {
     mail: {
