@@ -20,14 +20,16 @@ const Contact = ({ data, meta }) => {
         <meta name="description" content={meta.desc} />
       </Head>
       <div className="container page-box">
-        <div className="section-title">{meta.title}</div>
+        <div className="section-title">{t.commons.contactForm}</div>
         <div className="sectionHeader">
           <div className="sectionHeaderIcon">
             <img src="/assets/icons/contact-forms.png" />
           </div>
           <div className="sectionHeaderBar"></div>
         </div>
+
         <MailForm />
+        <div className="section-title">{t.commons.locations}</div>
         <div className="sectionHeader">
           <div className="sectionHeaderIcon">
             <img src="/assets/icons/maps_placeholder.png" />
@@ -36,13 +38,14 @@ const Contact = ({ data, meta }) => {
         </div>
         <br />
         <div className="row">
+          <h5 className="text-center location-title">{meta.desc}</h5>
+          <br />
+          <br />
           <div className="col">
             {data.map((item, index) => {
               return (
                 <div key={index}>
-                  <p className="page-sub-title">
-                    {item.name} : {item.organization}
-                  </p>
+                  <p className="page-sub-title">{item.name}</p>
                   <div className="row">
                     <div className="col mw-50px">
                       <img src="assets/icons/map.png" alt="address" />
@@ -117,6 +120,11 @@ const Contact = ({ data, meta }) => {
           margin-top: -42px;
           position: relative;
           z-index: -1;
+        }
+        @media screen and (max-width: 1024px) {
+          .location-title {
+            font-size: 16px;
+          }
         }
       `}</style>
     </div>

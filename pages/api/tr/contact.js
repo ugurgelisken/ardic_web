@@ -7,8 +7,6 @@ export default function handler(req, res) {
     data: [
       {
         name: "Istanbul Ofisi",
-        organization:
-          "ARDIC ArGe Bilgi ve Teknoloji Çözümleri, Yazılım, Bilgisayar San. ve Tic. A.Ş.",
         address:
           "Atatürk Mah. Gülibrişim Cd. No:23 Evinpark Residence A1 Blok Daire:2 34758 Ataşehir/İstanbul - Turkey",
         phone: "+90 530 098 5889",
@@ -17,8 +15,6 @@ export default function handler(req, res) {
       },
       {
         name: "Gebze Ofisi",
-        organization:
-          "ARDIC ArGe Bilgi ve Teknoloji Çözümleri, Yazılım, Bilgisayar San. ve Tic. A.Ş.",
         address:
           "TÜBİTAK MAM Gebze Yerleşkesi Teknoloji Serbest Bölgesi Yeni Teknoloji Binaları B Blok 205-206 41470 Gebze/Kocaeli - Turkey",
         phone: "-",

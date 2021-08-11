@@ -26,6 +26,8 @@ export default {
     references: "Referanslar",
     successStories: "Başarı Hikayeleri",
     solutions: "Çözümler",
+    contactForm: "İletişim Formu",
+    locations: "Bölgeler",
   },
   page: {
     _404: {

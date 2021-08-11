@@ -117,15 +117,31 @@ const Footer = () => {
                   }}
                 />
               </div>
-              <input
-                type="submit"
-                className="submit"
-                disabled={submitted !== ""}
-              />
-              <div className="errorMessage">
-                {submitted === "sending" && <p>{t.forms.mail.sending}</p>}
-                {submitted === "sent" && <p>{t.forms.mail.sent}</p>}
-                {submitted === "error" && <p>{t.forms.mail.error}</p>}
+              <div className="row mb-10">
+                <div className="col col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 t-10">
+                  {submitted === "sending" && (
+                    <div className="alert alert-warning fit-content mt-10">
+                      {t.forms.mail.sending}
+                    </div>
+                  )}
+                  {submitted === "sent" && (
+                    <div className="alert alert-success fit-content mt-10">
+                      {t.forms.mail.sent}
+                    </div>
+                  )}
+                  {submitted === "error" && (
+                    <div className="alert alert-danger fit-content mt-10">
+                      {t.forms.mail.error}
+                    </div>
+                  )}
+                </div>
+                <div className="col col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 text-right">
+                  <input
+                    type="submit"
+                    className="submit"
+                    disabled={submitted !== ""}
+                  />
+                </div>
               </div>
             </form>
           </div>
@@ -136,6 +152,7 @@ const Footer = () => {
           margin-bottom: 10px;
         }
         .submit {
+          width: 100px;
           float: right;
           border: none;
           padding: 10px 20px;
@@ -161,10 +178,14 @@ const Footer = () => {
         @media screen and (max-width: 768px) {
           .submit {
             width: 100%;
+            margin-bottom: 20px;
           }
           .errorMessage {
             padding-top: 60px;
             text-align: center;
+          }
+          .alert{
+            width: 100% !important;
           }
         }
       `}</style>

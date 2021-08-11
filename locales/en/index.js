@@ -26,6 +26,8 @@ export default {
     references: "References",
     successStories: "Success Stories",
     solutions: "Solutions",
+    contactForm: "Contact Form",
+    locations: "Locations",
   },
   page: {
     _404: {

@@ -161,11 +161,15 @@ const Layout = ({ children }) => {
           min-width: 75%;
         }
         .page-sub-title {
-          background-color: #54a7e4;
-          padding: 6px 10px;
+          background-color: #454545;
+          padding: 6px 20px;
           font-size: 18px;
-          color: white;
+          color: #ffffff;
+          width: fit-content;
           margin-bottom: 20px;
+          margin-left: -20px;
+          border-top-right-radius: 6px;
+          border-bottom-right-radius: 6px;
         }
         h4 {
           font-weight: bolder;
@@ -173,6 +177,9 @@ const Layout = ({ children }) => {
         }
         .card-text {
           margin-bottom: 0px !important;
+        }
+        .alert {
+          padding: 6px 10px !important;
         }
         .shadow {
           filter: drop-shadow(0px 0px 6px rgba(0, 0, 0, 0.5));
@@ -216,6 +223,12 @@ const Layout = ({ children }) => {
         .pt-10 {
           padding-top: 10px;
         }
+        .mb-20 {
+          margin-bottom: 20px;
+        }
+        .mt-10 {
+          margin-top: 10px;
+        }
         label {
           margin-top: 10px;
           margin-bottom: 4px;
@@ -224,6 +237,9 @@ const Layout = ({ children }) => {
           cursor: pointer !important;
           width: fit-content;
           opacity: 0.7;
+        }
+        .fit-content {
+          width: fit-content !important;
         }
         @media screen and (max-width: 768px) {
           .section-title {
@@ -245,6 +261,11 @@ const Layout = ({ children }) => {
             pointer-events: none;
             position: fixed;
             overflow: hidden;
+          }
+        }
+        @media screen and (max-width: 768px) {
+          .page-sub-title {
+            font-size: 16px;
           }
         }
       `}</style>
