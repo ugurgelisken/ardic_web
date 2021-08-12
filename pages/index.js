@@ -7,7 +7,12 @@ import References from "../components/references";
 import SuccessStories from "../components/successStories";
 import Solutions from "../components/solutions";
 
-const Index = ({ successStoriesData, solutionsMeta, solutionsData }) => {
+const Index = ({
+  successStoriesData,
+  successStoriesMeta,
+  solutionsMeta,
+  solutionsData,
+}) => {
   const router = useRouter();
   const { locale } = router;
   const t = locale === "en" ? en : tr;
@@ -16,11 +21,14 @@ const Index = ({ successStoriesData, solutionsMeta, solutionsData }) => {
     <div className="container">
       <Head>
         <title>{process.env.APP_NAME}</title>
-        <meta name="description" content={solutionsMeta.desc} />
+        <meta
+          name="description"
+          content={`${solutionsMeta.desc} | ${successStoriesMeta.desc}`}
+        />
       </Head>
       <div className="page-box">
-        {/*<SuccessStories data={successStoriesData} />*/}
         <Solutions data={solutionsData} />
+        <SuccessStories data={successStoriesData} />
         <References />
       </div>
     </div>
@@ -42,7 +50,8 @@ export const getServerSideProps = async (router) => {
 
   return {
     props: {
-      successStoriesData,
+      successStoriesMeta: successStoriesData.meta,
+      successStoriesData: successStoriesData.data,
       solutionsMeta: solutionsData.meta,
       solutionsData: solutionsData.data,
     },

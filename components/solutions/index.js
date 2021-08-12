@@ -9,7 +9,7 @@ const Solutions = ({ data }) => {
   const { locale } = router;
   const t = locale === "en" ? en : tr;
   return (
-    <div className="container-solutions">
+    <div className="container">
       <div className="section-title">{t.commons.solutions}</div>
       <br />
       <div className="row">
@@ -69,11 +69,6 @@ const Solutions = ({ data }) => {
         </div>
       </div>
       <style jsx>{`
-        .container-solutions {
-          display: flex;
-          justify-content: center;
-          flex-wrap: wrap;
-        }
         .iconsContainer {
           position: absolute;
           top: 10px;

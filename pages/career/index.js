@@ -1,6 +1,9 @@
+import { useRouter } from "next/router";
+
 import Head from "next/head";
 import Link from "next/link";
-import { useRouter } from "next/router";
+
+import { createHTML } from "../../utils";
 
 import tr from "../../locales/tr";
 import en from "../../locales/en";
@@ -9,19 +12,6 @@ const Career = ({ data, meta }) => {
   const router = useRouter();
   const { locale } = router;
   const t = locale === "en" ? en : tr;
-
-  function createHTML(data) {
-    const { detailTexts } = data;
-    const htmlText = detailTexts.map((item, index) => {
-      return `<div key="${index}"><${item.tag}>${item.text}</${item.tag}></div>`;
-    });
-    return {
-      __html: htmlText
-        .join("")
-        .replace(/\*/g, "<br />●")
-        .replace(/\--/g, "<br />&emsp;○"),
-    };
-  }
 
   return (
     <div>
@@ -60,7 +50,14 @@ const Career = ({ data, meta }) => {
                     </div>
                     <div className="col col-12 col-sm-12 col-md-8 col-lg-9 col-xl-10">
                       <h2>{item.name}</h2>
-                      {<div dangerouslySetInnerHTML={createHTML(item)} />}
+                      {
+                        <div
+                          dangerouslySetInnerHTML={createHTML(
+                            item.detailTexts,
+                            t
+                          )}
+                        />
+                      }
                     </div>
                   </div>
                 </div>

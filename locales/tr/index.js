@@ -28,6 +28,7 @@ export default {
     solutions: "Çözümler",
     contactForm: "İletişim Formu",
     locations: "Bölgeler",
+    seeTheDocuments: "Dokümanlara gözat",
   },
   page: {
     _404: {

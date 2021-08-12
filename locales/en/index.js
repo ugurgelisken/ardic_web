@@ -28,6 +28,7 @@ export default {
     solutions: "Solutions",
     contactForm: "Contact Form",
     locations: "Locations",
+    seeTheDocuments: "See the documents",
   },
   page: {
     _404: {

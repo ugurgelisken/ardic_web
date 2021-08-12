@@ -122,6 +122,16 @@ const Layout = ({ children }) => {
             #2ae7d8
           );
         }
+        .btn-smooth {
+          background-color: #627583;
+          border-radius: 6px !important;
+          color: white !important;
+          font-size: 15px !important;
+          padding: 6px 10px !important;
+        }
+        .btn-smooth:hover {
+          opacity: 0.8;
+        }
         .btn {
           border-radius: 20px;
           box-shadow: 0px 10px 30px 0px rgb(0 0 0 / 10%);
@@ -179,6 +189,12 @@ const Layout = ({ children }) => {
           margin: 20px 0px !important;
         }
         h4 {
+          font-weight: 600;
+          font-size: 22px;
+          margin-top: 20px;
+          margin-bottom: 10px;
+        }
+        h5 {
           font-weight: bolder;
           font-size: 19px;
         }

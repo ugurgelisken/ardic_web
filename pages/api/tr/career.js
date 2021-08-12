@@ -39,7 +39,7 @@ export default function handler(req, res) {
               text: "Your day to day will be implementing new designs in mobile application by collaborating with our product designers and software developers. You will also be expected to participate in the feature design process with our lean and talented team.",
             },
             {
-              tag: "b",
+              tag: "h5",
               text: "Job Description",
             },
             {
@@ -47,20 +47,20 @@ export default function handler(req, res) {
               text: " * Design and implement cross-platform Android/iOS mobile applications connected to highly available cloud applications. * Develop and evolve clean and maintainable software deliveries that satisfy targeted product features. * Review, maintain design and code documentation. * Involve in continuous integration and deployment tasks. * Support business and customer service teams when necessary.",
             },
             {
-              tag: "b",
+              tag: "h5",
               text: "Qualifications",
             },
             {
               tag: "p",
-              text: "* Experience in one or more cross-platform development frameworks. * Knowledge of React (Hooks), Context API/Redux, RESTful APIs. * Strength in REST, SOAP, structured and non-structured data models. * Experience with software lifecycle management tools.",
+              text: " * Experience in one or more cross-platform development frameworks. * Knowledge of React (Hooks), Context API/Redux, RESTful APIs. * Strength in REST, SOAP, structured and non-structured data models. * Experience with software lifecycle management tools.",
             },
             {
-              tag: "b",
+              tag: "h5",
               text: "Education & Experience",
             },
             {
               tag: "p",
-              text: "* MS, or BS in Computer Engineering, Computer Science, Software Engineering or related fields.",
+              text: " * MS, or BS in Computer Engineering, Computer Science, Software Engineering or related fields.",
             },
           ],
         },
@@ -73,20 +73,20 @@ export default function handler(req, res) {
               text: "For more than a decade, we have been building worldwide solutions with pioneering technologies including cloud and mobile services, IoT, and AI. We are looking for new team members with an ambitious mindset and a solid professional or educational background.",
             },
             {
-              tag: "b",
+              tag: "h5",
               text: "Qualifications",
             },
             {
               tag: "p",
-              text: "* In depth understanding of diverse computer systems and networks * Knowledge of system security and data backup/recovery * Ability to create scripts in Bash, Python or other language * Experience with networking protocols such as TCP/IP, HTTP/S, etc. * Understanding of cloud technologies, including containerization, Docker and Kubernetes, virtualization * Familiarity with configuration management tools such as Puppet, Ansible, etc.",
+              text: " * In depth understanding of diverse computer systems and networks * Knowledge of system security and data backup/recovery * Ability to create scripts in Bash, Python or other language * Experience with networking protocols such as TCP/IP, HTTP/S, etc. * Understanding of cloud technologies, including containerization, Docker and Kubernetes, virtualization * Familiarity with configuration management tools such as Puppet, Ansible, etc.",
             },
             {
-              tag: "b",
+              tag: "h5",
               text: "Responsibilities",
             },
             {
               tag: "p",
-              text: "* Install, configure and manage software and hardware * Manage network servers, workstations, user accounts, and technology tools * Monitor performance and maintain systems according to requirements * Perform regular security monitoring and daily backup operations * Provide technical support and respond immediately to security or usability concerns * Troubleshoot issues and outages * Basic contract and SLA management * Field Support with direct customer touch ",
+              text: " * Install, configure and manage software and hardware * Manage network servers, workstations, user accounts, and technology tools * Monitor performance and maintain systems according to requirements * Perform regular security monitoring and daily backup operations * Provide technical support and respond immediately to security or usability concerns * Troubleshoot issues and outages * Basic contract and SLA management * Field Support with direct customer touch ",
             },
           ],
         },
@@ -99,7 +99,7 @@ export default function handler(req, res) {
               text: "For more than a decade, we have been building worldwide solutions with pioneering technologies including cloud and mobile services, IoT, and AI. We are looking for new team members with an ambitious mindset and a solid professional or educational background.",
             },
             {
-              tag: "b",
+              tag: "h5",
               text: "Job Description",
             },
             {
@@ -107,7 +107,7 @@ export default function handler(req, res) {
               text: " * Design and implement cloud and enterprise solutions with high availability * Design and develop applications in different programming or scripting languages on a variety of frameworks and with miscellaneous tools * Develop server-side features using Java, Kafka, and managing clustered databases with Redis, PostgreSQL * Develop and evolve software deliveries with the following features: -- Clean and maintainable-- Satisfy targeted product features -- Meet security and data protection standards * Fulfill industry-standard software development lifecycle tasks: -- Collaborate with other team members  -- Develop and run unit tests -- Review code -- Maintain design and code documentation -- Support business team and customer service when necessary",
             },
             {
-              tag: "b",
+              tag: "h5",
               text: "Qualifications",
             },
             {
@@ -125,7 +125,7 @@ export default function handler(req, res) {
               text: "For more than a decade, we have been building worldwide solutions with pioneering technologies including cloud and mobile services, IoT, and AI. We are looking for new team members with an ambitious mindset and a solid professional or educational background.",
             },
             {
-              tag: "b",
+              tag: "h5",
               text: "Job Description",
             },
             {
@@ -133,7 +133,7 @@ export default function handler(req, res) {
               text: " * Design and implement cloud and enterprise solutions with high availability * Design and develop web applications in different programming or scripting languages and a variety of frameworks and tools * Develop and evolve software deliveries with the following features:  -- Clean and maintainable -- Satisfy targeted product features -- Meet security and data protection standards  * Fulfill industry-standard software development lifecycle tasks: -- Collaborate with other team members  -- Develop and run unit tests -- Review code -- Maintain design and code documentation -- Support business team and customer service when necessary",
             },
             {
-              tag: "b",
+              tag: "h5",
               text: "Qualifications",
             },
             {
@@ -151,7 +151,7 @@ export default function handler(req, res) {
               text: "For more than a decade, we have been building worldwide solutions with pioneering technologies including cloud and mobile services, IoT, intelligent communications. We are looking for new team members with an ambitious mindset and a solid professional or educational background.",
             },
             {
-              tag: "b",
+              tag: "h5",
               text: "Qualifications",
             },
             {
@@ -159,7 +159,7 @@ export default function handler(req, res) {
               text: " * In depth understanding of Android and Linux operating systems fundamentals including application runtime, messaging, and security models. * Solid experience in modification of Android middleware and working with AOSP, BSPs, Linux Kernel, HAL. * Experience with consumer level Android application development. * C/C++, Java, and Kotlin knowledge. * Hands on experience with SDLC management tools like Git, Gerrit, Jenkins, Jira, Confluence etc. * Basic knowledge on TCP/IP protocols and programming. * At least bachelor’s degree in Computer Science, Computer Engineering, Electronics Engineering or equivalent combination of education and experience. * Familiarity with MQTT, IoT, Android Enterprise and Samsung Knox.",
             },
             {
-              tag: "b",
+              tag: "h5",
               text: "Responsibilities",
             },
             {
@@ -177,7 +177,7 @@ export default function handler(req, res) {
               text: "For more than a decade, we have been building worldwide solutions with pioneering technologies including cloud and mobile services, IoT, and AI. We are looking for new team members with an ambitious mindset and a solid professional or educational background.",
             },
             {
-              tag: "b",
+              tag: "h5",
               text: "Key Responsibilities",
             },
             {
@@ -185,7 +185,7 @@ export default function handler(req, res) {
               text: " * Architecting, designing, and developing Web Applications & Cross Platform software components based on product specifications * Maintaining and extending the functionality of existing Web & Cross Platform software component * Integrating and developing UX/UI designs and wireframes into user-friendly experiences and intuitive user interfaces * Working closely with backend developers to implement and develop products with responsive designs * Evaluating user interaction issues and debugging with backend developers to deliver optimized products * Implementing the unit tests",
             },
             {
-              tag: "b",
+              tag: "h5",
               text: "Qualifications & Experience",
             },
             {
@@ -193,8 +193,8 @@ export default function handler(req, res) {
               text: " * Minimum 2 years of experience in React/Redux and/or Vue/Vuex is must. * BSc or MSc degree in Computer Science, Computer Engineering, Software Engineering or related disciplines * Professional experience in JavaScript development. * Solid understanding of front-end web technology stack, e.g. HTML, CSS (CSS Preprocessors, BEM), session management and http headers * Good understanding of the JavaScript ecosystem, libraries, and tooling (ES6/7), Vue/React/Angular. * Good technical understanding of RESTful APIs * Experience on writing high-performance, reusable code for UI components. * Good communication skills and the ability to work well in a team. * Self-motivated; independent, organized and proactive; highly responsive, flexible, and adaptable when working across multiple teams. * Should be able to work with offshore English-speaking team members or stakeholders",
             },
             {
-              tag: "b",
-              text: "Plus:",
+              tag: "h5",
+              text: "Plus",
             },
             {
               tag: "p",
