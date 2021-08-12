@@ -1,7 +1,7 @@
 export default function handler(req, res) {
   res.status(200).json({
     meta: {
-      title: "ARDICTECH Takım Üyeleri",
+      title: "Takım Üyeleri",
       desc: "Bağlantılı dünya konusunda tutkulu ve yeni teknolojilerin uygulanmasını kolaylaştıracak yaratıcı çözümler tasarlamaya hevesli 30'dan fazla mühendis.",
     },
     data: {

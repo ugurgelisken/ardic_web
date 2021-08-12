@@ -176,6 +176,7 @@ const Layout = ({ children }) => {
         }
         h1 {
           font-weight: 800;
+          margin: 20px 0px !important;
         }
         h4 {
           font-weight: bolder;
@@ -228,6 +229,9 @@ const Layout = ({ children }) => {
         }
         .pt-10 {
           padding-top: 10px;
+        }
+        .pl-0 {
+          padding-left: 0px !important;
         }
         .mb-20 {
           margin-bottom: 20px;

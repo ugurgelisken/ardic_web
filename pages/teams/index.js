@@ -3,7 +3,6 @@ import Link from "next/link";
 
 const Teams = ({ data, meta }) => {
   const moveToDiv = (id) => {
-    console.log(id);
     const elmntToView = document.getElementById(id);
     elmntToView.scrollIntoView();
   };
@@ -135,12 +134,13 @@ const Teams = ({ data, meta }) => {
         }
         .teams-texts {
           position: absolute;
-          top: 290px;
+          top: 260px;
           left: 40%;
           right: 10px;
           border-top: 1px solid #eaeaea;
           padding: 20px;
           text-align: justify;
+          background-color: rgba(255, 255, 255, 0.6);
         }
         .meet-team-title {
           font-size: 40px;
@@ -158,12 +158,6 @@ const Teams = ({ data, meta }) => {
           opacity: 0.8;
         }
         @media screen and (max-width: 640px) {
-          .teams-texts {
-            position: unset;
-            padding: 10px;
-            text-align: left;
-            margin-bottom: -30px;
-          }
           .teams-determined {
             text-align: left;
           }
@@ -186,6 +180,15 @@ const Teams = ({ data, meta }) => {
           }
           .statistics-value {
             font-size: 20px;
+          }
+          .teams-texts {
+            position: unset;
+            padding: 10px;
+            text-align: left;
+            margin-bottom: -30px;
+          }
+          .max-width-100per {
+            width: 100%;
           }
         }
       `}</style>
