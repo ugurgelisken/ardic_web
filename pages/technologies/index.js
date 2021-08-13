@@ -2,6 +2,8 @@ import Head from "next/head";
 import Link from "next/link";
 import { useRouter } from "next/router";
 
+import { isExternalLink } from "../../utils";
+
 import tr from "../../locales/tr";
 import en from "../../locales/en";
 
@@ -41,7 +43,16 @@ const Technologies = ({ data, meta }) => {
                     <p className="summary">{item.summary}</p>
                     {item.slug && (
                       <Link href={item.slug} hrefLang={locale}>
-                        <a className="link">{t.button.readMore}</a>
+                        <a
+                          className="link"
+                          target={
+                            isExternalLink(item.slug) === true
+                              ? "_blank"
+                              : "_self"
+                          }
+                        >
+                          {t.button.readMore}
+                        </a>
                       </Link>
                     )}
                   </div>

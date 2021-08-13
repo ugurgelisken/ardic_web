@@ -14,6 +14,15 @@ const createHTML = (data, t) => {
   };
 };
 
+const isExternalLink = (link) => {
+  var re = new RegExp("^(http|https)://", "i");
+  if (re.test(link)) {
+    return true;
+  }
+  return false;
+};
+
 module.exports = {
   createHTML,
+  isExternalLink,
 };
