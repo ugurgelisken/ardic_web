@@ -1,14 +1,6 @@
 const withPWA = require("next-pwa");
 
-module.exports = {
-  async rewrites() {
-    return [
-      {
-        source: "/api/:path*",
-        destination: "https://ardic-web-ugurgelisken.vercel.app/:path*",
-      },
-    ];
-  },
+module.exports = withPWA({
   async headers() {
     return [
       {
@@ -58,4 +50,4 @@ module.exports = {
   eslint: {
     ignoreDuringBuilds: false,
   },
-};
+});
