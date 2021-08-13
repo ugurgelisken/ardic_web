@@ -50,7 +50,6 @@ const Upward = () => {
         .container-upward:hover {
           cursor: pointer;
           opacity: 0.7;
-          bottom: 70px;
           transition: 0.2s;
         }
 
