@@ -1,11 +1,11 @@
-import NextCors from "nextjs-cors";
-
 export default function handler(req, res) {
-  NextCors(req, res, {
-    methods: ["GET", "HEAD", "PUT", "PATCH", "POST", "DELETE"],
-    origin: "*",
-    optionsSuccessStatus: 200,
-  });
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header(
+    "Access-Control-Allow-Headers",
+    "Origin, X-Requested-With, Content-Type, Accept, Authorization",
+    "Access-Control-Allow-Methods",
+    "PUT, POST, PATCH, DELETE, GET"
+  );
 
   res.status(200).json({
     copyright: "©2021 ARDIC Inc.",

@@ -1,4 +1,12 @@
 export default function handler(req, res) {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header(
+    "Access-Control-Allow-Headers",
+    "Origin, X-Requested-With, Content-Type, Accept, Authorization",
+    "Access-Control-Allow-Methods",
+    "PUT, POST, PATCH, DELETE, GET"
+  );
+
   res.status(200).json({
     copyright: "©2021 ARDIC Inc.",
     powered: " | ARDIC Teknoloji Tarafından Geliştirilmiştir",
