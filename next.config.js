@@ -24,7 +24,6 @@ module.exports = withPWA({
     PORT: process.env.PORT,
     GA_TRACKING_ID: process.env.GA_TRACKING_ID,
   },
-  distDir: "build",
   generateBuildId: async () => {
     return new Date().toDateString();
   },
