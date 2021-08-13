@@ -289,7 +289,7 @@ const Layout = ({ children }) => {
             margin-bottom: 3px;
           }
         }
-        @media screen and (max-width: 420px) {
+        @media screen and (max-width: 340px) {
           body {
             transition: 0.5s;
             filter: blur(10px);
