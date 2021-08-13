@@ -1,6 +1,6 @@
 const withPWA = require("next-pwa");
 
-module.exports = {
+module.exports = withPWA({
   async headers() {
     return [
       {
@@ -26,7 +26,7 @@ module.exports = {
     register: true,
     skipWaiting: true,
     cacheOnFrontEndNav: true,
-    /*disable: process.env.MODE === "development",*/
+    disable: process.env.MODE === "development",
   },
   reactStrictMode: true,
   generateEtags: false,
@@ -50,4 +50,4 @@ module.exports = {
   eslint: {
     ignoreDuringBuilds: false,
   },
-};
+});

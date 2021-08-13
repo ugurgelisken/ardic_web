@@ -10,8 +10,6 @@ export default function TechnologiesItem({ data, meta }) {
   const router = useRouter();
   const { locale } = router;
   const t = locale === "en" ? en : tr;
-  console.log(data);
-  console.log(meta);
   return (
     <div>
       <Head>
