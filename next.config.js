@@ -1,10 +1,17 @@
 const withPWA = require("next-pwa");
 
 module.exports = withPWA({
+  async rewrites() {
+    return [
+      {
+        source: "/api/:path*",
+        destination: "https://ardic-web-ugurgelisken.vercel.app/:path*",
+      },
+    ];
+  },
   async headers() {
     return [
       {
-        // matching all API routes
         source: "/api/:path*",
         headers: [
           { key: "Access-Control-Allow-Credentials", value: "true" },
