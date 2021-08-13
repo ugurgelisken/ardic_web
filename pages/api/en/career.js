@@ -51,7 +51,7 @@ export default function handler(req, res) {
             },
             {
               tag: "p",
-              text: "* Experience in one or more cross-platform development frameworks. * Knowledge of React (Hooks), Context API/Redux, RESTful APIs. * Strength in REST, SOAP, structured and non-structured data models. * Experience with software lifecycle management tools.",
+              text: " * Experience in one or more cross-platform development frameworks. * Knowledge of React (Hooks), Context API/Redux, RESTful APIs. * Strength in REST, SOAP, structured and non-structured data models. * Experience with software lifecycle management tools.",
             },
             {
               tag: "h5",
@@ -59,7 +59,7 @@ export default function handler(req, res) {
             },
             {
               tag: "p",
-              text: "* MS, or BS in Computer Engineering, Computer Science, Software Engineering or related fields.",
+              text: " * MS, or BS in Computer Engineering, Computer Science, Software Engineering or related fields.",
             },
           ],
         },
@@ -77,7 +77,7 @@ export default function handler(req, res) {
             },
             {
               tag: "p",
-              text: "* In depth understanding of diverse computer systems and networks * Knowledge of system security and data backup/recovery * Ability to create scripts in Bash, Python or other language * Experience with networking protocols such as TCP/IP, HTTP/S, etc. * Understanding of cloud technologies, including containerization, Docker and Kubernetes, virtualization * Familiarity with configuration management tools such as Puppet, Ansible, etc.",
+              text: " * In depth understanding of diverse computer systems and networks * Knowledge of system security and data backup/recovery * Ability to create scripts in Bash, Python or other language * Experience with networking protocols such as TCP/IP, HTTP/S, etc. * Understanding of cloud technologies, including containerization, Docker and Kubernetes, virtualization * Familiarity with configuration management tools such as Puppet, Ansible, etc.",
             },
             {
               tag: "h5",
