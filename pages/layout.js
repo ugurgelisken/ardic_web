@@ -98,11 +98,11 @@ const Layout = ({ children }) => {
           content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no, user-scalable=no, viewport-fit=cover"
         />
       </Head>
-      {children.type.name !== "_404" ? <Header {...router} t={t} /> : null}
-      {children.type.name !== "_404" ? <Brands {...router} t={t} /> : null}
+      {children?.type?.name !== "_404" ? <Header {...router} t={t} /> : null}
+      {children?.type?.name !== "_404" ? <Brands {...router} t={t} /> : null}
       {children}
-      {children.type.name !== "_404" ? <Upward {...router} t={t} /> : null}
-      {children.type.name !== "_404" ? <Footer {...router} t={t} /> : null}
+      {children?.type?.name !== "_404" ? <Upward {...router} t={t} /> : null}
+      {children?.type?.name !== "_404" ? <Footer {...router} t={t} /> : null}
       <style jsx global>{`
         html,
         body {
