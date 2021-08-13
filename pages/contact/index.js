@@ -23,7 +23,7 @@ const Contact = ({ data, meta }) => {
         <div className="section-title">{t.commons.contactForm}</div>
         <div className="sectionHeader">
           <div className="sectionHeaderIcon">
-            <img src="/assets/icons/contact-forms.png" />
+            <img src="/assets/icons/contact-forms.png" alt="" />
           </div>
           <div className="sectionHeaderBar"></div>
         </div>
@@ -32,7 +32,7 @@ const Contact = ({ data, meta }) => {
         <div className="section-title">{t.commons.locations}</div>
         <div className="sectionHeader">
           <div className="sectionHeaderIcon">
-            <img src="/assets/icons/maps_placeholder.png" />
+            <img src="/assets/icons/maps_placeholder.png" alt="" />
           </div>
           <div className="sectionHeaderBar"></div>
         </div>
@@ -56,17 +56,19 @@ const Contact = ({ data, meta }) => {
                   </div>
                   <div className="row">
                     <div className="col mw-50px">
-                      <img src="assets/icons/phone.png" alt="address" />
+                      <img src="assets/icons/phone.png" alt="phone" />
                     </div>
                     <div className="col">
                       <Link href={`tel:${item.phone}`}>
-                        <p className="pointer-fit">{item.phone}</p>
+                        <a>
+                          <p className="pointer-fit">{item.phone}</p>
+                        </a>
                       </Link>
                     </div>
                   </div>
                   <div className="row">
                     <div className="col mw-50px">
-                      <img src="assets/icons/mail.png" alt="address" />
+                      <img src="assets/icons/mail.png" alt="mail" />
                     </div>
                     <div className="col">
                       <Link href={`mailto:${item.email}`}>

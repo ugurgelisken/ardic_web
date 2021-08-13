@@ -33,7 +33,9 @@ const Career = ({ data, meta }) => {
         </div>
         <h1 className="text-center">{data.title_2}</h1>
         <Link href={`mailto:${data.email}`}>
-          <p className="text-center pointer">{data.text_2}</p>
+          <a>
+            <p className="text-center pointer">{data.text_2}</p>
+          </a>
         </Link>
         <div className="row">
           {data.positions.map((item, index) => {

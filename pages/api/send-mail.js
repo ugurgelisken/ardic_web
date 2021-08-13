@@ -1,4 +1,4 @@
-export default function (req, res) {
+const sendMail = (req, res) => {
   res.status(200);
 
   let nodemailer = require("nodemailer");
@@ -36,4 +36,6 @@ export default function (req, res) {
     console.log("[ ✓ ] Mail sent sucessfully. Info: ", info);
     return res.status(200).json({ status: 200, ...info });
   });
-}
+};
+
+export default sendMail;

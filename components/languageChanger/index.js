@@ -8,7 +8,7 @@ const LanguageChanger = () => {
 
   useEffect(() => {
     setSelectedLanguage(locale);
-  }, []);
+  }, [locale]);
 
   const setLanguage = (l) => {
     const locale = l;

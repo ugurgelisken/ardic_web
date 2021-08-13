@@ -16,7 +16,7 @@ const Footer = () => {
         setPoweredData(data.powered);
         setSocialMediasData(data.socialMedias);
       });
-  }, []);
+  }, [router.locale]);
 
   return (
     <div className="container-footer">

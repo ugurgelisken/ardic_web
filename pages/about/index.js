@@ -78,7 +78,7 @@ const About = ({ data, meta }) => {
                   <p className="charValue1">{data.chart.value_1.value}</p>
                 </div>
               </div>
-              <img className="chartImage" src="assets/chart.png" />
+              <img className="chartImage" src="assets/chart.png" alt="" />
             </div>
           </div>
         </div>

@@ -16,7 +16,7 @@ const Brands = () => {
         setRightData(data.right);
         setIsLoaded(true);
       });
-  }, []);
+  }, [router.locale]);
 
   return (
     isLoaded && (
@@ -24,8 +24,16 @@ const Brands = () => {
         <div className="brand">
           <Link href={left.slug}>
             <a>
-              <img className="brandLogo" src={`/assets/${left.icon}.jpg`} />
-              <img className="brandName1" src={`assets/${left.logo}.png`} />
+              <img
+                className="brandLogo"
+                src={`/assets/${left.icon}.jpg`}
+                alt=""
+              />
+              <img
+                className="brandName1"
+                src={`assets/${left.logo}.png`}
+                alt=""
+              />
               <p className="brandText">{left.summary}</p>
             </a>
           </Link>
@@ -33,8 +41,16 @@ const Brands = () => {
         <div className="brand">
           <Link className="brand" href={right.slug}>
             <a>
-              <img className="brandLogo" src={`/assets/${right.icon}.jpg`} />
-              <img className="brandName2" src={`assets/${right.logo}.png`} />
+              <img
+                className="brandLogo"
+                src={`/assets/${right.icon}.jpg`}
+                alt=""
+              />
+              <img
+                className="brandName2"
+                src={`assets/${right.logo}.png`}
+                alt=""
+              />
               <p className="brandText">{right.summary}</p>
             </a>
           </Link>

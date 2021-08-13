@@ -58,6 +58,7 @@ const Teams = ({ data, meta }) => {
                         <img
                           className="linkedinIcon"
                           src="/assets/socials/linkedin-2.png"
+                          alt=""
                         />
                       </a>
                     </Link>

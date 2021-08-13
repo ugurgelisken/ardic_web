@@ -18,7 +18,7 @@ const Header = () => {
       .then((data) => {
         setMenuItems(data);
       });
-  }, [router]);
+  }, [router.locale]);
 
   return (
     <div className="container-header">
@@ -29,8 +29,8 @@ const Header = () => {
             <div className="brand">
               <Link href="/">
                 <a>
-                  <img className="logo" src="/assets/ardic_180.png" />
-                  <img src="/assets/ardic-tech.png" />
+                  <img className="logo" src="/assets/ardic_180.png" alt="" />
+                  <img src="/assets/ardic-tech.png" alt="" />
                 </a>
               </Link>
             </div>
@@ -49,8 +49,8 @@ const Header = () => {
           <div className="col mw-75 brand">
             <Link href="/">
               <a>
-                <img className="logo" src="/assets/ardic_180.png" />
-                <img src="/assets/ardic-tech.png" />
+                <img className="logo" src="/assets/ardic_180.png" alt="" />
+                <img src="/assets/ardic-tech.png" alt="" />
               </a>
             </Link>
           </div>

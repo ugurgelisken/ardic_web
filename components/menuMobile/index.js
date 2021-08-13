@@ -11,7 +11,7 @@ const Menu = ({ menuItems, router }) => {
     window.onresize = () => {
       setMenuState(false);
     };
-  }, []);
+  }, [locale]);
 
   const setLanguage = (l) => {
     const locale = l;

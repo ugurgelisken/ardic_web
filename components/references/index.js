@@ -17,7 +17,7 @@ const References = () => {
       .then((data) => {
         setReferencesData(data);
       });
-  }, []);
+  }, [router.locale]);
 
   return (
     <div className="container-fluid">
@@ -30,6 +30,7 @@ const References = () => {
                 key={index}
                 className="item"
                 src={`assets/references/${item.name}.jpg`}
+                alt=""
               />
             );
           })}
