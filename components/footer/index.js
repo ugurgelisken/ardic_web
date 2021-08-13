@@ -33,7 +33,7 @@ const Footer = () => {
                     <a target="_blank" rel="noopener noreferrer">
                       <img
                         className="socialIcons"
-                        src={`assets/socials/${item.icon}.png`}
+                        src={`/assets/socials/${item.icon}.png`}
                         alt={item.name}
                       />
                     </a>

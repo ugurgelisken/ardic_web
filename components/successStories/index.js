@@ -36,11 +36,9 @@ const SuccessStories = ({ data }) => {
               <details key={index} className="details">
                 <summary>{item.title}</summary>
                 <div className="details-text">
-                  {
-                    <div
-                      dangerouslySetInnerHTML={createHTML(item.detailTexts, t)}
-                    />
-                  }
+                  <div
+                    dangerouslySetInnerHTML={createHTML(item.detailTexts, t)}
+                  />
                 </div>
               </details>
             );

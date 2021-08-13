@@ -252,6 +252,9 @@ const Layout = ({ children }) => {
         .mb-20 {
           margin-bottom: 20px;
         }
+        .mt-0 {
+          margin-top: 0px !important;
+        }
         .mt-10 {
           margin-top: 10px;
         }

@@ -29,7 +29,7 @@ const References = () => {
               <img
                 key={index}
                 className="item"
-                src={`assets/references/${item.name}.jpg`}
+                src={`/assets/references/${item.name}.jpg`}
                 alt=""
               />
             );

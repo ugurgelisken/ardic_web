@@ -27,7 +27,7 @@ const About = ({ data, meta }) => {
               <p className="boxText">{data.section_1.value}</p>
               <img
                 className="boxIcon"
-                src={`assets/icons/${data.section_1.icon}.png`}
+                src={`/assets/icons/${data.section_1.icon}.png`}
                 alt={data.section_1.title}
               />
             </div>
@@ -38,7 +38,7 @@ const About = ({ data, meta }) => {
               <p className="boxText">{data.section_2.value}</p>
               <img
                 className="boxIcon"
-                src={`assets/icons/${data.section_2.icon}.png`}
+                src={`/assets/icons/${data.section_2.icon}.png`}
                 alt={data.section_2.title}
               />
             </div>
@@ -49,7 +49,7 @@ const About = ({ data, meta }) => {
               <p className="boxText">{data.section_3.value}</p>
               <img
                 className="boxIcon"
-                src={`assets/icons/${data.section_3.icon}.png`}
+                src={`/assets/icons/${data.section_3.icon}.png`}
                 alt={data.section_3.title}
               />
             </div>
@@ -60,7 +60,7 @@ const About = ({ data, meta }) => {
               <p className="boxText">{data.section_4.value}</p>
               <img
                 className="boxIcon"
-                src={`assets/icons/${data.section_4.icon}.png`}
+                src={`/assets/icons/${data.section_4.icon}.png`}
                 alt={data.section_4.title}
               />
             </div>
@@ -78,7 +78,7 @@ const About = ({ data, meta }) => {
                   <p className="charValue1">{data.chart.value_1.value}</p>
                 </div>
               </div>
-              <img className="chartImage" src="assets/chart.png" alt="" />
+              <img className="chartImage" src="/assets/chart.png" alt="" />
             </div>
           </div>
         </div>

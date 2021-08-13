@@ -48,7 +48,7 @@ const Contact = ({ data, meta }) => {
                   <p className="page-sub-title">{item.name}</p>
                   <div className="row">
                     <div className="col mw-50px">
-                      <img src="assets/icons/map.png" alt="address" />
+                      <img src="/assets/icons/map.png" alt="address" />
                     </div>
                     <div className="col">
                       <p>{item.address}</p>
@@ -56,7 +56,7 @@ const Contact = ({ data, meta }) => {
                   </div>
                   <div className="row">
                     <div className="col mw-50px">
-                      <img src="assets/icons/phone.png" alt="phone" />
+                      <img src="/assets/icons/phone.png" alt="phone" />
                     </div>
                     <div className="col">
                       <Link href={`tel:${item.phone}`}>
@@ -68,7 +68,7 @@ const Contact = ({ data, meta }) => {
                   </div>
                   <div className="row">
                     <div className="col mw-50px">
-                      <img src="assets/icons/mail.png" alt="mail" />
+                      <img src="/assets/icons/mail.png" alt="mail" />
                     </div>
                     <div className="col">
                       <Link href={`mailto:${item.email}`}>

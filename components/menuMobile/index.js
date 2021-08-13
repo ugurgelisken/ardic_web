@@ -27,7 +27,7 @@ const Menu = ({ menuItems, router }) => {
     <div>
       <img
         className="menuIcon"
-        src="assets/icons/menu.png"
+        src="/assets/icons/menu.png"
         alt="menu"
         onClick={toggleMenu}
       />

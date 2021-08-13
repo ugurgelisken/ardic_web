@@ -33,13 +33,13 @@ const Technologies = ({ data, meta }) => {
                 <div className="box">
                   <div>
                     <img
-                      src={`assets/icons-128/icon-${item.icon}.jpg`}
+                      src={`/assets/icons-128/icon-${item.icon}.jpg`}
                       className="icon"
                       alt={item.name}
                     />
                   </div>
                   <div>
-                    <h4>{item.name}</h4>
+                    <h4 className="mt-0">{item.name}</h4>
                     <p className="summary">{item.summary}</p>
                     {item.slug && (
                       <Link href={item.slug} hrefLang={locale}>

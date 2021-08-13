@@ -29,6 +29,7 @@ export default {
     contactForm: "İletişim Formu",
     locations: "Bölgeler",
     seeTheDocuments: "Dokümanlara gözat",
+    joinOurTeam: "Join Our Team",
   },
   page: {
     _404: {

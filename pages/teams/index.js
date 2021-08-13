@@ -1,7 +1,15 @@
 import Head from "next/head";
 import Link from "next/link";
+import { useRouter } from "next/router";
+
+import tr from "../../locales/tr";
+import en from "../../locales/en";
 
 const Teams = ({ data, meta }) => {
+  const router = useRouter();
+  const { locale } = router;
+  const t = locale === "en" ? en : tr;
+
   const moveToDiv = (id) => {
     const elmntToView = document.getElementById(id);
     elmntToView.scrollIntoView();
@@ -68,6 +76,15 @@ const Teams = ({ data, meta }) => {
             );
           })}
         </div>
+        <div className="row moreBox">
+          <Link href="/career">
+            <a className="plusIcon">+</a>
+          </Link>
+          <div className="plusContent">
+            <h4 className="plusText">{t.commons.joinOurTeam}</h4>
+          </div>
+        </div>
+        <br />
         <div className="statistics-box-area">
           <div className="statistics-box">
             <img
@@ -99,6 +116,54 @@ const Teams = ({ data, meta }) => {
         </div>
       </div>
       <style jsx global>{`
+        .moreBox {
+          border: 1px solid #dedede;
+          border-radius: 2px;
+          width: 50%;
+          max-width: 600px;
+          margin: auto auto;
+          text-align: center;
+          padding: 10px;
+          margin-top: 30px;
+          user-select: none;
+        }
+        .plusIcon {
+          margin-top: -10px;
+          margin-bottom: 20px;
+          position: relative;
+          z-index: 1;
+          top: -50px;
+          font-size: 52px;
+          font-weight: 800;
+          margin: auto auto;
+          height: 80px;
+          width: 80px;
+          border-radius: 100px;
+          color: white !important;
+          background-image: -webkit-linear-gradient(
+            330deg,
+            rgb(0, 228, 216),
+            rgb(132, 3, 255)
+          );
+          filter: drop-shadow(1px 1px 4px rgba(0, 0, 0, 0.5));
+          cursor: pointer;
+        }
+        .plusIcon:hover {
+          filter: drop-shadow(1px 1px 4px rgba(0, 0, 0, 0.8));
+          opacity: 0.95;
+        }
+        .plusContent {
+          margin-top: -50px;
+        }
+        @media screen and (max-width: 1024px) {
+          .moreBox {
+            width: 100%;
+            margin: 0px;
+            margin-bottom: 40px;
+            margin-top: 30px;
+          }
+        }
+
         .statistics-box-area {
           display: inline-flex;
           width: 100%;

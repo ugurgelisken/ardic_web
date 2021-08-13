@@ -29,6 +29,7 @@ export default {
     contactForm: "Contact Form",
     locations: "Locations",
     seeTheDocuments: "See the documents",
+    joinOurTeam: "Join Our Team",
   },
   page: {
     _404: {

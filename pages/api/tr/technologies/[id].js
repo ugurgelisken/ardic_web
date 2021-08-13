@@ -11,7 +11,7 @@ export default function handler(req, res) {
         cover: "/assets/technologies/modiverse.png",
         detailTexts: [
           {
-            tag: "h3",
+            tag: "h1",
             text: "Complete MDM: Modiverse",
           },
           {
@@ -48,7 +48,7 @@ export default function handler(req, res) {
         cover: "/assets/technologies/iot-ignite.png",
         detailTexts: [
           {
-            tag: "h3",
+            tag: "h1",
             text: "End-to-End IoT",
           },
           {
@@ -85,7 +85,7 @@ export default function handler(req, res) {
         cover: "/assets/technologies/ar-cloud.png",
         detailTexts: [
           {
-            tag: "h3",
+            tag: "h1",
             text: "Own Infrastructure – ArCloud",
           },
           {

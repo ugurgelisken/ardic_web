@@ -10,7 +10,7 @@ export default function handler(req, res) {
         summary:
           "Multi-layered platform technology,  enabling provisioning , management and automation of the connected devices over the air providing REST APIs for integration. ",
         icon: "ignite-cloud",
-        slug: "/technologies/ignite-cloud",
+        slug: "/technologies/iot-ignite",
       },
       {
         name: "PilarOS",
