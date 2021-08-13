@@ -76,6 +76,7 @@ const Technologies = ({ data, meta }) => {
           margin-top: 30px;
         }
         .summary {
+          outline: none;
           text-align: left;
           margin-right: 10px;
           margin-bottom: 4px;

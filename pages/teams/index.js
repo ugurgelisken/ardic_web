@@ -27,7 +27,7 @@ const Teams = ({ data, meta }) => {
         <br />
 
         <h5 className="text-center mb-3">{data.summary}</h5>
-        <div className="cover-img mb-10 overflow-hidden">
+        <div className="mb-10 overflow-hidden">
           <img clasName="max-width-100per" src={data.cover} alt={meta.title} />
         </div>
         <div className="teams-texts">
@@ -163,7 +163,6 @@ const Teams = ({ data, meta }) => {
             margin-top: 30px;
           }
         }
-
         .statistics-box-area {
           display: inline-flex;
           width: 100%;
@@ -190,9 +189,6 @@ const Teams = ({ data, meta }) => {
           font-size: 30px;
           font-weight: 600;
           opacity: 0.8;
-        }
-        .cover-img {
-          min-height: 400px;
         }
         .teams-determined {
           text-align: center;
@@ -223,6 +219,7 @@ const Teams = ({ data, meta }) => {
         .linkedinIcon:hover {
           opacity: 0.8;
         }
+
         @media screen and (max-width: 640px) {
           .teams-determined {
             text-align: left;
@@ -232,6 +229,9 @@ const Teams = ({ data, meta }) => {
           }
           .statistics-value {
             font-size: 16px;
+          }
+          .statistics-box {
+            min-width: 120px;
           }
         }
         @media screen and (max-width: 1024px) {

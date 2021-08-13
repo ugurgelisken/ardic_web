@@ -22,8 +22,7 @@ export default function TechnologiesItem({ data, meta }) {
       </Head>
       <div className="container page-box">
         <div className="section-title">{meta.title}</div>
-
-        <div className="row">
+        <div className="row mt-4">
           <div className="col-12 col-s-12 col-md-12 col-lg-6 col-xl-6">
             <div dangerouslySetInnerHTML={createHTML(data.detailTexts, t)} />
           </div>

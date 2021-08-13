@@ -28,7 +28,7 @@ const Career = ({ data, meta }) => {
           <h1 className="pointer">{data.title_1}</h1>
           <p>{data.text_1}</p>
         </div>
-        <div className="cover-img mb-10 overflow-hidden">
+        <div className="mb-10 overflow-hidden">
           <img className="max-width-100per" src={data.cover} alt={meta.title} />
         </div>
         <h1 className="text-center">{data.title_2}</h1>
@@ -69,9 +69,6 @@ const Career = ({ data, meta }) => {
         </div>
       </div>
       <style jsx global>{`
-        .cover-img {
-          min-height: 400px;
-        }
         .teams-texts {
           position: absolute;
           top: 200px;

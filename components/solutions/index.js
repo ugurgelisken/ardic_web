@@ -131,6 +131,19 @@ const Solutions = ({ data }) => {
             margin-top: 30px;
           }
         }
+        @media screen and (max-width: 640px) {
+          .item {
+            margin: -20px !important;
+            margin-bottom: 30px !important;
+          }
+          .icons {
+            width: 44px;
+            border-radius: 22px;
+            margin-left: 8px;
+            margin-bottom: 12px;
+            filter: drop-shadow(2px 2px 4px silver);
+          }
+        }
       `}</style>
     </div>
   );

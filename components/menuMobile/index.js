@@ -98,6 +98,11 @@ const Menu = ({ menuItems, router }) => {
         .mobileLanguageChanger {
           position: absolute;
           bottom: 20px;
+          right: 0px;
+          background-color: white;
+          padding-right: 20px;
+          left: 0px;
+          text-align: right;
         }
         .mobileLanguageChangerButton {
           background-color: white;

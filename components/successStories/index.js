@@ -47,7 +47,7 @@ const SuccessStories = ({ data }) => {
       </div>
       <style jsx>{`
         .details {
-          color: #606060;
+          color: #282828;
           font-size: 16px;
           font-weight: bolder;
           margin: 16px;

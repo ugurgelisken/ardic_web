@@ -22,10 +22,10 @@ const Footer = () => {
     <div className="container-footer">
       <div className="container-fluid">
         <div className="row">
-          <div className="col-4 col-sm-4 col-md-5 col-lg-6 col-xl-6 copyright">
+          <div className="col-5 col-sm-5 col-md-5 col-lg-6 col-xl-6 copyright">
             {copyrightData} <span className="powered">{poweredData}</span>
           </div>
-          <div className="col-8 col-sm-8 col-md-7 col-lg-6 col-xl-6">
+          <div className="col-7 col-sm-7 col-md-7 col-lg-6 col-xl-6">
             <div className="socials">
               {socialMediasData.map((item, index) => {
                 return (
@@ -72,10 +72,9 @@ const Footer = () => {
         }
         @media screen and (max-width: 768px) {
           .container-footer {
-            height: 64px;
+            height: 48px;
+            padding-top: 10x;
             font-size: 12px;
-            padding: 12px;
-            border-bottom: 10px solid silver;
           }
 
           .copyright {
@@ -83,9 +82,9 @@ const Footer = () => {
           }
           .socialIcons {
             opacity: 0.5;
-            width: 30px;
-            height: 30px;
-            margin-left: 16px;
+            width: 27px;
+            height: 27px;
+            margin-left: 10px;
           }
         }
         @media screen and (max-width: 920px) {

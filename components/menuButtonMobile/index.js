@@ -20,7 +20,7 @@ const MenuButton = ({ title, slug, locale, onClick }) => {
           display: block;
           border-bottom: 1px solid silver;
           font-size: 18px;
-          padding: 16px;
+          padding: 10px;
         }
         .active {
           font-weight: bold;
