@@ -1,12 +1,12 @@
-export default function Custom404() {
-  return null;
-}
+import { useEffect } from "react";
+import { useRouter } from "next/router";
 
-export const getServerSideProps = () => {
-  return {
-    redirect: {
-      permanent: true,
-      destination: "/",
-    },
-  };
+const Custom404 = () => {
+  const router = useRouter();
+  useEffect(() => {
+    router.push("/");
+  }, [router]);
+  return null;
 };
+
+export default Custom404;

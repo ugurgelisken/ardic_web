@@ -72,7 +72,9 @@ const Contact = ({ data, meta }) => {
                     </div>
                     <div className="col">
                       <Link href={`mailto:${item.email}`}>
-                        <p className="pointer-fit">{item.email}</p>
+                        <a>
+                          <p className="pointer-fit">{item.email}</p>
+                        </a>
                       </Link>
                     </div>
                   </div>
