@@ -17,7 +17,7 @@ export default function handler(req, res) {
         summary:
           "AKA TRDROID, is ARDIC’s industrial Android distro with extended security and manageability framework over 1800 new APIs built on Android",
         icon: "pilaros",
-        slug: "/technologies/pilaros",
+        slug: "https://www.pilaros.net/?lang=en",
       },
       {
         name: "ArCoud",
@@ -31,14 +31,14 @@ export default function handler(req, res) {
         summary:
           "Data is handled on the IoT device itself before reaching the cloud enabling lower bandwidth, faster data access, and simplified data management. Smart edge gateways execute rules, allow efficient decision-making, and are fully under your control even without cloud connectivity. ",
         icon: "ignite-edge",
-        slug: "/technologies/ignite-edge",
+        slug: "/technologies/iot-ignite",
       },
       {
         name: "AFEX",
         summary:
           " ARDIC’s framework that enables end-to-end secure and manageable services on any Android device. AFEX can be embedded or integrated into any Android device by running a simple script, or installed into devices as a mobile app for certain features.",
         icon: "afex",
-        slug: "/technologies/afex",
+        slug: "https://www.pilaros.net/afex?lang=en",
       },
       {
         name: "Machine Learning",
@@ -52,7 +52,7 @@ export default function handler(req, res) {
         summary:
           "Real-time visibility and optimization tools for field personnels, managers and leaders to increase efficiency.",
         icon: "ignite-metrics",
-        slug: "/technologies/ignite-metrics",
+        slug: "/technologies/iot-ignite",
       },
       {
         name: "Modiverse",
