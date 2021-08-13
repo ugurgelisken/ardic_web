@@ -1,6 +1,6 @@
 const withPWA = require("next-pwa");
 
-module.exports = withPWA({
+module.exports = {
   async rewrites() {
     return [
       {
@@ -58,4 +58,4 @@ module.exports = withPWA({
   eslint: {
     ignoreDuringBuilds: false,
   },
-});
+};
