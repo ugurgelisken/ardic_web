@@ -1,4 +1,12 @@
+import NextCors from "nextjs-cors";
+
 export default function handler(req, res) {
+  NextCors(req, res, {
+    methods: ["GET", "HEAD", "PUT", "PATCH", "POST", "DELETE"],
+    origin: "*",
+    optionsSuccessStatus: 200,
+  });
+
   res.status(200).json({
     copyright: "©2021 ARDIC Inc.",
     powered: " | Powered by ARDIC Technology",
