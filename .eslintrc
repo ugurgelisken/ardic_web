@@ -1,15 +1,6 @@
 {
   "extends": ["next", "next/core-web-vitals"],
-  "import/no-anonymous-default-export": [
-    "error",
-    {
-      "allowArray": false,
-      "allowArrowFunction": false,
-      "allowAnonymousClass": false,
-      "allowAnonymousFunction": false,
-      "allowCallExpression": true,
-      "allowLiteral": false,
-      "allowObject": false
-    }
-  ]
+  "rules": {
+    "@next/next/no-img-element": "off"
+  }
 }
