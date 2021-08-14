@@ -82,8 +82,8 @@ const Footer = () => {
           }
           .socialIcons {
             opacity: 0.5;
-            width: 27px;
-            height: 27px;
+            width: 26px;
+            height: 26px;
             margin-left: 10px;
           }
         }
