@@ -44,9 +44,11 @@ function App({ Component, pageProps }) {
         animate="animate"
         variants={{
           initial: {
-            opacity: 0.5,
+            y: 40,
+            opacity: 0.2,
           },
           animate: {
+            y: 0,
             opacity: 1,
           },
         }}

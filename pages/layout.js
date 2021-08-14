@@ -161,6 +161,7 @@ const Layout = ({ children }) => {
           padding: 20px;
           border-top: 6px solid #aa03ff;
           filter: drop-shadow(0px 0px 10px silver);
+          min-height: calc(100vh - 400px);
         }
         .overflow-hidden {
           overflow: hidden;
@@ -291,7 +292,7 @@ const Layout = ({ children }) => {
             margin-bottom: 3px;
           }
         }
-        @media screen and (max-width: 340px) {
+        @media screen and (max-width: 320px) {
           body {
             transition: 0.5s;
             filter: blur(10px);
