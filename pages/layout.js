@@ -191,6 +191,10 @@ const Layout = ({ children }) => {
           font-weight: 800;
           margin: 20px 0px !important;
         }
+        h2 {
+          font-size: 20px !important;
+          font-weight: 600 !important;
+        }
         h4 {
           font-weight: 600;
           font-size: 22px;
@@ -211,7 +215,8 @@ const Layout = ({ children }) => {
           filter: drop-shadow(0px 0px 6px rgba(0, 0, 0, 0.5));
         }
         .section-title {
-          margin-left: -40px;
+          margin-left: -40px !important;
+          margin-top: -10px !important;
           padding-left: 10px;
           background-color: white;
           font-weight: bolder;
@@ -281,15 +286,18 @@ const Layout = ({ children }) => {
         }
         @media screen and (max-width: 768px) {
           .section-title {
-            font-weight: bolder;
-            padding: 10px;
+            font-weight: bolder !important;
+            padding: 12px;
             text-align: center !important;
             background-color: whitesmoke;
             color: #444444;
             font-size: 18px;
             font-weight: 100;
-            margin: -20px;
-            margin-bottom: 3px;
+            height: 40px !important;
+            margin-left: -32px !important;
+            margin-right: -32px !important;
+            margin-bottom: 3px !important;
+            margin-top: -20px !important;
           }
         }
         @media screen and (max-width: 320px) {

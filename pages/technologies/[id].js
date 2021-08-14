@@ -19,7 +19,7 @@ export default function TechnologiesItem({ data, meta }) {
         <meta name="description" content={trimString(meta.desc, 150)} />
       </Head>
       <div className="container page-box">
-        <div className="section-title">{meta.title}</div>
+        <h1 className="section-title">{meta.title}</h1>
         <div className="row mt-4">
           <div className="col-12 col-s-12 col-md-12 col-lg-6 col-xl-6">
             <div dangerouslySetInnerHTML={createHTML(data.detailTexts, t)} />

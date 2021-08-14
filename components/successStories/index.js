@@ -28,7 +28,7 @@ const SuccessStories = ({ data }) => {
 
   return (
     <div className="container-fluid">
-      <div className="section-title">{t.commons.successStories}</div>
+      <h1 className="section-title">{t.commons.successStories}</h1>
       <div className="row">
         <div className="col p-2 pl-0">
           {data.map((item, index) => {

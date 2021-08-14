@@ -60,7 +60,7 @@ const Teams = ({ data, meta }) => {
                     alt={member.name}
                   />
                   <div className="card-body">
-                    <h5>{member.name}</h5>
+                    <h2>{member.name}</h2>
                     <span>{member.position}</span>
                     <Link href={member.linkedin}>
                       <a target="_blank" rel="noopener noreferrer">

@@ -21,7 +21,7 @@ const Technologies = ({ data, meta }) => {
         <meta name="description" content={trimString(meta.desc, 150)} />
       </Head>
       <div className="container page-box">
-        <div className="section-title">{meta.title}</div>
+        <h1 className="section-title">{meta.title}</h1>
         <br />
         <div className="row">
           {data.map((item, index) => {

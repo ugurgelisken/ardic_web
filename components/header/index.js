@@ -29,8 +29,12 @@ const Header = () => {
             <div className="brand">
               <Link href="/">
                 <a>
-                  <img className="logo" src="/assets/ardic_180.png" alt="" />
-                  <img src="/assets/ardic-tech.png" alt="" />
+                  <img
+                    className="logo"
+                    src="/assets/ardic_180.png"
+                    alt="Ardıc"
+                  />
+                  <img src="/assets/ardic-tech.png" alt="Ardıc Tech" />
                 </a>
               </Link>
             </div>
@@ -49,8 +53,8 @@ const Header = () => {
           <div className="col mw-75 brand">
             <Link href="/">
               <a>
-                <img className="logo" src="/assets/ardic_180.png" alt="" />
-                <img src="/assets/ardic-tech.png" alt="" />
+                <img className="logo" src="/assets/ardic_180.png" alt="Ardıc" />
+                <img src="/assets/ardic-tech.png" alt="Ardıc Tech" />
               </a>
             </Link>
           </div>

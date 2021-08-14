@@ -22,16 +22,15 @@ const Contact = ({ data, meta }) => {
         <meta name="description" content={trimString(meta.desc, 150)} />
       </Head>
       <div className="container page-box">
-        <div className="section-title">{t.commons.contactForm}</div>
+        <h1 className="section-title">{t.commons.contactForm}</h1>
         <div className="sectionHeader">
           <div className="sectionHeaderIcon">
             <img src="/assets/icons/contact-forms.png" alt="" />
           </div>
           <div className="sectionHeaderBar"></div>
         </div>
-
         <MailForm />
-        <div className="section-title">{t.commons.locations}</div>
+        <h1 className="section-title">{t.commons.locations}</h1>
         <div className="sectionHeader">
           <div className="sectionHeaderIcon">
             <img src="/assets/icons/maps_placeholder.png" alt="" />

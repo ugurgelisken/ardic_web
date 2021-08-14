@@ -13,8 +13,7 @@ export default {
     index: "Ardıc",
   },
   commons: {
-    title:
-      "Büyük ölçekli IoT hizmetleri ve derin cihaz yönetimi için platformlar",
+    title: "Büyük ölçekli IoT hizmetleri ve derin cihaz yönetim platformu",
     sliderText:
       "Büyük ölçekli IoT hizmetleri<br/>& derin cihaz yönetimi için platformlar<br/>",
     plus0: "bağlantı yönetimi",
