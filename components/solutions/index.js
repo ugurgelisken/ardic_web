@@ -1,6 +1,8 @@
 import { useRouter } from "next/router";
 import Link from "next/link";
 
+import { isExternalLink } from "../../utils";
+
 import tr from "../../locales/tr";
 import en from "../../locales/en";
 
@@ -31,9 +33,15 @@ const Solutions = ({ data }) => {
                     <p className="card-text">{item.summary}</p>
                     <div className="iconsContainer">
                       {item.technologies.map((icon, i) => {
-                        return icon.link ? (
-                          <Link href={icon.link}>
-                            <a>
+                        return icon.slug ? (
+                          <Link href={icon.slug}>
+                            <a
+                              target={
+                                isExternalLink(icon.slug) === true
+                                  ? "_blank"
+                                  : "_self"
+                              }
+                            >
                               <img
                                 className="icons iconsLink"
                                 src={icon.image}

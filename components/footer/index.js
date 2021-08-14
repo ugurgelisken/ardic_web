@@ -82,9 +82,10 @@ const Footer = () => {
           }
           .socialIcons {
             opacity: 0.5;
-            width: 26px;
-            height: 26px;
-            margin-left: 10px;
+            width: 22px;
+            height: 22px;
+            margin-top: 4px;
+            margin-left: 9px;
           }
         }
         @media screen and (max-width: 920px) {
