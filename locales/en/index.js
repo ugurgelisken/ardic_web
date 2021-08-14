@@ -13,6 +13,8 @@ export default {
     index: "Ardıc",
   },
   commons: {
+    title:
+      "Platforms for large-scale and IoT services & deep device management",
     sliderText:
       "Platforms for large-scale <br/>IoT services & deep device management<br/>",
     plus0: "connectivity management",

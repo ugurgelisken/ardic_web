@@ -7,6 +7,8 @@ import MailForm from "../../components/mailForm/";
 import tr from "../../locales/tr";
 import en from "../../locales/en";
 
+import { trimString } from "../../utils";
+
 const Contact = ({ data, meta }) => {
   const router = useRouter();
   const { locale } = router;
@@ -17,7 +19,7 @@ const Contact = ({ data, meta }) => {
         <title>
           {process.env.APP_NAME} | {meta.title}
         </title>
-        <meta name="description" content={meta.desc} />
+        <meta name="description" content={trimString(meta.desc, 150)} />
       </Head>
       <div className="container page-box">
         <div className="section-title">{t.commons.contactForm}</div>

@@ -1,11 +1,13 @@
 import { useRouter } from "next/router";
 import Head from "next/head";
+
 import Header from "../components/header";
 import Footer from "../components/footer";
 import Brands from "../components/brands";
+
+import Upward from "../components/upward";
 import tr from "../locales/tr";
 import en from "../locales/en";
-import Upward from "../components/upward";
 
 const Layout = ({ children }) => {
   const router = useRouter();
@@ -14,8 +16,6 @@ const Layout = ({ children }) => {
   return (
     <div className="content">
       <Head>
-        <title>{process.env.APP_NAME}</title>
-        <meta name="description" content="ARDIC" />
         <meta name="robots" content="index, follow" />
         <meta name="distribution" content="global" />
         <meta name="author" content={process.env.APP_NAME} />

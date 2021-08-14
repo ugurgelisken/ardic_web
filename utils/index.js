@@ -22,7 +22,10 @@ const isExternalLink = (link) => {
   return false;
 };
 
+const trimString = (string, length) => string.substring(0, length);
+
 module.exports = {
   createHTML,
   isExternalLink,
+  trimString,
 };

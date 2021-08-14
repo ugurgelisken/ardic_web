@@ -1,10 +1,10 @@
-import Head from "next/head";
 import { useRouter } from "next/router";
-
-import { createHTML } from "../../utils";
+import Head from "next/head";
 
 import tr from "../../locales/tr";
 import en from "../../locales/en";
+
+import { createHTML, trimString } from "../../utils";
 
 export default function TechnologiesItem({ data, meta }) {
   const router = useRouter();
@@ -16,7 +16,7 @@ export default function TechnologiesItem({ data, meta }) {
         <title>
           {process.env.APP_NAME} | {meta.title}
         </title>
-        <meta name="description" content={meta.desc} />
+        <meta name="description" content={trimString(meta.desc, 150)} />
       </Head>
       <div className="container page-box">
         <div className="section-title">{meta.title}</div>

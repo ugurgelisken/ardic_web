@@ -1,11 +1,14 @@
-import Head from "next/head";
 import { useRouter } from "next/router";
-import tr from "../locales/tr";
-import en from "../locales/en";
+import Head from "next/head";
 
 import References from "../components/references";
 import SuccessStories from "../components/successStories";
 import Solutions from "../components/solutions";
+
+import tr from "../locales/tr";
+import en from "../locales/en";
+
+import { trimString } from "../utils";
 
 const Index = ({
   successStoriesData,
@@ -16,14 +19,18 @@ const Index = ({
   const router = useRouter();
   const { locale } = router;
   const t = locale === "en" ? en : tr;
-
   return (
     <div className="container">
       <Head>
-        <title>{process.env.APP_NAME}</title>
+        <title>
+          {process.env.APP_NAME} | {t.commons.title}
+        </title>
         <meta
           name="description"
-          content={`${solutionsMeta.desc} | ${successStoriesMeta.desc}`}
+          content={trimString(
+            `${solutionsMeta.desc} | ${successStoriesMeta.desc}`,
+            150
+          )}
         />
       </Head>
       <div className="page-box">

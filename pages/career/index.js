@@ -3,7 +3,7 @@ import { useRouter } from "next/router";
 import Head from "next/head";
 import Link from "next/link";
 
-import { createHTML } from "../../utils";
+import { createHTML, trimString } from "../../utils";
 
 import tr from "../../locales/tr";
 import en from "../../locales/en";
@@ -12,14 +12,13 @@ const Career = ({ data, meta }) => {
   const router = useRouter();
   const { locale } = router;
   const t = locale === "en" ? en : tr;
-
   return (
     <div>
       <Head>
         <title>
           {process.env.APP_NAME} | {meta.title}
         </title>
-        <meta name="description" content={meta.desc} />
+        <meta name="description" content={trimString(meta.desc, 150)} />
       </Head>
       <div className="container page-box">
         <div className="section-title">{meta.title}</div>
