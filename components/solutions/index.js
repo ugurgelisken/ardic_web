@@ -29,7 +29,7 @@ const Solutions = ({ data }) => {
                     alt={item.title}
                   />
                   <div className="card-body">
-                    <h4 className="card-title">{item.title}</h4>
+                    <h5 className="card-title">{item.title}</h5>
                     <p className="card-text">{item.summary}</p>
                     <div className="iconsContainer">
                       {item.technologies.map((icon, i) => {
