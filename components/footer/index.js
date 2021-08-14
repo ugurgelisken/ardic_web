@@ -73,7 +73,6 @@ const Footer = () => {
         @media screen and (max-width: 768px) {
           .container-footer {
             height: 48px;
-            padding-top: 10x;
             font-size: 12px;
           }
 

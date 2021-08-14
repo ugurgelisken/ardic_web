@@ -55,7 +55,7 @@ const SuccessStories = ({ data }) => {
           border-bottom: 1px solid #f2f2f2;
         }
         details:hover {
-          transition: 0, 2s;
+          transition: 0.2s;
           opacity: 0.8;
         }
         .details-text {
