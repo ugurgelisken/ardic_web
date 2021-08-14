@@ -1,1 +1,6 @@
-User-agent: * s s
+User-agent: *
+Allow: /*
+
+Disallow: /api/*
+
+Sitemap: https://www.ardictech.com/sitemap.xml
