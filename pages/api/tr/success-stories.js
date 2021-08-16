@@ -2,19 +2,19 @@ export default function handler(req, res) {
   res.status(200).json({
     meta: {
       title: "Başarı Hikayeleri",
-      desc: "ARDICTECH'te Başarı Hikayeleri, Intel and ARDIC, TC Ministry of Finance Revenue Adm. with EMN – Electronic Enquiry Tablet Project, Kocaeli Metropolitan Municipality with CASPER – Education Tablet, Demwatch – Patient Tracking System, TC Ministry of Education with SEBIT – FATIH Project for Education – Pilot Implementation, R&D Projects",
+      desc: "ARDICTECH'te Başarı Hikayeleri, Intel ve ARDIC, TC Maliye Bakanlığı Gelir İdaresi Başkanlığı EMN – Elektronik Sorgu Tablet Projesi ile, Kocaeli Büyükşehir Belediyesi CASPER – Eğitim Tableti, Demwatch – Hasta Takip Sistemi, TC Milli Eğitim Bakanlığı SEBIT – FATİH Projesi ile Eğitim – Pilot Uygulama, Ar-Ge Projeleri",
     },
     data: [
       {
-        title: "Intel and ARDIC",
+        title: "Intel ve ARDIC",
         detailTexts: [
           {
             tag: "h4",
-            text: "ARDIC IoT Ignite and Vertical Application Stores",
+            text: "ARDIC IoT Ignite ve Dikey Uygulama Mağazaları",
           },
           {
             tag: "p",
-            text: "Examine this solution brief and see how Turkish technology provider ARDIC, runs its IoT Ignite service offering on Intel® IoT Gateways for superior end-to-end security, networking and interoperability. A vertical application store provides customers with access to apps and data on any device from any location, enabling flexible, user-friendly and, most importantly, rapidly deployable services for any market segment.",
+            text: "Bu çözüm özetini inceleyin ve Türk teknoloji sağlayıcısı ARDIC'in üstün uçtan uca güvenlik, ağ iletişimi ve birlikte çalışabilirlik için Intel® IoT Gateway'lerde IoT Ignite hizmetini nasıl çalıştırdığını görün. Dikey bir uygulama mağazası, müşterilere herhangi bir konumdan herhangi bir cihazdaki uygulamalara ve verilere erişim sağlayarak, herhangi bir pazar segmenti için esnek, kullanıcı dostu ve en önemlisi hızla dağıtılabilir hizmetler sağlar.",
           },
           {
             tag: "a",
@@ -22,11 +22,11 @@ export default function handler(req, res) {
           },
           {
             tag: "h4",
-            text: "ARDIC IoT Ignite with Intel® IoT Gateways",
+            text: "Intel® IoT Ağ Geçitleri ile ARDIC IoT Ignite",
           },
           {
             tag: "p",
-            text: "Explore this solution brief and see how Turkish technology provider ARDIC runs its IoT Ignite service offering on Intel® IoT Gateways for superior end-to-end security, networking and interoperability and the Android OS for easy customization. The ARDIC IoT Ignite service enables fast IoT solution deployment for IoT service providers.",
+            text: "Bu çözüm özetini keşfedin ve Türk teknoloji sağlayıcısı ARDIC'in üstün uçtan uca güvenlik, ağ iletişimi ve birlikte çalışabilirlik için Intel® IoT Ağ Geçitleri ve kolay özelleştirme için Android işletim sistemi üzerinde IoT Ignite hizmet teklifini nasıl çalıştırdığını görün. ARDIC IoT Ignite hizmeti, IoT hizmet sağlayıcıları için hızlı IoT çözüm dağıtımına olanak tanır.",
           },
           {
             tag: "a",
@@ -34,11 +34,11 @@ export default function handler(req, res) {
           },
           {
             tag: "h4",
-            text: "Solution Brief: ARDIC IoT Ignite and Intel® IoT Gateways",
+            text: "Çözüm Özeti: ARDIC IoT Ignite ve Intel® IoT Ağ Geçitleri",
           },
           {
             tag: "p",
-            text: "Review this solution and brief and discover how Turkish technology provider, ARDIC ,runs its IoT Ignite service offering on Intel® IoT Gateways for superior end-to-end security, networking and interoperability. The ARDIC IoT Ignite service comes with a rich feature set enabling fast IoT solution deployment for IoT service providers.",
+            text: "Bu çözümü gözden geçirin ve özetleyin ve Türk teknoloji sağlayıcısı ARDIC'in üstün uçtan uca güvenlik, ağ iletişimi ve birlikte çalışabilirlik için IoT Ignite hizmetini Intel® IoT Gateway'lerde nasıl çalıştırdığını keşfedin. ARDIC IoT Ignite hizmeti, IoT hizmet sağlayıcıları için hızlı IoT çözüm dağıtımını sağlayan zengin bir özellik seti ile birlikte gelir.",
           },
           {
             tag: "a",
@@ -46,11 +46,11 @@ export default function handler(req, res) {
           },
           {
             tag: "h4",
-            text: "Intel AI Builders – ARDIC",
+            text: "Intel Yapay Zeka Oluşturucuları – ARDIC",
           },
           {
             tag: "p",
-            text: "ARDIC became an AI partner of Intel in 2018, within the scope of The Intel AI Builders Program. The Intel AI Builders program is an ecosystem of industry leading independent software vendors (ISVs), system integrators (SIs), original equipment manufacturers (OEMs), and enterprise end users who have a shared mission to accelerate the adoption of artificial intelligence across Intel platforms.",
+            text: "ARDIC, Intel AI Builders Programı kapsamında 2018 yılında Intel'in AI ortağı oldu. Intel AI Builders programı, Intel platformlarında yapay zekanın benimsenmesini hızlandırmak için ortak bir misyona sahip endüstri lideri bağımsız yazılım satıcıları (ISV'ler), sistem entegratörleri (SI'ler), orijinal ekipman üreticileri (OEM'ler) ve kurumsal son kullanıcılardan oluşan bir ekosistemdir.",
           },
           {
             tag: "a",
@@ -60,107 +60,106 @@ export default function handler(req, res) {
       },
       {
         title:
-          "TC Ministry of Finance Revenue Adm. with EMN – Electronic Enquiry Tablet Project",
+          "TC Maliye Bakanlığı Gelir İdaresi Başkanlığı ile EMN – Elektronik Sorgulama Tableti Projesi",
         detailTexts: [
           {
             tag: "h4",
-            text: "Requirements",
+            text: "Gereksinimler",
           },
           {
             tag: "p",
-            text: "Provide information in the nature of a preliminary assessment for tax-related administrative operations, conduct online certain administrative procedures via smart mobile devices (tablets) in the workplace directly or in the place of tax-related cases.",
+            text: "Vergi ile ilgili idari işlemler için ön tahakkuk niteliğinde bilgi sağlamak, belirli idari işlemleri akıllı mobil cihazlar (tabletler) aracılığıyla doğrudan işyerinde veya vergi ile ilgili davaların yerinde çevrimiçi olarak yürütmek.",
           },
           {
             tag: "h4",
-            text: "Solution Components",
+            text: "Çözüm Bileşenleri",
           },
           {
             tag: "p",
-            text: " * Samsung Galaxy Note 1 0 .1 Tablets, Android Jelly Bean (Provided by EMN) * ARDIC Modiverse Premium Management and Control Platform * ARDIC Mode Application (Client opp for the tablets to communicate with Modiverse Premium)",
+            text: " * Samsung Galaxy Note 1 0 .1 Tabletler, Android Jelly Bean (EMN tarafından sağlanır) * ARDIC Modiverse Premium Yönetim ve Kontrol Platformu * ARDIC Modu Uygulaması (Tabletlerin Modiverse Premium ile iletişim kurması için istemci uygulaması)",
           },
           {
             tag: "h4",
-            text: "Critical Project Requirements",
+            text: "Kritik Proje Gereksinimleri",
           },
           {
             tag: "p",
-            text: " * Management of mobile devices remotely via mobile device management application, * Turkish GUI of the application to access through PC and notebook, * Online device configuration, error log reporting, reporting of battery info, memory info, network info, online/offline status, location info, application list, etc. * Remote lock and reboot of devices, * User profile definition and to be able to change device profiles, * Push application, silent installation, remove application remotely, * Role-based administration and access, * Load Balancing and High Availability of the solution platform, * Device inventory tracking, * Built-in application blockage, network connection deactivation and activation remotely, * PIN control and wi-fi access control, * Remote lock of rooted devices, * Remote installation and update of security certifications, * Scheduling of group-based remote transactions, opp installation and removals, * Enterprise opp store and content store (server based and clientbased), user con download apps or contents from stores on the tablet, * Defining authorization areas of admin users, * Remote deactivation of the device in case of lost/stolen,",
+            text: " * Mobil cihaz yönetimi uygulaması ile mobil cihazların uzaktan yönetimi, * PC ve notebook üzerinden erişim için uygulamanın Türkçe GUI'si, * Online cihaz konfigürasyonu, hata log raporlama, pil bilgisi, hafıza bilgisi, ağ bilgisi, online/offline durum raporlaması, konum bilgisi, uygulama listesi vb. * Cihazları uzaktan kilitleme ve yeniden başlatma, * Kullanıcı profili tanımlama ve cihaz profillerini değiştirebilme, * Push uygulaması, sessiz kurulum, uygulamayı uzaktan kaldırma, * Rol bazlı yönetim ve erişim, * Yükleme Çözüm platformunun Dengelenmesi ve Yüksek Kullanılabilirliği, * Cihaz envanter takibi, * Dahili uygulama blokajı, uzaktan ağ bağlantısı deaktivasyonu ve aktivasyonu, * PIN kontrolü ve wi-fi erişim kontrolü, * Rootlu cihazların uzaktan kilitlenmesi, * Uzaktan kurulum ve güncelleme güvenlik sertifikaları, * Grup bazlı uzak işlemlerin programlanması, opp kurulum ve kaldırma işlemleri, * Kurumsal opp store ve içerik deposu (sunucu bazlı ve müşteri bazlı) ), kullanıcıların tablet üzerinde mağazalardan uygulama veya içerik indirmesi, * Yönetici kullanıcıların yetki alanlarının belirlenmesi, * Cihazın kaybolması/çalınması durumunda uzaktan cihazın devre dışı bırakılması,",
           },
           {
             tag: "h4",
-            text: "Solution Details",
+            text: "Çözüm Ayrıntıları",
           },
           {
             tag: "p",
-            text: "ARDIC Modiverse Premium Mobile Device Management and Control Services Platform is implemented on Samsung Galaxy Note 1 0.1 tablets in this project as the software solution which meets the above mentioned requirments. All the tablets are provided and supported by EMN Technology. The implemented Modiverse Premium solution contains Mobile Device Management (MDM), Mobile Application Management (MAM), Mobile Content Management (MCM), user profile identification, device use case policy definitions. Because of the security requirements, on-site deployment model is executed . In this way, the corporate data created by the transactions will be saved on the local servers.",
+            text: "ARDIC Modiverse Premium Mobil Cihaz Yönetim ve Kontrol Hizmetleri Platformu, bu projede yukarıda belirtilen gereksinimleri karşılayan yazılım çözümü olarak Samsung Galaxy Note 1 0.1 tabletlerde uygulanmaktadır. Tüm tabletler EMN Teknolojisi tarafından sağlanmakta ve desteklenmektedir. Uygulanan Modiverse Premium çözümü, Mobil Cihaz Yönetimi (MDM), Mobil Uygulama Yönetimi (MAM), Mobil İçerik Yönetimi (MCM), kullanıcı profili tanımlama, cihaz kullanım senaryosu tanımlarını içerir. Güvenlik gereksinimleri nedeniyle yerinde dağıtım modeli yürütülür. Bu sayede işlemlerin oluşturduğu kurumsal veriler yerel sunuculara kaydedilecektir.",
           },
           {
             tag: "h4",
-            text: "Added Value of The Implemented Solution",
+            text: "Uygulanan Çözümün Katma Değeri",
           },
           {
             tag: "p",
-            text: " * Data Security (On-Premise Deployment) * Secure Messaging (via VPN connection) * Easy to Use",
+            text: " * Veri Güvenliği (Şirket İçi Dağıtım) * Güvenli Mesajlaşma (VPN bağlantısı üzerinden) * Kullanımı Kolay",
           },
         ],
       },
       {
-        title:
-          "Kocaeli Metropolitan Municipality with CASPER – Education Tablet",
+        title: "CASPER ile Kocaeli Büyükşehir Belediyesi – Eğitim Tableti",
         detailTexts: [
           {
             tag: "h4",
-            text: "Requirements",
+            text: "Gereksinimler",
           },
           {
             tag: "p",
-            text: "Under the approval of Ministry of Education (MoE), Kocaeli Municipality have been carried out a grant programme of 27.109 education tablets. Casper won the tender and provided the tablets devices with ARDIC Modiverse solution bundle to Kocaeli Municipality. Main requirements can be summerized as providing secured and flexible education tablet solution set to schools and to be able to control remotely devices if necessary via mobile services platform.",
+            text: "Kocaeli Belediyesi tarafından Milli Eğitim Bakanlığı (MEB) onayı ile 27.109 adet eğitim tableti hibe programı yürütülmüştür. Casper, ihaleyi kazanarak Kocaeli Belediyesi'ne ARDIC Modiverse çözüm paketine sahip tablet cihazları sağladı. Temel gereksinimler, okullara güvenli ve esnek eğitim tablet çözümü seti sağlanması ve gerektiğinde cihazların mobil servisler platformu üzerinden uzaktan kontrol edilebilmesi olarak özetlenebilir.",
           },
           {
             tag: "h4",
-            text: "Solution Components",
+            text: "Çözüm Bileşenleri",
           },
           {
             tag: "p",
-            text: " * Casper VIA T41 Android Tablets with Intel Baytrail processor (27.109 tablets) * ARDIC ArCloud IoT Platform * ARDIC Modiverse Mobile Services Package Solution * ARDIC KuuKla Parental Control Application * ARDIC Modiverse-Mode application (Client app for the tablets to communicate with cloud platform)",
+            text: " * Intel Baytrail işlemcili Casper VIA T41 Android Tabletler (27.109 tablet) * ARDIC ArCloud IoT Platformu * ARDIC Modiverse Mobil Servis Paketi Çözümü * ARDIC KuuKla Ebeveyn Kontrolü Uygulaması * ARDIC Modiverse-Mode uygulaması (tabletlerin bulut platformu ile iletişim kurması için istemci uygulaması)",
           },
           {
             tag: "h4",
-            text: "Critical Project Requirements",
+            text: "Kritik Proje Gereksinimleri",
           },
           {
             tag: "p",
-            text: " * Anti-theft solution: Remote lock and location detection functions, remote deactivation of the device in case of lost/stolen Device activation solution * Parental control software * Management of mobile devices remotely if requested via mobile device management application * Turkish GUI of application to access through PC and notebook via web browser * Device inventory tracking",
+            text: " * Hırsızlığa karşı çözüm: Uzaktan kilitleme ve konum tespit fonksiyonları, kayıp/çalıntı durumunda cihazın uzaktan devre dışı bırakılması Cihaz aktivasyon çözümü * Ebeveyn kontrol yazılımı * Mobil cihaz yönetim uygulaması ile istendiğinde mobil cihazların uzaktan yönetimi * Uygulamanın Türkçe GUI uygulaması web tarayıcısı üzerinden PC ve notebook üzerinden erişim * Cihaz envanter takibi",
           },
           {
             tag: "h4",
-            text: "Solution Details and Added Value of Implemented Solutions",
+            text: "Çözüm Detayları ve Uygulanan Çözümlerin Katma Değeri",
           },
           {
             tag: "p",
-            text: "In this project, Casper and ARDIC provided an education sector tablet solution to meet the tender requirements. ARDIC Modiverse Package GUI has been customized to enable Casper Support Center users to manage only the requirements above. All these tablets have been distributed to end users of 289 schools in 12 districts and been used in the classes and at home successfully.",
+            text: "Bu projede Casper ve ARDIC, ihale gereksinimlerini karşılamak için eğitim sektörü tablet çözümü sağladı. ARDIC Modiverse Paket GUI, Casper Destek Merkezi kullanıcılarının yalnızca yukarıdaki gereksinimleri yönetmesini sağlamak için özelleştirilmiştir. Tüm bu tabletler 12 ilçede 289 okulun son kullanıcılarına dağıtılarak sınıflarda ve evlerde başarıyla kullanılmıştır.",
           },
           {
             tag: "h4",
-            text: "Added Value of the Implemented Solutions",
+            text: "Uygulanan Çözümlerin Katma Değeri",
           },
           {
             tag: "p",
-            text: " * Ready-to-use teacher/student tablets (all settings and updates are managed remotely) * Customized Admin Panel GUI, which provides only the requested functionalities",
+            text: " * Kullanıma hazır öğretmen/öğrenci tabletleri (tüm ayarlar ve güncellemeler uzaktan yönetilir) * Yalnızca istenen işlevleri sağlayan Özelleştirilmiş Yönetici Paneli GUI",
           },
         ],
       },
 
       {
-        title: "Demwatch – Patient Tracking System",
+        title: "Demwatch – Hasta Takip Sistemi",
         detailTexts: [
           {
             tag: "h4",
-            text: "Requirements",
+            text: "Gereksinimler",
           },
           {
             tag: "p",
-            text: "To assist people with slight and moderate memory disorders by creating assistive indoor and outdoor technology that supports everyday life and boosts independent living and inclusion.",
+            text: "Günlük yaşamı destekleyen ve bağımsız yaşamı ve katılımı artıran yardımcı iç ve dış mekan teknolojisi oluşturarak hafif ve orta düzeyde bellek bozukluğu olan insanlara yardımcı olmak.",
           },
           {
             tag: "a",
@@ -170,164 +169,164 @@ export default function handler(req, res) {
       },
       {
         title:
-          "TC Ministry of Education with SEBIT – FATIH Project for Education – Pilot Implementation",
+          "TC Milli Eğitim Bakanlığı ile SEBİT – FATİH Eğitim Projesi – Pilot Uygulama",
         detailTexts: [
           {
             tag: "h4",
-            text: "Requirements",
+            text: "Gereksinimler",
           },
           {
             tag: "p",
-            text: "Under the approval of Ministry of Education (MoE), Turk Telekom have been carried a grant program of 5.000 education tablets in coordination with SEBIT for FATIH project. Main requirements con be summarized as providing a flexible end-to-end education services platform which will enable classroom eco-system that includes teacher tablets, student tablets and smart board; being able to manage and control all the tablets remotely; managing the classroom sessions and control student tablets and smart board via teacher tablet; being able to use the tablets with different use case scenarios outside the school.",
+            text: "Milli Eğitim Bakanlığı (MEB) onayı ile Türk Telekom, SEBİT ile koordineli olarak FATİH projesi için 5.000 adet eğitim tableti hibe programı yürütmüştür. Temel gereksinimler, öğretmen tabletleri, öğrenci tabletleri ve akıllı tahtayı içeren sınıf eko sistemini mümkün kılacak esnek bir uçtan uca eğitim hizmetleri platformunun sağlanması olarak özetlenebilir; tüm tabletleri uzaktan yönetebilme ve kontrol edebilme; öğretmen tableti aracılığıyla sınıf oturumlarını yönetmek ve öğrenci tabletlerini ve akıllı tahtayı kontrol etmek; tabletleri okul dışında farklı kullanım senaryoları ile kullanabilme.",
           },
           {
             tag: "h4",
-            text: "Solution Components",
+            text: "Çözüm Bileşenleri",
           },
           {
             tag: "p",
-            text: "INTEL SoC (System on Chip) and Android ICS based tablets, designed specifically for the project, Customized Education Tablet Operating System to execute project specific use case scenarios easily, Teacher and Student Tablet Solutions customized on the basis of different user profiles, Smart Board Classroom Management Application, Cloud Services Platform for Education Tablets developed on ARCLOUD ©",
+            text: "Projeye özel tasarlanmış INTEL SoC (System on Chip) ve Android ICS tabanlı tabletler, Projeye özel kullanım senaryolarını kolayca yürütmek için Özelleştirilmiş Eğitim Tableti İşletim Sistemi, Farklı kullanıcı profillerine göre özelleştirilmiş Öğretmen ve Öğrenci Tablet Çözümleri, Akıllı Tahta Sınıfı Yönetim Uygulaması, Eğitim Tabletleri için Bulut Hizmetleri Platformu ARCLOUD © üzerinde geliştirildi",
           },
           {
             tag: "h4",
-            text: "Critical Project Requirements:",
+            text: "Kritik Proje Gereksinimleri:",
           },
           {
             tag: "h5",
-            text: "Education Tablet Operating System",
+            text: "Eğitim Tableti İşletim Sistemi",
           },
           {
             tag: "p",
-            text: " * Different use case scenarios for school, classroom and home * SSO (Single Sign On) for Vitamin and z-Book applications * General desktop components * User profile-specific Settings screen * Customized Applications screen * Partial or full OS upgrade (Over The Air)",
+            text: " * Okul, sınıf ve ev için farklı kullanım senaryoları * Vitamin ve z-Book uygulamaları için SSO (Tek Oturum Açma) * Genel masaüstü bileşenleri * Kullanıcı profiline özel Ayarlar ekranı * Özelleştirilmiş Uygulamalar ekranı * Kısmi veya tam işletim sistemi yükseltmesi (Over The Air) )",
           },
           {
             tag: "h5",
-            text: "School Administration Functions",
+            text: "Okul Yönetimi İşlevleri",
           },
           {
             tag: "p",
-            text: " * Defining of city, school, class relations provided by MoE Services for the teacher and student tablets * Provisioning of the teacher and student tablets * Inventory management * Activation of the tablets",
+            text: " * Öğretmen ve öğrenci tabletleri için MEB Hizmetleri tarafından sağlanan şehir, okul, sınıf ilişkilerinin tanımlanması * Öğretmen ve öğrenci tabletlerinin sağlanması * Envanter yönetimi * Tabletlerin aktivasyonu",
           },
           {
             tag: "h5",
-            text: "Class Learning Management Functions",
+            text: "Sınıf Öğrenme Yönetim Fonksiyonları",
           },
           {
             tag: "p",
-            text: " * Restriction of Setting * Restriction of app installations other than the ones allowed by MoE * Soot and change of date * User profile based restrictions of applications for access to internet",
+            text: "* Ayar Kısıtlaması * MEB tarafından izin verilenler dışındaki uygulama yüklemelerinin kısıtlanması * Kurum ve tarih değişikliği * İnternete erişim için uygulamaların kullanıcı profiline dayalı kısıtlamaları",
           },
           {
             tag: "h5",
-            text: "Session Management Solution for Teachers",
+            text: "Öğretmenler için Oturum Yönetimi Çözümü",
           },
           {
             tag: "p",
-            text: " * Session start/terminate * Attendance check * Tablet hardware functions management of student tablets (Camera on/off, touchscreen lock/unlock, etc) * Control of application use in the class and after school * Redirection of student tablets to a certain web site * Remote control of smart board via teacher tablet * Use of smart board during the session, smart board screen display function on student tablets * Screen display of teacher/student tablets on the smart board * Screen display of student tablets on the teacher tablet * Lock of student tablets (Single or multi) * Allowing any student tablet to manage smart board remotely * Voting * Send messages to student tablets (single or multi)",
+            text: "* Oturum başlatma/sonlandırma * Katılım kontrolü * Öğrenci tabletlerinin tablet donanım fonksiyonlarının yönetimi (Kamera açma/kapama, dokunmatik ekran kilitleme/açma vb.) * Derste ve okul sonrası uygulama kullanımının kontrolü * Öğrenci tabletlerinin belirli bir web sitesine yönlendirilmesi * Akıllı tahtanın öğretmen tableti ile uzaktan kontrolü * Oturum sırasında akıllı tahta kullanımı, öğrenci tabletlerinde akıllı tahta ekran görüntüleme işlevi * Akıllı tahtada öğretmen/öğrenci tabletlerinin ekran gösterimi * Öğretmen tabletinde öğrenci tabletlerinin ekran gösterimi * Kilit Öğrenci tabletlerinin sayısı (Tekli veya çoklu) * Herhangi bir öğrenci tabletinin akıllı tahtayı uzaktan yönetmesine izin verme * Oylama * Öğrenci tabletlerine mesaj gönderme (tekli veya çoklu)",
           },
           {
             tag: "h5",
-            text: "Session Management Solution for Students",
+            text: "Öğrenciler için Oturum Yönetimi Çözümü",
           },
           {
             tag: "p",
-            text: " * Join the session and apply the classroom use case scenario * Manage the smart board remotely * Participate in voting * View the message content sent by the teacher",
+            text: "* Oturuma katılın ve sınıf kullanım senaryosunu uygulayın * Akıllı tahtayı uzaktan yönetin * Oylamaya katılın * Öğretmen tarafından gönderilen mesaj içeriğini görüntüleyin",
           },
           {
             tag: "h5",
-            text: "Built-in Applications – SEBiT Apps",
+            text: "Yerleşik Uygulamalar – SEBiT Uygulamaları",
           },
           {
             tag: "p",
-            text: " * Controllable and manageable applications by tablet OS * Controllable and manageable applications by cloud services platform",
+            text: "* Tablet işletim sistemi ile kontrol edilebilir ve yönetilebilir uygulamalar * Bulut hizmetleri platformu ile kontrol edilebilir ve yönetilebilir uygulamalar",
           },
           {
             tag: "h5",
-            text: "Built-in Applications- 3rd Party",
+            text: "Yerleşik Uygulamalar - 3. Parti",
           },
           {
             tag: "p",
-            text: " * Run only 3rd party applications chosen by SEBIT * Allow only the installation of signed 3rd party apps",
+            text: " * Yalnızca SEBIT tarafından seçilen 3. parti uygulamaları çalıştırın * Yalnızca imzalı 3. parti uygulamaların yüklenmesine izin verin",
           },
           {
             tag: "h5",
-            text: "Cloud Services Platform for Education Tablets",
+            text: "Eğitim Tabletleri için Bulut Hizmetleri Platformu",
           },
           {
             tag: "p",
-            text: " *App Installation I App Removal * Lock lost or stolen tablets * Lock student tablets if they have not been used for a period of time at the school * User allocation of tablets * Log collection * Online/ offline status info of the tablets * Tablet inventory reports * Lock/Unlock tablets remotely * Send messages to the tablets * Wipe tablets * Application based statistics",
+            text: " * Uygulama Yükleme I Uygulama Kaldırma * Kaybolan veya çalınan tabletleri kilitleme * Okulda bir süre kullanılmamışsa öğrenci tabletlerini kilitleme * Tabletlerin kullanıcı tahsisi * Log toplama * Tabletlerin çevrimiçi/çevrimdışı durum bilgisi * Tablet envanteri raporlar * Tabletleri uzaktan kilitleyin/kilidini açın * Tabletlere mesaj gönderin * Tabletleri silin * Uygulama tabanlı istatistikler",
           },
           {
             tag: "h5",
-            text: "Solution Details and Added Value of The Implemented Solution: Classroom WiFi that provides connectivity to Cloud",
+            text: "Çözüm Detayları ve Uygulanan Çözümün Katma Değeri: Buluta bağlantı sağlayan Classroom WiFi",
           },
           {
             tag: "p",
-            text: "In this project, an education sector specific end-to-end tablet solution has been developed to meet the above-mentioned critical project needs. SEBIT provided the project requirements and related designs, and ARDIC developed the related functions that satisfy these requirements through its own solution platforms.",
+            text: "Bu projede yukarıda belirtilen kritik proje ihtiyaçlarını karşılamak için eğitim sektörüne özel uçtan uca tablet çözümü geliştirilmiştir. SEBIT, proje ihtiyaçlarını ve ilgili tasarımları sağladı ve ARDIC, kendi çözüm platformları aracılığıyla bu gereksinimleri karşılayan ilgili fonksiyonları geliştirdi.",
           },
           {
             tag: "p",
-            text: "As a result, tablets are diversified as student and teacher tablets based on the user profiles. Applications on the tablets can be managed, upgraded and supported efficiently via cloud services platform. Besides, tablets can be used with different scenarios in the different environments such as at school, in the classroom or at home. All these scenarios were designed by taking into account education sector needs and user profiles.",
+            text: "Sonuç olarak tabletler kullanıcı profillerine göre öğrenci ve öğretmen tabletleri olarak çeşitlenmektedir. Tabletlerdeki uygulamalar, bulut hizmetleri platformu aracılığıyla verimli bir şekilde yönetilebilir, yükseltilebilir ve desteklenebilir. Ayrıca tabletler okulda, sınıfta veya ev gibi farklı ortamlarda farklı senaryolarla kullanılabilir. Tüm bu senaryolar eğitim sektörü ihtiyaçları ve kullanıcı profilleri dikkate alınarak tasarlandı.",
           },
           {
             tag: "p",
-            text: "Today these tablets have been distributed to end users of 8 schools in 4 cities (istanbul, Ankara, Kastamonu and Karaman) and been used in the classes successfully. They are managed and controlled via Education Tablet Cloud Services Platform and field support services are given currently.",
+            text: "Bugün bu tabletler 4 ilde (istanbul, Ankara, Kastamonu ve Karaman) 8 okulun son kullanıcılarına dağıtılmış ve derslerde başarıyla kullanılmıştır. Eğitim Tablet Bulut Hizmetleri Platformu üzerinden yönetilmekte ve kontrol edilmekte olup, halihazırda saha destek hizmetleri verilmektedir.",
           },
         ],
       },
       {
-        title: "R&D Projects",
+        title: "Ar-Ge Projeleri",
         detailTexts: [
           {
             tag: "p",
-            text: "Innovation is in ARDIC's genes. Aside from the commercial services and products, ARDIC has collected numerous grants from national and international R&D projects. Since 2008, 17 projects have been completed. Here are some of those:",
+            text: "Yenilik, ARDIC'in genlerinde var. ARDIC, ticari hizmet ve ürünlerinin yanı sıra ulusal ve uluslararası Ar-Ge projelerinden çok sayıda hibe almıştır. 2008 yılından bu yana 17 proje tamamlanmıştır. İşte bunlardan bazıları:",
           },
           {
             tag: "p",
-            text: "Prose 2020. Development of IoT based interactive location services infrastructure.",
+            text: "Prose 2020. IoT tabanlı etkileşimli konum hizmetleri altyapısının geliştirilmesi.",
           },
           {
             tag: "p",
-            text: "eWatch 2020. Perpetual data tracking wearable, secure health monitoring system.",
+            text: "eWatch 2020. Sürekli veri takibi giyilebilir, güvenli sağlık izleme sistemi.",
           },
           {
             tag: "p",
-            text: "Project 2019. Integrated energy management platform that collects and analyzes energy data in buildings, manages building systems remotely and includes sensor, trigger, IoT gateway and decision support mechanism.",
+            text: "Proje 2019. Binalardaki enerji verilerini toplayan ve analiz eden, bina sistemlerini uzaktan yöneten ve sensör, tetik, IoT ağ geçidi ve karar destek mekanizmasını içeren entegre enerji yönetimi platformu.",
           },
           {
             tag: "p",
-            text: "Project 2017. Development of cloud platform architecture with industry-level security.",
+            text: "Proje 2017. Sektör düzeyinde güvenlikle bulut platformu mimarisinin geliştirilmesi.",
           },
           {
             tag: "p",
-            text: "CEP 2015. Development of general-purpose, autonomous, dynamically programmable and remotely-manageable near real time complex event processing on device or cloud system.",
+            text: "CEP 2015. Cihaz veya bulut sistemi üzerinde genel amaçlı, otonom, dinamik olarak programlanabilir ve uzaktan yönetilebilir, neredeyse gerçek zamanlı karmaşık olay işlemenin geliştirilmesi.",
           },
           {
             tag: "p",
-            text: "SIGMONA 2015. Software Defined Network Concept in Generalized Mobile Network Architectures.",
+            text: "SIGMONA 2015. Genelleştirilmiş Mobil Ağ Mimarilerinde Yazılım Tanımlı Ağ Kavramı.",
           },
           {
             tag: "p",
-            text: "Secure Android 2015. Addition of necessary platform for Android to make Android devices more secure, manageable and controllable and enabling applications to use them securely.",
+            text: "Güvenli Android 2015. Android cihazları daha güvenli, yönetilebilir ve kontrol edilebilir hale getirmek ve uygulamaların bunları güvenli bir şekilde kullanmasını sağlamak için Android için gerekli platformun eklenmesi.",
           },
           {
             tag: "p",
-            text: "IoT 2014. Management of sensor network on IoT cloud platform through user-focused services.",
+            text: "IoT 2014. Kullanıcı odaklı hizmetler aracılığıyla IoT bulut platformunda sensör ağının yönetimi.",
           },
           {
             tag: "p",
-            text: "Project 2012. Wireless transfer of tablet display on touch panel and touch panel interaction on tablet display near real time.",
+            text: "Proje 2012. Dokunmatik panelde tablet ekranının kablosuz aktarımı ve tablet ekranında dokunmatik panel etkileşiminin gerçek zamana yakın olması.",
           },
           {
             tag: "p",
-            text: "Project 2011. Cloud-based mobile gateway and client applications for large scale management systems.",
+            text: "Proje 2011. Büyük ölçekli yönetim sistemleri için bulut tabanlı mobil ağ geçidi ve istemci uygulamaları.",
           },
           {
             tag: "p",
-            text: "OTA DM 2011. Open source over the air device management and control.",
+            text: "OTA DM 2011. Havadan cihaz yönetimi ve kontrolü üzerinden açık kaynak.",
           },
           {
             tag: "p",
-            text: "Project 2010. Open source embedded operating system platform and model practice on WiMax modem.",
+            text: "Proje 2010. Açık kaynak kodlu gömülü işletim sistemi platformu ve WiMax modem üzerinde model uygulaması.",
           },
         ],
       },
