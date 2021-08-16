@@ -30,7 +30,7 @@ export default {
     contactForm: "İletişim Formu",
     locations: "Bölgeler",
     seeTheDocuments: "Dokümanlara gözat",
-    joinOurTeam: "Join Our Team",
+    joinOurTeam: "Sen de Ekibe Katıl",
   },
   page: {
     _404: {

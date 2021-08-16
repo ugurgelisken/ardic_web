@@ -10,7 +10,7 @@ export default function handler(req, res) {
           title: "Smart Taxi",
           cover: "/assets/solutions/smart-taxi.jpg",
           summary:
-            "Digital transformation of taxis by turning them into service platforms and data collecting end-points. Our solution provides a channel for advertisement and dispatch applications, while collecting city data that can be utilized by 3rd party providers.",
+            "Taksilerin hizmet platformlarına ve veri toplama uç noktalarına dönüştürülerek dijital dönüşümü. Çözümümüz, 3. taraf sağlayıcılar tarafından kullanılabilecek şehir verilerini toplarken, reklam ve gönderi uygulamaları için bir kanal sağlar.",
           technologies: [
             {
               name: "Ignite Cloud",
@@ -38,7 +38,7 @@ export default function handler(req, res) {
           title: "IIoT (Industry 4.0)",
           cover: "/assets/solutions/industry-iot.jpg",
           summary:
-            "ARDIC’s IIoT (Industry 4.0) solution is the industry’s first Android @EDGE platform with zero touch configuration. Deep neural network and complex event processing at both EDGE and CLOUD.",
+            "ARDIC'in IIoT (Endüstri 4.0) çözümü, endüstrinin sıfır dokunuşlu konfigürasyona sahip ilk Android @EDGE platformudur. Hem EDGE hem de CLOUD'da derin sinir ağı ve karmaşık olay işleme.",
           technologies: [
             {
               name: "Ignite Cloud",
@@ -66,7 +66,7 @@ export default function handler(req, res) {
           title: "Managed Android Service Box",
           cover: "/assets/solutions/masbox.jpg",
           summary:
-            "ARDIC Managed Android Service Box is a manageable and secure box that revolutionizes the way of offering conventional services such as digital signage, PC replacement, IoT edge gateway, IPTV set top box etc.",
+            "ARDIC Managed Android Service Box, dijital tabela, bilgisayar değişimi, IoT uç ağ geçidi, IPTV set üstü kutusu vb. geleneksel hizmetleri sunma biçiminde devrim yaratan yönetilebilir ve güvenli bir kutudur.",
           technologies: [
             {
               name: "Modiverse",
@@ -89,7 +89,7 @@ export default function handler(req, res) {
           title: "Fertilizer Tracking System",
           cover: "/assets/solutions/field.jpg",
           summary:
-            "Control and management of handheld terminals used in a fertilizer tracking system is running on our MDM platform Modiverse. Most importantly for end-to-end security, we provide our own Android framework with additional API's in this project.",
+            "Gübre takip sisteminde kullanılan el terminallerinin kontrolü ve yönetimi, MDM platformumuz Modiverse üzerinde çalışmaktadır. Uçtan uca güvenlik için en önemlisi, bu projede ek API'lerle kendi Android çerçevemizi sağlıyoruz.",
           technologies: [
             {
               name: "Modiverse",
@@ -112,7 +112,7 @@ export default function handler(req, res) {
           title: "Distracted Driving Prevention",
           cover: "/assets/solutions/distracted.jpg",
           summary:
-            "For services like distracted driving prevention solutions, IoT-Ignite platform can provide a specialized, scalable back-end while Modiverse can reinforce the services with additional device management functionalities.",
+            "Dikkati dağılmış sürüş önleme çözümleri gibi hizmetler için, IoT-Ignite platformu özel, ölçeklenebilir bir arka uç sağlayabilirken Modiverse, hizmetleri ek cihaz yönetimi işlevleriyle güçlendirebilir.",
           technologies: [
             {
               name: "Ignite Cloud",
@@ -140,7 +140,7 @@ export default function handler(req, res) {
           title: "Customized Mobile Devices",
           cover: "/assets/solutions/devices.jpg",
           summary:
-            "With our platform, your mobile devices can become completely different devices in home, office or any context you define. Create your own Android based smart phones and tablets by using our customized OS and private cloud.",
+            "Platformumuz ile mobil cihazlarınız evde, ofiste veya tanımladığınız herhangi bir bağlamda tamamen farklı cihazlar haline gelebilir. Özelleştirilmiş işletim sistemimizi ve özel bulutumuzu kullanarak kendi Android tabanlı akıllı telefonlarınızı ve tabletlerinizi oluşturun.",
           technologies: [
             {
               name: "Modiverse",
@@ -161,8 +161,8 @@ export default function handler(req, res) {
         },
       ],
       more: {
-        title: "IoT Solutions Tailored to Your Needs",
-        text: "Together we can develop solutions to make your business smarter.",
+        title: "İhtiyaçlarınıza Uyarlanmış IoT Çözümleri",
+        text: "Birlikte işinizi daha akıllı hale getirmek için çözümler geliştirebiliriz.",
       },
     },
   });

@@ -8,70 +8,70 @@ export default function handler(req, res) {
       {
         name: "Ignite Cloud",
         summary:
-          "Multi-layered platform technology,  enabling provisioning , management and automation of the connected devices over the air providing REST APIs for integration. ",
+          "Entegrasyon için REST API'leri sağlayan, bağlı cihazların kablosuz olarak sağlanmasını, yönetilmesini ve otomasyonunu sağlayan çok katmanlı platform teknolojisi.",
         icon: "ignite-cloud",
         slug: "/technologies/iot-ignite",
       },
       {
         name: "PilarOS",
         summary:
-          "AKA TRDROID, is ARDIC’s industrial Android distro with extended security and manageability framework over 1800 new APIs built on Android",
+          "AKA TRDROID, Android üzerine kurulu 1800'den fazla yeni API ile genişletilmiş güvenlik ve yönetilebilirlik çerçevesine sahip ARDIC'in endüstriyel Android dağıtımıdır.",
         icon: "pilaros",
         slug: "https://www.pilaros.net/?lang=en",
       },
       {
         name: "ArCoud",
         summary:
-          " ARDIC developed its own cloud and operates on it. This is an AWS-like cloud service.",
+          "ARDIC kendi Cloud'unu geliştirdi ve üzerinde çalışıyor. Bu, AWS benzeri bir Cloud hizmetidir.",
         icon: "arcloud",
         slug: "/technologies/arcloud",
       },
       {
         name: "Ignite Edge",
         summary:
-          "Data is handled on the IoT device itself before reaching the cloud enabling lower bandwidth, faster data access, and simplified data management. Smart edge gateways execute rules, allow efficient decision-making, and are fully under your control even without cloud connectivity. ",
+          "Veriler, daha düşük bant genişliği, daha hızlı veri erişimi ve basitleştirilmiş veri yönetimi sağlayan Cloud'a ulaşmadan önce IoT cihazının kendisinde işlenir. Akıllı uç ağ geçitleri kuralları uygular, verimli karar vermeye olanak tanır ve Cloud bağlantısı olmasa bile tamamen kontrolünüz altındadır.",
         icon: "ignite-edge",
         slug: "/technologies/iot-ignite",
       },
       {
         name: "AFEX",
         summary:
-          " ARDIC’s framework that enables end-to-end secure and manageable services on any Android device. AFEX can be embedded or integrated into any Android device by running a simple script, or installed into devices as a mobile app for certain features.",
+          "ARDIC'ın herhangi bir Android cihazda uçtan uca güvenli ve yönetilebilir hizmetler sağlayan framework'üdür. AFEX, basit bir komut dosyası çalıştırılarak herhangi bir Android cihazına yerleştirilebilir veya entegre edilebilir veya belirli özellikler için cihazlara mobil uygulama olarak yüklenebilir.",
         icon: "afex",
         slug: "https://www.pilaros.net/afex?lang=en",
       },
       {
         name: "Machine Learning",
         summary:
-          "We use machine learning algorithms to analyze and evaluate the data coming from the field both at edge and cloud.",
+          "Sahadan gelen verileri hem uçta hem de Cloud'ta analiz etmek ve değerlendirmek için makine öğrenimi algoritmaları kullanıyoruz.",
         icon: "machine-learning",
         slug: "",
       },
       {
         name: "Ignite Metrics",
         summary:
-          "Real-time visibility and optimization tools for field personnels, managers and leaders to increase efficiency.",
+          "Saha personeli yöneticileri ve liderleri için verimliliği artırmak için gerçek zamanlı görünürlük ve optimizasyon araçları.",
         icon: "ignite-metrics",
         slug: "/technologies/iot-ignite",
       },
       {
         name: "Modiverse",
         summary:
-          "Cloud-based enterprise-grade mobile device management platform.",
+          "Cloud tabanlı kurumsal düzeyde mobil cihaz yönetimi platformu.",
         icon: "modiverse",
         slug: "/technologies/modiverse",
       },
       {
         name: "Deep Learning",
         summary:
-          "Similarly, to interpret the data and to build a decision making mechanism, we are working on our deep learning techniques.",
+          "Benzer şekilde, verileri yorumlamak ve bir karar verme mekanizması oluşturmak için derin öğrenme tekniklerimiz üzerinde çalışıyoruz.",
         icon: "deep-learning",
         slug: "",
       },
       {
         name: "Block Chain",
         summary:
-          "For reliable and private IoT applications, we enable blockchain technologies to track connected devices and data.",
+          "Güvenilir ve özel IoT uygulamaları için block chain teknolojilerinin bağlı cihazları ve verileri izlemesini sağlıyoruz.",
         icon: "block-chain",
         slug: "",
       },
