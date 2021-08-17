@@ -83,12 +83,16 @@ const Header = () => {
         }
         .brand {
           padding: 14px;
+          padding-left: 0px;
         }
         .logo {
           height: 32px;
           margin-right: 10px;
         }
         @media screen and (max-width: 1024px) {
+          .brand {
+            padding-left: 14px;
+          }
           .container {
             background-image: url("/assets/header-background-mobile.jpg");
           }

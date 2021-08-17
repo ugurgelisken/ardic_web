@@ -35,7 +35,7 @@ const LanguageChanger = () => {
       <style jsx>{`
         .container-lang {
           position: fixed;
-          right: 24px;
+          right: 14px;
           top: 14px;
           z-index: 2;
         }

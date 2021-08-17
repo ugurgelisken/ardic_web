@@ -87,7 +87,7 @@ const Menu = ({ menuItems, router }) => {
         }
         .menuIcon {
           position: fixed;
-          right: 10px;
+          right: 14px;
           top: 14px;
           height: 32px;
           z-index: 90;
