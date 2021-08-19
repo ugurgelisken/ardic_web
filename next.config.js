@@ -1,4 +1,7 @@
-module.exports = {
+const withPWA = require("next-pwa");
+const runtimeCaching = require("next-pwa/cache");
+
+module.exports = withPWA({
   async headers() {
     return [
       {
@@ -19,6 +22,7 @@ module.exports = {
       },
     ];
   },
+  pwa: { dest: "public", runtimeCaching },
   reactStrictMode: true,
   generateEtags: false,
   i18n: {
@@ -41,4 +45,4 @@ module.exports = {
   eslint: {
     ignoreDuringBuilds: false,
   },
-};
+});
