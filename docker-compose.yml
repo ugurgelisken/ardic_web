@@ -1,0 +1,27 @@
+version: "3"
+services:
+  ui:
+    container_name: web
+    restart: always
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./:/app
+      - /app/node_modules
+      - /app/.next
+    environment:
+      VERSION: v1
+      MODE: development
+      APP_NAME: ARDICTECH
+      HOSTNAME: localhost
+      PORT: 3000
+      HOST: http://localhost:3000
+      GA_TRACKING_ID: UA-115807499-1
+      MAIL_HOST: mail.ugurgelisken.com
+      MAIL_PORT: 465
+      MAIL_USER: nodemailer@ugurgelisken.com
+      MAIL_PASS: TigerUppercut
+      MAIL_TO: ugurgelisken@gmail.com
