@@ -160,7 +160,7 @@ const About = ({ data, meta }) => {
 export default About;
 
 export const getServerSideProps = async (router) => {
-  const res = await fetch(`${process.env.HOST}/api/${router.locale}/about`);
+  const res = await fetch(`/api/${router.locale}/about`);
   const data = await res.json();
   return {
     props: {
