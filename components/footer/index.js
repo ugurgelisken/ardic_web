@@ -9,7 +9,7 @@ const Footer = () => {
   const [socialMediasData, setSocialMediasData] = useState([]);
 
   useEffect(() => {
-    fetch(`${process.env.HOST}/api/${router.locale}/footer`)
+    fetch(`https://beta.ardictech.com/api/${router.locale}/footer`)
       .then((response) => response.json())
       .then((data) => {
         setCopyrightData(data.copyright);

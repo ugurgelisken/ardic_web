@@ -18,6 +18,7 @@ module.exports = {
     MODE: process.env.MODE,
     APP_NAME: process.env.APP_NAME,
     HOST: process.env.HOST,
+    BASE_URL: process.env.BASE_URL,
     HOSTNAME: process.env.HOSTNAME,
     PORT: process.env.PORT,
     GA_TRACKING_ID: process.env.GA_TRACKING_ID,
