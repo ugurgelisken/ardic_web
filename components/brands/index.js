@@ -9,7 +9,7 @@ const Brands = () => {
   const [right, setRightData] = useState({});
   const [isLoaded, setIsLoaded] = useState(false);
   useEffect(() => {
-    fetch(`/api/${router.locale}/brands`)
+    fetch(`${process.env.HOST}/api/${router.locale}/brands`)
       .then((response) => response.json())
       .then((data) => {
         setLeftData(data.left);

@@ -264,7 +264,7 @@ const Teams = ({ data, meta }) => {
 };
 
 export const getServerSideProps = async (router) => {
-  const res = await fetch(`/api/${router.locale}/teams`);
+  const res = await fetch(`${process.env.HOST}/api/${router.locale}/teams`);
   const data = await res.json();
   return {
     props: {

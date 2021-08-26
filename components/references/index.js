@@ -12,7 +12,7 @@ const References = () => {
   const [referencesData, setReferencesData] = useState([]);
 
   useEffect(() => {
-    fetch(`/api/${router.locale}/references`)
+    fetch(`${process.env.HOST}/api/${router.locale}/references`)
       .then((response) => response.json())
       .then((data) => {
         setReferencesData(data);

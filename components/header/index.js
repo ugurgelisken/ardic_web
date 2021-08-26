@@ -13,7 +13,7 @@ const Header = () => {
   const [menuItems, setMenuItems] = useState([]);
 
   useEffect(() => {
-    fetch(`/api/${router.locale}/menu`)
+    fetch(`${process.env.HOST}/api/${router.locale}/menu`)
       .then((response) => response.json())
       .then((data) => {
         setMenuItems(data);

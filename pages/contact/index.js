@@ -137,7 +137,7 @@ const Contact = ({ data, meta }) => {
 };
 
 export const getServerSideProps = async (router) => {
-  const res = await fetch(`/api/${router.locale}/contact`);
+  const res = await fetch(`${process.env.HOST}/api/${router.locale}/contact`);
   const data = await res.json();
   return {
     props: {

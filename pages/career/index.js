@@ -120,7 +120,7 @@ const Career = ({ data, meta }) => {
 };
 
 export const getServerSideProps = async (router) => {
-  const res = await fetch(`/api/${router.locale}/career`);
+  const res = await fetch(`${process.env.HOST}/api/${router.locale}/career`);
   const data = await res.json();
   return {
     props: {
