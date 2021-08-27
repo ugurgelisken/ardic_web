@@ -100,9 +100,6 @@ const Layout = ({ children }) => {
           content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no, user-scalable=no, viewport-fit=cover"
         />
       </Head>
-      <div className="info-box">
-        <span>{process.env.HOST}</span>
-      </div>
       {children?.type?.name !== "_404" ? <Header {...router} t={t} /> : null}
       {children?.type?.name !== "_404" ? <Brands {...router} t={t} /> : null}
       {children}
@@ -126,9 +123,6 @@ const Layout = ({ children }) => {
             #5263f1,
             #2ae7d8
           );
-        }
-        .info-box {
-          height: 0px;
         }
         .btn-smooth {
           background-color: #627583;
