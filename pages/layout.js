@@ -101,8 +101,7 @@ const Layout = ({ children }) => {
         />
       </Head>
       <div className="info-box">
-        <span>HOST: {process.env.HOST}</span>
-        <span> | BASE_URL: {process.env.BASE_URL}</span>
+        <span>{process.env.HOST}</span>
       </div>
       {children?.type?.name !== "_404" ? <Header {...router} t={t} /> : null}
       {children?.type?.name !== "_404" ? <Brands {...router} t={t} /> : null}
@@ -129,14 +128,7 @@ const Layout = ({ children }) => {
           );
         }
         .info-box {
-          position: fixed;
-          z-index: 999999;
-          top: 0;
-          left: 0;
-          right: 0;
-          height: 30px;
-          background-color: black;
-          color: white;
+          height: 0px;
         }
         .btn-smooth {
           background-color: #627583;

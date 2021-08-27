@@ -24,7 +24,7 @@ const Footer = () => {
     e.preventDefault();
     if (validateEmail(email) && name && message && submitted === "") {
       setSubmitted("sending");
-      fetch(`${process.env.HOST}/api/${router.locale}/send-mail`, {
+      fetch(`${process.env.BASE_URL}/api/${router.locale}/send-mail`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({

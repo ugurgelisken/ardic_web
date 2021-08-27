@@ -4,7 +4,7 @@ export default function handler(req, res) {
       id: "modiverse",
       meta: {
         title: "Modiverse",
-        desc: "ARDIC provides an end to end solution to all mobile device management (MDM) needs.",
+        desc: "ARDIC, tüm mobil cihaz yönetimi (MDM) ihtiyaçlarına uçtan uca bir çözüm sunar.",
       },
       data: {
         slug: "/modiverse",
@@ -12,27 +12,27 @@ export default function handler(req, res) {
         detailTexts: [
           {
             tag: "h1",
-            text: "Complete MDM: Modiverse",
+            text: "Eksiksiz MDM: Modiverse",
           },
           {
             tag: "p",
-            text: "ARDIC provides an end to end solution to all mobile device management (MDM) needs.",
+            text: "ARDIC, tüm mobil cihaz yönetimi (MDM) ihtiyaçlarına uçtan uca bir çözüm sunar.",
           },
           {
             tag: "p",
-            text: "Modiverse is a cloud based device management platform that can communicate with PilarOS, which is our improved, secure and fully manageable Android distribution that enables device management on operating system level.",
+            text: "Modiverse, işletim sistemi düzeyinde cihaz yönetimi sağlayan gelişmiş, güvenli ve tamamen yönetilebilir Android dağıtımımız olan PilarOS ile iletişim kurabilen bulut tabanlı bir cihaz yönetim platformudur.",
           },
           {
             tag: "p",
-            text: "Some of the things you can do only if you have such a structure:",
+            text: "Yalnızca böyle bir yapıya sahipseniz yapabileceğiniz şeylerden bazıları:",
           },
           {
             tag: "p",
-            text: " * Over-the-air firmware updates – incremental or full App installation, removal and updates without needing user approval – silent install * Full independence from Google, unlike other standard MDM providers * Automatically register and configure out of the box devices immediately when they go online * Full control over hardware",
+            text: " * Kablosuz aygıt yazılımı güncellemeleri – kullanıcı onayı gerektirmeden aşamalı veya tam Uygulama yükleme, kaldırma ve güncellemeler – sessiz kurulum * Diğer standart MDM sağlayıcılarından farklı olarak Google'dan tam bağımsızlık * Kullanıma hazır cihazları gittikleri anda otomatik olarak kaydetme ve yapılandırma çevrimiçi * Donanım üzerinde tam kontrol",
           },
           {
             tag: "p",
-            text: "and many more advanced MDM functions.",
+            text: "ve daha birçok gelişmiş MDM işlevi.",
           },
         ],
       },
@@ -41,7 +41,7 @@ export default function handler(req, res) {
       id: "iot-ignite",
       meta: {
         title: "iot-ignite",
-        desc: "IoT-Ignite is ARDIC’s end-to-end IoT platform. There are various vertical solutions running on the platform developed by ARDIC and its partners.",
+        desc: "IoT-Ignite, ARDIC'ın uçtan uca IoT platformudur. ARDIC ve ortakları tarafından geliştirilen platform üzerinde çalışan çeşitli dikey çözümler bulunmaktadır.",
       },
       data: {
         slug: "/iot-ignite",
@@ -49,23 +49,23 @@ export default function handler(req, res) {
         detailTexts: [
           {
             tag: "h1",
-            text: "End-to-End IoT",
+            text: "Uçtan Uca IoT",
           },
           {
             tag: "p",
-            text: "IoT-Ignite is ARDIC’s end-to-end IoT platform. There are various vertical solutions running on the platform developed by ARDIC and its partners.",
+            text: "IoT-Ignite, ARDIC'ın uçtan uca IoT platformudur. ARDIC ve ortakları tarafından geliştirilen platform üzerinde çalışan çeşitli dikey çözümler bulunmaktadır.",
           },
           {
             tag: "p",
-            text: "With edge processing capabilities that are enabled by ARDIC’s OS running on IoT gateways, and its own cloud infrastructure,",
+            text: "ARDIC'ın IoT ağ geçitleri üzerinde çalışan işletim sistemi ve kendi bulut altyapısı tarafından etkinleştirilen uç işleme yetenekleri ile,",
           },
           {
             tag: "p",
-            text: " * Device, application and service layers can be managed on a single architecture, * Full stack services can run on the platform independent of third party providers like Google and Amazon.",
+            text: " * Cihaz, uygulama ve hizmet katmanları tek bir mimari üzerinde yönetilebilir, * Full stack servisler, Google ve Amazon gibi üçüncü parti sağlayıcılardan bağımsız olarak platform üzerinde çalışabilir.",
           },
           {
             tag: "p",
-            text: "With these properties, IoT-Ignite becomes a truly end-to-end IoT platform, differentiating itself from the majority of providers in the market that define themselves as IoT platforms.",
+            text: "Bu özelliklerle IoT-Ignite, pazardaki kendilerini IoT platformları olarak tanımlayan çoğu sağlayıcıdan farklılaşarak gerçekten uçtan uca bir IoT platformu haline gelir.",
           },
           {
             tag: "a",
@@ -78,7 +78,7 @@ export default function handler(req, res) {
       id: "arcloud",
       meta: {
         title: "Arcloud",
-        desc: "Through its own cloud infrastructure, ARDIC can provide its MDM and IoT services fully independent of third party providers, unlike its competitors. This gives ARDIC an unparalleled edge especially in the security-sensitive markets.",
+        desc: "ARDIC, kendi bulut altyapısı sayesinde, rakiplerinden farklı olarak MDM ve IoT hizmetlerini üçüncü taraf sağlayıcılardan tamamen bağımsız olarak sunabilmektedir. Bu, ARDIC'a özellikle güvenlik açısından hassas pazarlarda benzersiz bir avantaj sağlar.",
       },
       data: {
         slug: "/arcloud",
@@ -86,19 +86,19 @@ export default function handler(req, res) {
         detailTexts: [
           {
             tag: "h1",
-            text: "Own Infrastructure – ArCloud",
+            text: "Kendi Altyapınız – ArCloud",
           },
           {
             tag: "p",
-            text: "Through its own cloud infrastructure, ARDIC can provide its MDM and IoT services fully independent of third party providers, unlike its competitors. This gives ARDIC an unparalleled edge especially in the security-sensitive markets.",
+            text: "ARDIC, kendi bulut altyapısı sayesinde, rakiplerinden farklı olarak MDM ve IoT hizmetlerini üçüncü taraf sağlayıcılardan tamamen bağımsız olarak sunabilmektedir. Bu, ARDIC'a özellikle güvenlik açısından hassas pazarlarda benzersiz bir avantaj sağlar.",
           },
           {
             tag: "p",
-            text: "To address concerns for the data collection, data processing and data storage, being local means being secure. ARDIC can also provide on-premise cloud solutions on request.",
+            text: "Veri toplama, veri işleme ve veri depolama ile ilgili endişeleri gidermek için yerel olmak, güvenli olmak anlamına gelir. ARDIC, istek üzerine kurum içi bulut çözümleri de sağlayabilir.",
           },
           {
             tag: "p",
-            text: "ARDIC has the ability and agility to push the envelope of technology staying ahead of its competitors.",
+            text: "ARDIC, rakiplerinin önüne geçerek teknolojinin sınırlarını zorlama yeteneğine ve çevikliğine sahiptir.",
           },
         ],
       },

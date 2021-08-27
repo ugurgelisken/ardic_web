@@ -45,13 +45,13 @@ const Index = ({
 export const getServerSideProps = async (router) => {
   // Success Stories Section
   const res_successStories = await fetch(
-    `${process.env.HOST}/api/${router.locale}/success-stories`
+    `${process.env.BASE_URL}/api/${router.locale}/success-stories`
   );
   const successStoriesData = await res_successStories.json();
 
   // Solutions Section
   const res_solutions = await fetch(
-    `${process.env.HOST}/api/${router.locale}/solutions`
+    `${process.env.BASE_URL}/api/${router.locale}/solutions`
   );
   const solutionsData = await res_solutions.json();
 

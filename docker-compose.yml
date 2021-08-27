@@ -1,7 +1,8 @@
 version: "3"
 services:
   ui:
-    container_name: web
+    container_name: beta.ardictech.com
+    hostname: beta.ardictech.com
     restart: always
     build:
       context: .
