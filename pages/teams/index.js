@@ -29,7 +29,7 @@ const Teams = ({ data, meta }) => {
 
         <h5 className="text-center mb-3">{data.summary}</h5>
         <div className="mb-10 overflow-hidden">
-          <img clasName="max-width-100per" src={data.cover} alt={meta.title} />
+          <img className="max-width-100per" src={data.cover} alt={meta.title} />
         </div>
         <div className="teams-texts">
           <h1
