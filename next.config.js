@@ -39,7 +39,7 @@ module.exports = {
     GA_TRACKING_ID: process.env.GA_TRACKING_ID,
   },
   generateBuildId: async () => {
-    return new Date().getTime();
+    return new Date().toDateString()
   },
   eslint: {
     ignoreDuringBuilds: false,
