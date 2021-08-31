@@ -39,15 +39,13 @@ export default function TechnologiesItem({ data, meta }) {
   );
 }
 
-export const getServerSideProps = async (router) => {
+TechnologiesItem.getInitialProps = async (router) => {
   const res = await fetch(
     `${process.env.BASE_URL}/api/${router.locale}/technologies/${router.query.id}`
   );
   const data = await res.json();
   return {
-    props: {
       data: data.data,
       meta: data.meta,
-    },
   };
 };

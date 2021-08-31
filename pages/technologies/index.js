@@ -86,16 +86,14 @@ const Technologies = ({ data, meta }) => {
   );
 };
 
-export const getServerSideProps = async (router) => {
+Technologies.getInitialProps = async (router) => {
   const res = await fetch(
     `${process.env.BASE_URL}/api/${router.locale}/technologies`
   );
   const data = await res.json();
   return {
-    props: {
       data: data.data,
       meta: data.meta,
-    },
   };
 };
 

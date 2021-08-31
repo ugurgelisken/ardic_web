@@ -42,7 +42,7 @@ const Index = ({
   );
 };
 
-export const getServerSideProps = async (router) => {
+Index.getInitialProps = async (router) => {
   // Success Stories Section
   const res_successStories = await fetch(
     `${process.env.BASE_URL}/api/${router.locale}/success-stories`
@@ -56,12 +56,10 @@ export const getServerSideProps = async (router) => {
   const solutionsData = await res_solutions.json();
 
   return {
-    props: {
       successStoriesMeta: successStoriesData.meta,
       successStoriesData: successStoriesData.data,
       solutionsMeta: solutionsData.meta,
-      solutionsData: solutionsData.data,
-    },
+      solutionsData: solutionsData.data,  
   };
 };
 
