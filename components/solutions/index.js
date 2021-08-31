@@ -34,7 +34,7 @@ const Solutions = ({ data }) => {
                     <div className="iconsContainer">
                       {item.technologies.map((icon, i) => {
                         return icon.slug ? (
-                          <Link href={icon.slug}>
+                          <Link href={icon.slug} key={i}>
                             <a
                               target={
                                 isExternalLink(icon.slug) === true
@@ -52,6 +52,7 @@ const Solutions = ({ data }) => {
                           </Link>
                         ) : (
                           <img
+                            key={i}
                             className="icons"
                             src={icon.image}
                             alt={icon.name}

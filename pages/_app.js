@@ -38,23 +38,9 @@ function App({ Component, pageProps }) {
 
   return (
     <Layout>
-      <motion.div
-        key={router.route}
-        initial="initial"
-        animate="animate"
-        variants={{
-          initial: {
-            y: 40,
-            opacity: 0.2,
-          },
-          animate: {
-            y: 0,
-            opacity: 1,
-          },
-        }}
-      >
+     
         <Component {...pageProps} />
-      </motion.div>
+     
     </Layout>
   );
 }

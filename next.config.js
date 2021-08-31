@@ -20,6 +20,7 @@ module.exports = {
       }
     ]
   },
+  trailingSlash: true,
   reactStrictMode: true,
   generateEtags: false,
   i18n: {
@@ -38,7 +39,7 @@ module.exports = {
     GA_TRACKING_ID: process.env.GA_TRACKING_ID,
   },
   generateBuildId: async () => {
-    return new Date().toDateString();
+    return new Date().getTime();
   },
   eslint: {
     ignoreDuringBuilds: false,
