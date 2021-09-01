@@ -17,14 +17,15 @@ const Menu = ({ menuItems, router }) => {
         .container-menu {
           display: flex;
           justify-content: center;
+          border: 1px solid white;
         }
         .menu {
           display: flex;
-          margin-top: 24px;
           padding: 1px 20px;
           border-radius: 20px;
           background-color: white;
-          position: absolute;
+          position: relative;
+          top: 24px;
           height: 50px;
         }
       `}</style>

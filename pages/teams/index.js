@@ -24,7 +24,7 @@ const Teams = ({ data, meta }) => {
         <meta name="description" content={trimString(meta.desc, 150)} />
       </Head>
       <div className="container page-box">
-        <div className="section-title">{meta.title}</div>
+        <h1 className="section-title">{meta.title}</h1>
         <br />
 
         <h5 className="text-center mb-3">{data.summary}</h5>

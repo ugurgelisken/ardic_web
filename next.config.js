@@ -1,9 +1,15 @@
 module.exports = {
+  webpack5: false,
   webpackDevMiddleware: (config) => {
     config.watchOptions = {
       poll: 1000,
       aggregateTimeout: 300,
     };
+    config.devServer = {
+      historyApiFallback: true,
+      contentBase: "./",
+      hot: true
+    }
     return config;
   },
   async headers() {
@@ -20,7 +26,7 @@ module.exports = {
       }
     ]
   },
-  trailingSlash: true,
+  trailingSlash: false,
   reactStrictMode: true,
   generateEtags: false,
   i18n: {
