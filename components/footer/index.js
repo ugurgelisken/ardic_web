@@ -18,6 +18,12 @@ const Footer = () => {
       });
   }, [router.locale]);
 
+  useEffect(() => {
+    console.log(router.asPath)
+    router.push(router.asPath)
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  },[])
+
   return (
     <div className="container-footer">
       <div className="container-fluid">
